@@ -1,0 +1,10 @@
+﻿Variable_Name,Variable_Label
+CNT,Country code 3-character
+CNTSCHID,Intl. School ID
+SC064Q05WA,Proportion parent/guardians who: Discussed their child's behaviour with a teacher on the parents' or guardians' own initiative
+SC064Q06WA,Proportion parent/guardians who: Discussed their child's behaviour on the initiative of one of their child's teachers
+SC064Q01TA,Proportion parent/guardians who: Discussed their child's progress with a teacher on the parents' or guardians' own initiative
+SC064Q02TA,Proportion parent/guardians who: Discussed their child's progress on the initiative of one of their child's teachers
+SC064Q04NA,"Proportion parent/guardians who: Volunteered in physical or extra-curricular activities, (e.g. building maintenance, carpentry, gardening or yard work, school play, sports, field trip)"
+SC064Q03TA,Proportion parent/guardians who: Participated in local school government (e.g. parent council or school management committee)
+SCHSIZE,School size (Sum)

@@ -1,0 +1,20 @@
+﻿Variable_Name,Variable_Label
+CNT,Country code 3-character
+CNTSCHID,Intl. School ID
+ST001D01T,Student International Grade (Derived)
+ST004D01T,Student (Standardized) Gender
+ST268Q01JA,Agree/disagree: Mathematics is one of my favourite subjects.
+ST268Q04JA,Agree/disagree: Mathematics is easy for me.
+ST268Q07JA,Agree/disagree: I want to do well in my mathematics class.
+MISCED,Mother’s level of education (ISCED)
+ESCS,"Index of economic, social and cultural status"
+PV1MATH,Plausible Value 1 in Mathematics
+PV2MATH,Plausible Value 2 in Mathematics
+PV3MATH,Plausible Value 3 in Mathematics
+PV4MATH,Plausible Value 4 in Mathematics
+PV5MATH,Plausible Value 5 in Mathematics
+PV6MATH,Plausible Value 6 in Mathematics
+PV7MATH,Plausible Value 7 in Mathematics
+PV8MATH,Plausible Value 8 in Mathematics
+PV9MATH,Plausible Value 9 in Mathematics
+PV10MATH,Plausible Value 10 in Mathematics

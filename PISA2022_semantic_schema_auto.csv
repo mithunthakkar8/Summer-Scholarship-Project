@@ -1,0 +1,29 @@
+Variable,Label,Source,Inferred_Type
+CNT,Country code 3-character,Student,Other / Mixed
+CNTSCHID,Intl. School ID,Student,Other / Mixed
+ST001D01T,Student International Grade (Derived),Student,Ordinal / Likert
+ST004D01T,Student (Standardized) Gender,Student,Ordinal / Likert
+ST268Q01JA,Agree/disagree: Mathematics is one of my favourite subjects.,Student,Ordinal / Likert
+ST268Q04JA,Agree/disagree: Mathematics is easy for me.,Student,Ordinal / Likert
+ST268Q07JA,Agree/disagree: I want to do well in my mathematics class.,Student,Ordinal / Likert
+MISCED,Mother’s level of education (ISCED),Student,Ordinal (Education level)
+ESCS,"Index of economic, social and cultural status",Student,Continuous (Index)
+PV1MATH,Plausible Value 1 in Mathematics,Student,Continuous (Plausible Value)
+PV2MATH,Plausible Value 2 in Mathematics,Student,Continuous (Plausible Value)
+PV3MATH,Plausible Value 3 in Mathematics,Student,Continuous (Plausible Value)
+PV4MATH,Plausible Value 4 in Mathematics,Student,Continuous (Plausible Value)
+PV5MATH,Plausible Value 5 in Mathematics,Student,Continuous (Plausible Value)
+PV6MATH,Plausible Value 6 in Mathematics,Student,Continuous (Plausible Value)
+PV7MATH,Plausible Value 7 in Mathematics,Student,Continuous (Plausible Value)
+PV8MATH,Plausible Value 8 in Mathematics,Student,Continuous (Plausible Value)
+PV9MATH,Plausible Value 9 in Mathematics,Student,Continuous (Plausible Value)
+PV10MATH,Plausible Value 10 in Mathematics,Student,Continuous (Plausible Value)
+CNT,Country code 3-character,School,Other / Mixed
+CNTSCHID,Intl. School ID,School,Other / Mixed
+SC064Q05WA,Proportion parent/guardians who: Discussed their child's behaviour with a teacher on the parents' or guardians' own initiative,School,Ordinal / Likert
+SC064Q06WA,Proportion parent/guardians who: Discussed their child's behaviour on the initiative of one of their child's teachers,School,Ordinal / Likert
+SC064Q01TA,Proportion parent/guardians who: Discussed their child's progress with a teacher on the parents' or guardians' own initiative,School,Ordinal / Likert
+SC064Q02TA,Proportion parent/guardians who: Discussed their child's progress on the initiative of one of their child's teachers,School,Ordinal / Likert
+SC064Q04NA,"Proportion parent/guardians who: Volunteered in physical or extra-curricular activities, (e.g. building maintenance, carpentry, gardening or yard work, school play, sports, field trip)",School,Ordinal / Likert
+SC064Q03TA,Proportion parent/guardians who: Participated in local school government (e.g. parent council or school management committee),School,Ordinal / Likert
+SCHSIZE,School size (Sum),School,Ordinal / Likert

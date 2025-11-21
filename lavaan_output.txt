@@ -1,0 +1,122 @@
+lavaan 0.6-20 ended normally after 27 iterations
+
+  Estimator                                        ULS
+  Optimization method                           NLMINB
+  Number of model parameters                        49
+
+  Number of observations                          4895
+
+Model Test User Model:
+                                                      
+  Test statistic                               435.703
+  Degrees of freedom                                53
+  P-value (Unknown)                                 NA
+
+Model Test Baseline Model:
+
+  Test statistic                             84045.342
+  Degrees of freedom                                66
+  P-value                                           NA
+
+User Model versus Baseline Model:
+
+  Comparative Fit Index (CFI)                    0.995
+  Tucker-Lewis Index (TLI)                       0.994
+
+Root Mean Square Error of Approximation:
+
+  RMSEA                                          0.038
+  90 Percent confidence interval - lower         0.035
+  90 Percent confidence interval - upper         0.042
+  P-value H_0: RMSEA <= 0.050                    1.000
+  P-value H_0: RMSEA >= 0.080                    0.000
+
+Standardized Root Mean Square Residual:
+
+  SRMR                                           0.034
+
+Parameter Estimates:
+
+  Parameterization                               Delta
+  Standard errors                             Standard
+  Information                                 Expected
+  Information saturated (h1) model        Unstructured
+
+Latent Variables:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+  MOT =~                                                                
+    ST113Q01TA        1.000                               0.892    0.892
+    ST113Q02TA        1.064    0.016   66.711    0.000    0.948    0.948
+    ST113Q03TA        1.028    0.015   66.494    0.000    0.916    0.916
+    ST113Q04TA        0.969    0.015   65.915    0.000    0.864    0.864
+  SCIEFF =~                                                             
+    ST129Q01TA        1.000                               0.743    0.743
+    ST129Q02TA        1.085    0.014   78.614    0.000    0.806    0.806
+    ST129Q03TA        1.069    0.014   78.223    0.000    0.794    0.794
+    ST129Q04TA        1.116    0.014   79.313    0.000    0.829    0.829
+    ST129Q05TA        1.127    0.014   79.534    0.000    0.837    0.837
+    ST129Q06TA        1.112    0.014   79.224    0.000    0.826    0.826
+    ST129Q07TA        0.970    0.013   75.526    0.000    0.720    0.720
+    ST129Q08TA        1.080    0.014   78.483    0.000    0.802    0.802
+
+Covariances:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+  MOT ~~                                                                
+    SCIEFF            0.221    0.004   60.415    0.000    0.334    0.334
+
+Thresholds:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+    ST113Q01TA|t1    -0.534    0.014  -37.366    0.000   -0.534   -0.534
+    ST113Q01TA|t2     0.881    0.014   61.629    0.000    0.881    0.881
+    ST113Q01TA|t3     1.608    0.014  112.481    0.000    1.608    1.608
+    ST113Q02TA|t1    -0.632    0.014  -44.203    0.000   -0.632   -0.632
+    ST113Q02TA|t2     0.829    0.014   58.014    0.000    0.829    0.829
+    ST113Q02TA|t3     1.644    0.014  115.035    0.000    1.644    1.644
+    ST113Q03TA|t1    -0.597    0.014  -41.780    0.000   -0.597   -0.597
+    ST113Q03TA|t2     0.704    0.014   49.264    0.000    0.704    0.704
+    ST113Q03TA|t3     1.539    0.014  107.665    0.000    1.539    1.539
+    ST113Q04TA|t1    -0.676    0.014  -47.264    0.000   -0.676   -0.676
+    ST113Q04TA|t2     0.582    0.014   40.714    0.000    0.582    0.582
+    ST113Q04TA|t3     1.403    0.014   98.160    0.000    1.403    1.403
+    ST129Q01TA|t1    -0.594    0.014  -41.566    0.000   -0.594   -0.594
+    ST129Q01TA|t2     0.906    0.014   63.391    0.000    0.906    0.906
+    ST129Q01TA|t3     1.518    0.014  106.168    0.000    1.518    1.518
+    ST129Q02TA|t1    -0.545    0.014  -38.111    0.000   -0.545   -0.545
+    ST129Q02TA|t2     0.882    0.014   61.734    0.000    0.882    0.882
+    ST129Q02TA|t3     1.584    0.014  110.817    0.000    1.584    1.584
+    ST129Q03TA|t1    -0.663    0.014  -46.412    0.000   -0.663   -0.663
+    ST129Q03TA|t2     0.604    0.014   42.252    0.000    0.604    0.604
+    ST129Q03TA|t3     1.376    0.014   96.279    0.000    1.376    1.376
+    ST129Q04TA|t1    -0.642    0.014  -44.905    0.000   -0.642   -0.642
+    ST129Q04TA|t2     0.715    0.014   50.001    0.000    0.715    0.715
+    ST129Q04TA|t3     1.459    0.014  102.049    0.000    1.459    1.459
+    ST129Q05TA|t1    -0.621    0.014  -43.419    0.000   -0.621   -0.621
+    ST129Q05TA|t2     0.691    0.014   48.350    0.000    0.691    0.691
+    ST129Q05TA|t3     1.494    0.014  104.499    0.000    1.494    1.494
+    ST129Q06TA|t1    -0.680    0.014  -47.580    0.000   -0.680   -0.680
+    ST129Q06TA|t2     0.610    0.014   42.683    0.000    0.610    0.610
+    ST129Q06TA|t3     1.414    0.014   98.933    0.000    1.414    1.414
+    ST129Q07TA|t1    -0.784    0.014  -54.840    0.000   -0.784   -0.784
+    ST129Q07TA|t2     0.413    0.014   28.905    0.000    0.413    0.413
+    ST129Q07TA|t3     1.153    0.014   80.675    0.000    1.153    1.153
+    ST129Q08TA|t1    -0.577    0.014  -40.333    0.000   -0.577   -0.577
+    ST129Q08TA|t2     0.631    0.014   44.116    0.000    0.631    0.631
+    ST129Q08TA|t3     1.350    0.014   94.464    0.000    1.350    1.350
+
+Variances:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+   .ST113Q01TA        0.205                               0.205    0.205
+   .ST113Q02TA        0.101                               0.101    0.101
+   .ST113Q03TA        0.160                               0.160    0.160
+   .ST113Q04TA        0.253                               0.253    0.253
+   .ST129Q01TA        0.449                               0.449    0.449
+   .ST129Q02TA        0.350                               0.350    0.350
+   .ST129Q03TA        0.370                               0.370    0.370
+   .ST129Q04TA        0.313                               0.313    0.313
+   .ST129Q05TA        0.300                               0.300    0.300
+   .ST129Q06TA        0.318                               0.318    0.318
+   .ST129Q07TA        0.481                               0.481    0.481
+   .ST129Q08TA        0.357                               0.357    0.357
+    MOT               0.795    0.016   50.234    0.000    1.000    1.000
+    SCIEFF            0.551    0.010   55.587    0.000    1.000    1.000
+
