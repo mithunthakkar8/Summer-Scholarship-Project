@@ -1,0 +1,12 @@
+{
+  "name": "TIMSS_SGP",
+  "task_type": "regression",
+  "header": "infer",
+  "column_names": null,
+  "num_col_idx": [17],
+  "cat_col_idx": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,18],
+  "target_col_idx": [19],
+  "file_type": "csv",
+  "data_path": "data/TIMSS_SGP/df_core_with_acm_latent_SGP.csv",
+  "test_path": null
+}
