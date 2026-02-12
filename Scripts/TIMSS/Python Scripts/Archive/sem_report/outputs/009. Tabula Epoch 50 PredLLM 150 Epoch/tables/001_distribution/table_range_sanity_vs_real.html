@@ -1,0 +1,985 @@
+
+<style>
+/* =====================================================
+   APA 7 TABLE FORMAT (MINIMAL RULES)
+   ===================================================== */
+
+.sem-table {
+  border-collapse: collapse;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12pt;
+  color: #000;
+  margin: 12px 0;
+
+  /* APA: only top & bottom rules */
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+/* -----------------------------------------------------
+   HEADER
+   ----------------------------------------------------- */
+.sem-table thead th {
+  padding: 6px 8px;
+  text-align: center;
+  font-weight: 600;
+
+  /* APA: header separator rule */
+  border-bottom: 1px solid #000;
+
+  /* APA: NEVER vertical rules */
+  border-left: none;
+  border-right: none;
+}
+
+/* -----------------------------------------------------
+   BODY
+   ----------------------------------------------------- */
+.sem-table td {
+  padding: 6px 8px;
+  text-align: center;
+  vertical-align: middle;
+
+  /* APA: no inner gridlines */
+  border: none;
+  white-space: nowrap;
+}
+
+/* First column left-aligned (row labels) */
+.sem-table th:first-child,
+.sem-table td:first-child {
+  text-align: left;
+}
+
+/* Remove zebra striping / shading */
+.sem-table tbody tr {
+  background: transparent;
+}
+
+/* -----------------------------------------------------
+   TABLE NOTES
+   ----------------------------------------------------- */
+.apa-table-note {
+  font-size: 11pt;
+  margin-top: 6px;
+}
+
+/* -----------------------------------------------------
+   TABLE NUMBER & TITLE
+   ----------------------------------------------------- */
+.apa-table-number {
+  margin-top: 12px;
+  font-size: 12pt;
+  font-weight: 600;
+}
+
+.apa-table-title {
+  margin-bottom: 6px;
+  font-size: 12pt;
+  font-style: italic;
+}
+
+</style>
+
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+  svg: { fontCache: 'global' }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+<div class="apa-table-number"><strong>Table 6</strong></div><div class="apa-table-title"><em>Range Sanity Checks Relative to Real Data</em></div><table border="1" class="dataframe sem-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Variable</th>
+      <th>Technique</th>
+      <th>REAL_Range</th>
+      <th>Synthetic_Range</th>
+      <th>Same_As_REAL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AGE</td>
+      <td>REAL</td>
+      <td>[15.33, 16.25]</td>
+      <td>[15.33, 16.25]</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>AGE</td>
+      <td>CTGAN</td>
+      <td>[15.33, 16.25]</td>
+      <td>[15.33, 16.25]</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>AGE</td>
+      <td>GReaT</td>
+      <td>[15.33, 16.25]</td>
+      <td>[15.33, 16.25]</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>AGE</td>
+      <td>PredLLM</td>
+      <td>[15.33, 16.25]</td>
+      <td>[15.33, 16.37]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>AGE</td>
+      <td>REaLTabFormer</td>
+      <td>[15.33, 16.25]</td>
+      <td>[15.33, 16.25]</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>AGE</td>
+      <td>TabDiff</td>
+      <td>[15.33, 16.25]</td>
+      <td>[15.33, 16.25]</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>AGE</td>
+      <td>TabSyn</td>
+      <td>[15.33, 16.25]</td>
+      <td>[15.33, 16.25]</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>AGE</td>
+      <td>Tabula</td>
+      <td>[15.33, 16.25]</td>
+      <td>[15.25, 16.25]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>AGE</td>
+      <td>TapTap</td>
+      <td>[15.33, 16.25]</td>
+      <td>[15.33, 16.25]</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>ESCS</td>
+      <td>REAL</td>
+      <td>[-2.94, 2.77]</td>
+      <td>[-2.94, 2.77]</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>ESCS</td>
+      <td>CTGAN</td>
+      <td>[-2.94, 2.77]</td>
+      <td>[-2.94, 2.2]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>ESCS</td>
+      <td>GReaT</td>
+      <td>[-2.94, 2.77]</td>
+      <td>[-2.28, 2.27]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>ESCS</td>
+      <td>PredLLM</td>
+      <td>[-2.94, 2.77]</td>
+      <td>[-2.67, 1.97]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>ESCS</td>
+      <td>REaLTabFormer</td>
+      <td>[-2.94, 2.77]</td>
+      <td>[-3.07, 2.8]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>ESCS</td>
+      <td>TabDiff</td>
+      <td>[-2.94, 2.77]</td>
+      <td>[-2.94, 2.77]</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>ESCS</td>
+      <td>TabSyn</td>
+      <td>[-2.94, 2.77]</td>
+      <td>[-2.92, 2.66]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>ESCS</td>
+      <td>Tabula</td>
+      <td>[-2.94, 2.77]</td>
+      <td>[-2.01, 2.34]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>ESCS</td>
+      <td>TapTap</td>
+      <td>[-2.94, 2.77]</td>
+      <td>[-2.67, 1.93]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>MCLSIZE</td>
+      <td>REAL</td>
+      <td>[18.0, 38.0]</td>
+      <td>[18.0, 38.0]</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>MCLSIZE</td>
+      <td>CTGAN</td>
+      <td>[18.0, 38.0]</td>
+      <td>[18.0, 38.0]</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>MCLSIZE</td>
+      <td>GReaT</td>
+      <td>[18.0, 38.0]</td>
+      <td>[18.0, 38.0]</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>MCLSIZE</td>
+      <td>PredLLM</td>
+      <td>[18.0, 38.0]</td>
+      <td>[18.04, 37.96]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>MCLSIZE</td>
+      <td>REaLTabFormer</td>
+      <td>[18.0, 38.0]</td>
+      <td>[14.99, 41.0]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>MCLSIZE</td>
+      <td>TabDiff</td>
+      <td>[18.0, 38.0]</td>
+      <td>[18.0, 38.0]</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>MCLSIZE</td>
+      <td>TabSyn</td>
+      <td>[18.0, 38.0]</td>
+      <td>[18.0, 38.0]</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>MCLSIZE</td>
+      <td>Tabula</td>
+      <td>[18.0, 38.0]</td>
+      <td>[18.0, 38.0]</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>MCLSIZE</td>
+      <td>TapTap</td>
+      <td>[18.0, 38.0]</td>
+      <td>[18.0, 38.0]</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>PV10MATH</td>
+      <td>REAL</td>
+      <td>[238.5, 817.24]</td>
+      <td>[238.5, 817.24]</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PV10MATH</td>
+      <td>CTGAN</td>
+      <td>[238.5, 817.24]</td>
+      <td>[238.5, 816.4]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV10MATH</td>
+      <td>GReaT</td>
+      <td>[238.5, 817.24]</td>
+      <td>[238.5, 817.24]</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>PV10MATH</td>
+      <td>PredLLM</td>
+      <td>[238.5, 817.24]</td>
+      <td>[238.12, 817.28]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV10MATH</td>
+      <td>REaLTabFormer</td>
+      <td>[238.5, 817.24]</td>
+      <td>[188.77, 825.34]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV10MATH</td>
+      <td>TabDiff</td>
+      <td>[238.5, 817.24]</td>
+      <td>[238.5, 817.23]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV10MATH</td>
+      <td>TabSyn</td>
+      <td>[238.5, 817.24]</td>
+      <td>[246.58, 816.28]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV10MATH</td>
+      <td>Tabula</td>
+      <td>[238.5, 817.24]</td>
+      <td>[411.92, 815.97]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV10MATH</td>
+      <td>TapTap</td>
+      <td>[238.5, 817.24]</td>
+      <td>[238.53, 817.28]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV1MATH</td>
+      <td>REAL</td>
+      <td>[237.55, 943.04]</td>
+      <td>[237.55, 943.04]</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PV1MATH</td>
+      <td>CTGAN</td>
+      <td>[237.55, 943.04]</td>
+      <td>[237.55, 916.34]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV1MATH</td>
+      <td>GReaT</td>
+      <td>[237.55, 943.04]</td>
+      <td>[246.62, 816.91]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV1MATH</td>
+      <td>PredLLM</td>
+      <td>[237.55, 943.04]</td>
+      <td>[207.22, 817.36]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV1MATH</td>
+      <td>REaLTabFormer</td>
+      <td>[237.55, 943.04]</td>
+      <td>[188.98, 943.04]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV1MATH</td>
+      <td>TabDiff</td>
+      <td>[237.55, 943.04]</td>
+      <td>[246.64, 942.56]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV1MATH</td>
+      <td>TabSyn</td>
+      <td>[237.55, 943.04]</td>
+      <td>[249.4, 936.57]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV1MATH</td>
+      <td>Tabula</td>
+      <td>[237.55, 943.04]</td>
+      <td>[411.77, 810.96]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV1MATH</td>
+      <td>TapTap</td>
+      <td>[237.55, 943.04]</td>
+      <td>[206.71, 816.96]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV2MATH</td>
+      <td>REAL</td>
+      <td>[277.13, 878.47]</td>
+      <td>[277.13, 878.47]</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PV2MATH</td>
+      <td>CTGAN</td>
+      <td>[277.13, 878.47]</td>
+      <td>[277.13, 856.77]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV2MATH</td>
+      <td>GReaT</td>
+      <td>[277.13, 878.47]</td>
+      <td>[285.57, 830.46]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV2MATH</td>
+      <td>PredLLM</td>
+      <td>[277.13, 878.47]</td>
+      <td>[286.0, 878.47]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV2MATH</td>
+      <td>REaLTabFormer</td>
+      <td>[277.13, 878.47]</td>
+      <td>[281.93, 868.27]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV2MATH</td>
+      <td>TabDiff</td>
+      <td>[277.13, 878.47]</td>
+      <td>[277.13, 878.45]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV2MATH</td>
+      <td>TabSyn</td>
+      <td>[277.13, 878.47]</td>
+      <td>[277.13, 878.33]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV2MATH</td>
+      <td>Tabula</td>
+      <td>[277.13, 878.47]</td>
+      <td>[393.73, 817.85]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV2MATH</td>
+      <td>TapTap</td>
+      <td>[277.13, 878.47]</td>
+      <td>[209.83, 878.88]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV3MATH</td>
+      <td>REAL</td>
+      <td>[282.47, 838.13]</td>
+      <td>[282.47, 838.13]</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PV3MATH</td>
+      <td>CTGAN</td>
+      <td>[282.47, 838.13]</td>
+      <td>[282.47, 838.13]</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>PV3MATH</td>
+      <td>GReaT</td>
+      <td>[282.47, 838.13]</td>
+      <td>[287.72, 831.71]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV3MATH</td>
+      <td>PredLLM</td>
+      <td>[282.47, 838.13]</td>
+      <td>[287.29, 831.41]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV3MATH</td>
+      <td>REaLTabFormer</td>
+      <td>[282.47, 838.13]</td>
+      <td>[289.3, 809.28]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV3MATH</td>
+      <td>TabDiff</td>
+      <td>[282.47, 838.13]</td>
+      <td>[282.49, 838.12]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV3MATH</td>
+      <td>TabSyn</td>
+      <td>[282.47, 838.13]</td>
+      <td>[290.34, 837.78]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV3MATH</td>
+      <td>Tabula</td>
+      <td>[282.47, 838.13]</td>
+      <td>[422.26, 896.97]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV3MATH</td>
+      <td>TapTap</td>
+      <td>[282.47, 838.13]</td>
+      <td>[282.46, 838.14]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV4MATH</td>
+      <td>REAL</td>
+      <td>[201.46, 833.41]</td>
+      <td>[201.46, 833.41]</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PV4MATH</td>
+      <td>CTGAN</td>
+      <td>[201.46, 833.41]</td>
+      <td>[201.46, 833.41]</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>PV4MATH</td>
+      <td>GReaT</td>
+      <td>[201.46, 833.41]</td>
+      <td>[258.7, 805.76]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV4MATH</td>
+      <td>PredLLM</td>
+      <td>[201.46, 833.41]</td>
+      <td>[274.54, 882.67]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV4MATH</td>
+      <td>REaLTabFormer</td>
+      <td>[201.46, 833.41]</td>
+      <td>[201.78, 860.84]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV4MATH</td>
+      <td>TabDiff</td>
+      <td>[201.46, 833.41]</td>
+      <td>[201.48, 833.41]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV4MATH</td>
+      <td>TabSyn</td>
+      <td>[201.46, 833.41]</td>
+      <td>[211.7, 833.39]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV4MATH</td>
+      <td>Tabula</td>
+      <td>[201.46, 833.41]</td>
+      <td>[418.4, 818.77]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV4MATH</td>
+      <td>TapTap</td>
+      <td>[201.46, 833.41]</td>
+      <td>[203.23, 833.6]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV5MATH</td>
+      <td>REAL</td>
+      <td>[206.36, 850.7]</td>
+      <td>[206.36, 850.7]</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PV5MATH</td>
+      <td>CTGAN</td>
+      <td>[206.36, 850.7]</td>
+      <td>[206.36, 850.7]</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>PV5MATH</td>
+      <td>GReaT</td>
+      <td>[206.36, 850.7]</td>
+      <td>[282.68, 850.7]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV5MATH</td>
+      <td>PredLLM</td>
+      <td>[206.36, 850.7]</td>
+      <td>[205.9, 874.75]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV5MATH</td>
+      <td>REaLTabFormer</td>
+      <td>[206.36, 850.7]</td>
+      <td>[278.15, 870.62]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV5MATH</td>
+      <td>TabDiff</td>
+      <td>[206.36, 850.7]</td>
+      <td>[206.76, 806.68]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV5MATH</td>
+      <td>TabSyn</td>
+      <td>[206.36, 850.7]</td>
+      <td>[211.34, 806.68]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV5MATH</td>
+      <td>Tabula</td>
+      <td>[206.36, 850.7]</td>
+      <td>[418.83, 844.84]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV5MATH</td>
+      <td>TapTap</td>
+      <td>[206.36, 850.7]</td>
+      <td>[206.31, 850.7]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV6MATH</td>
+      <td>REAL</td>
+      <td>[266.06, 851.73]</td>
+      <td>[266.06, 851.73]</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PV6MATH</td>
+      <td>CTGAN</td>
+      <td>[266.06, 851.73]</td>
+      <td>[266.06, 851.73]</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>PV6MATH</td>
+      <td>GReaT</td>
+      <td>[266.06, 851.73]</td>
+      <td>[283.34, 844.53]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV6MATH</td>
+      <td>PredLLM</td>
+      <td>[266.06, 851.73]</td>
+      <td>[214.99, 811.07]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV6MATH</td>
+      <td>REaLTabFormer</td>
+      <td>[266.06, 851.73]</td>
+      <td>[211.95, 865.81]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV6MATH</td>
+      <td>TabDiff</td>
+      <td>[266.06, 851.73]</td>
+      <td>[266.06, 851.73]</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>PV6MATH</td>
+      <td>TabSyn</td>
+      <td>[266.06, 851.73]</td>
+      <td>[266.68, 851.71]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV6MATH</td>
+      <td>Tabula</td>
+      <td>[266.06, 851.73]</td>
+      <td>[431.8, 813.07]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV6MATH</td>
+      <td>TapTap</td>
+      <td>[266.06, 851.73]</td>
+      <td>[258.28, 851.72]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV7MATH</td>
+      <td>REAL</td>
+      <td>[238.54, 876.15]</td>
+      <td>[238.54, 876.15]</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PV7MATH</td>
+      <td>CTGAN</td>
+      <td>[238.54, 876.15]</td>
+      <td>[238.54, 841.32]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV7MATH</td>
+      <td>GReaT</td>
+      <td>[238.54, 876.15]</td>
+      <td>[238.54, 876.15]</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>PV7MATH</td>
+      <td>PredLLM</td>
+      <td>[238.54, 876.15]</td>
+      <td>[232.91, 875.63]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV7MATH</td>
+      <td>REaLTabFormer</td>
+      <td>[238.54, 876.15]</td>
+      <td>[194.08, 872.57]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV7MATH</td>
+      <td>TabDiff</td>
+      <td>[238.54, 876.15]</td>
+      <td>[238.56, 876.15]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV7MATH</td>
+      <td>TabSyn</td>
+      <td>[238.54, 876.15]</td>
+      <td>[239.58, 874.96]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV7MATH</td>
+      <td>Tabula</td>
+      <td>[238.54, 876.15]</td>
+      <td>[422.84, 845.54]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV7MATH</td>
+      <td>TapTap</td>
+      <td>[238.54, 876.15]</td>
+      <td>[231.07, 881.76]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV8MATH</td>
+      <td>REAL</td>
+      <td>[293.77, 828.84]</td>
+      <td>[293.77, 828.84]</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PV8MATH</td>
+      <td>CTGAN</td>
+      <td>[293.77, 828.84]</td>
+      <td>[293.77, 828.84]</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>PV8MATH</td>
+      <td>GReaT</td>
+      <td>[293.77, 828.84]</td>
+      <td>[293.77, 828.84]</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>PV8MATH</td>
+      <td>PredLLM</td>
+      <td>[293.77, 828.84]</td>
+      <td>[254.08, 843.56]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV8MATH</td>
+      <td>REaLTabFormer</td>
+      <td>[293.77, 828.84]</td>
+      <td>[293.85, 870.08]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV8MATH</td>
+      <td>TabDiff</td>
+      <td>[293.77, 828.84]</td>
+      <td>[293.77, 828.83]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV8MATH</td>
+      <td>TabSyn</td>
+      <td>[293.77, 828.84]</td>
+      <td>[295.57, 828.78]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV8MATH</td>
+      <td>Tabula</td>
+      <td>[293.77, 828.84]</td>
+      <td>[411.94, 843.91]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV8MATH</td>
+      <td>TapTap</td>
+      <td>[293.77, 828.84]</td>
+      <td>[211.96, 832.24]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV9MATH</td>
+      <td>REAL</td>
+      <td>[269.98, 841.66]</td>
+      <td>[269.98, 841.66]</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PV9MATH</td>
+      <td>CTGAN</td>
+      <td>[269.98, 841.66]</td>
+      <td>[269.98, 841.66]</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>PV9MATH</td>
+      <td>GReaT</td>
+      <td>[269.98, 841.66]</td>
+      <td>[277.66, 841.66]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV9MATH</td>
+      <td>PredLLM</td>
+      <td>[269.98, 841.66]</td>
+      <td>[270.24, 842.06]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV9MATH</td>
+      <td>REaLTabFormer</td>
+      <td>[269.98, 841.66]</td>
+      <td>[186.38, 887.52]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV9MATH</td>
+      <td>TabDiff</td>
+      <td>[269.98, 841.66]</td>
+      <td>[269.99, 841.66]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV9MATH</td>
+      <td>TabSyn</td>
+      <td>[269.98, 841.66]</td>
+      <td>[269.98, 841.51]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV9MATH</td>
+      <td>Tabula</td>
+      <td>[269.98, 841.66]</td>
+      <td>[421.75, 838.73]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>PV9MATH</td>
+      <td>TapTap</td>
+      <td>[269.98, 841.66]</td>
+      <td>[269.93, 883.99]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>SCHSIZE</td>
+      <td>REAL</td>
+      <td>[315.0, 4020.0]</td>
+      <td>[315.0, 4020.0]</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>SCHSIZE</td>
+      <td>CTGAN</td>
+      <td>[315.0, 4020.0]</td>
+      <td>[315.0, 4020.0]</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>SCHSIZE</td>
+      <td>GReaT</td>
+      <td>[315.0, 4020.0]</td>
+      <td>[315.0, 4020.0]</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>SCHSIZE</td>
+      <td>PredLLM</td>
+      <td>[315.0, 4020.0]</td>
+      <td>[314.71, 4018.29]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>SCHSIZE</td>
+      <td>REaLTabFormer</td>
+      <td>[315.0, 4020.0]</td>
+      <td>[164.91, 4018.29]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>SCHSIZE</td>
+      <td>TabDiff</td>
+      <td>[315.0, 4020.0]</td>
+      <td>[315.0, 4020.0]</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>SCHSIZE</td>
+      <td>TabSyn</td>
+      <td>[315.0, 4020.0]</td>
+      <td>[315.0, 4020.0]</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>SCHSIZE</td>
+      <td>Tabula</td>
+      <td>[315.0, 4020.0]</td>
+      <td>[28.0, 4020.0]</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>SCHSIZE</td>
+      <td>TapTap</td>
+      <td>[315.0, 4020.0]</td>
+      <td>[63.37, 4019.96]</td>
+      <td>✗</td>
+    </tr>
+  </tbody>
+</table><div class="apa-table-note"><em>Note.</em> Check marks indicate whether the synthetic value range exactly matches the real range after rounding.</div>

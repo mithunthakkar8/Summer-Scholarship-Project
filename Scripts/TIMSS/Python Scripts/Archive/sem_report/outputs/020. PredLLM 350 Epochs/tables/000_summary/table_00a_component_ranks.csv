@@ -1,0 +1,9 @@
+Technique,Distribution_Rank,Path_Rank,LatentCorr_Rank,Covariate_Rank,Loading_Rank,Reliability_Rank,HTMT_Rank,Fit_Rank,Privacy_Rank,Overall_Rank
+TabSyn,1,1,2,2,1,2,1,5,5,1
+TabDiff,2,2,1,1,8,8,1,4,1,2
+TapTap,6,5,4,4,4,1,1,1,6,3
+Tabula,4,4,5,5,2,4,1,5,7,4
+PredLLM,7,6,3,7,6,3,1,1,4,5
+GReaT,3,3,6,6,3,5,1,5,8,6
+CTGAN,5,8,7,3,7,7,1,3,2,7
+REaLTabFormer,8,7,8,8,5,6,1,5,3,8

@@ -1,0 +1,3 @@
+Metric,CTGAN,GReaT_DistilGPT2,GReaT_GPT2,Tabula_DistilGPT2,Tabula_GPT2,TapTap_DistilGPT2,TapTap_GPT2,PredLLM_DistilGPT2,PredLLM_GPT2,TabSyn,TabDiff,REaLTabFormer
+Directional Consistency,0.842,0.842,0.789,0.632,0.789,0.842,1.000,0.421,0.789,1.000,1.000,0.789
+Rank Preservation (ρ),0.121,0.879,0.807,0.489,0.565,0.626,0.665,0.370,0.300,0.872,0.707,0.191

@@ -1,0 +1,336 @@
+
+<style>
+/* =====================================================
+   APA 7 TABLE FORMAT (MINIMAL RULES)
+   ===================================================== */
+
+.sem-table {
+  border-collapse: collapse;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12pt;
+  color: #000;
+  margin: 12px 0;
+
+  /* APA: only top & bottom rules */
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+/* -----------------------------------------------------
+   HEADER
+   ----------------------------------------------------- */
+.sem-table thead th {
+  padding: 6px 8px;
+  text-align: center;
+  font-weight: 600;
+
+  /* APA: header separator rule */
+  border-bottom: 1px solid #000;
+
+  /* APA: NEVER vertical rules */
+  border-left: none;
+  border-right: none;
+}
+
+/* -----------------------------------------------------
+   BODY
+   ----------------------------------------------------- */
+.sem-table td {
+  padding: 6px 8px;
+  text-align: center;
+  vertical-align: middle;
+
+  /* APA: no inner gridlines */
+  border: none;
+  white-space: nowrap;
+}
+
+/* First column left-aligned (row labels) */
+.sem-table th:first-child,
+.sem-table td:first-child {
+  text-align: left;
+}
+
+/* Remove zebra striping / shading */
+.sem-table tbody tr {
+  background: transparent;
+}
+
+/* -----------------------------------------------------
+   TABLE NOTES
+   ----------------------------------------------------- */
+.apa-table-note {
+  font-size: 11pt;
+  margin-top: 6px;
+}
+
+/* -----------------------------------------------------
+   TABLE NUMBER & TITLE
+   ----------------------------------------------------- */
+.apa-table-number {
+  margin-top: 12px;
+  font-size: 12pt;
+  font-weight: 600;
+}
+
+.apa-table-title {
+  margin-bottom: 6px;
+  font-size: 12pt;
+  font-style: italic;
+}
+
+</style>
+
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+  svg: { fontCache: 'global' }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+<div class="apa-table-number"><strong>Table 24</strong></div><div class="apa-table-title"><em>Standardized Structural Path Coefficients</em></div><table border="1" class="dataframe sem-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Path</th>
+      <th>REAL β</th>
+      <th>CTGAN</th>
+      <th>GReaT</th>
+      <th>Tabula</th>
+      <th>TapTap</th>
+      <th>PredLLM</th>
+      <th>TabSyn</th>
+      <th>TabDiff</th>
+      <th>REaLTabFormer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SPI  ->  SMS</td>
+      <td>-0.053 ns</td>
+      <td>-0.038 ± 0.070 ns</td>
+      <td>-0.029 ± 0.070 ns</td>
+      <td>-0.291 ± 0.190 *</td>
+      <td>-0.015 ± 0.070 ns</td>
+      <td>-0.435 ± 0.080 ns</td>
+      <td>-0.135 ± 0.040 *</td>
+      <td>-0.088 ± 0.040 ns</td>
+      <td>-0.238 ± 0.100 *</td>
+    </tr>
+    <tr>
+      <td>SPI  ->  SMP</td>
+      <td>-0.207 **</td>
+      <td>-0.374 ± 0.050 **</td>
+      <td>-0.148 ± 0.060 ns</td>
+      <td>-0.179 ± 0.190 ns</td>
+      <td>-0.116 ± 0.040 **</td>
+      <td>1.086 ± 0.100 **</td>
+      <td>-0.205 ± 0.030 **</td>
+      <td>-0.254 ± 0.030 **</td>
+      <td>-0.276 ± 0.090 **</td>
+    </tr>
+    <tr>
+      <td>gender  ->  SMS</td>
+      <td>0.121 **</td>
+      <td>0.058 ± 0.040 ns</td>
+      <td>0.099 ± 0.040 *</td>
+      <td>0.025 ± 0.030 ns</td>
+      <td>0.092 ± 0.030 *</td>
+      <td>-0.075 ± 0.030 **</td>
+      <td>0.108 ± 0.040 *</td>
+      <td>0.137 ± 0.040 **</td>
+      <td>0.062 ± 0.040 ns</td>
+    </tr>
+    <tr>
+      <td>gender  ->  SMP</td>
+      <td>-0.042 ns</td>
+      <td>-0.058 ± 0.030 ns</td>
+      <td>0.010 ± 0.030 ns</td>
+      <td>0.033 ± 0.030 ns</td>
+      <td>-0.027 ± 0.030 ns</td>
+      <td>0.351 ± 0.030 ns</td>
+      <td>-0.023 ± 0.030 ns</td>
+      <td>-0.025 ± 0.030 ns</td>
+      <td>-0.038 ± 0.030 ns</td>
+    </tr>
+    <tr>
+      <td>grade  ->  SMS</td>
+      <td>0.087 *</td>
+      <td>0.101 ± 0.040 ns</td>
+      <td>0.045 ± 0.050 ns</td>
+      <td>0.158 ± 0.060 *</td>
+      <td>0.071 ± 0.040 ns</td>
+      <td>-0.026 ± 0.040 ns</td>
+      <td>0.039 ± 0.040 ns</td>
+      <td>0.097 ± 0.040 *</td>
+      <td>0.029 ± 0.040 ns</td>
+    </tr>
+    <tr>
+      <td>grade  ->  SMP</td>
+      <td>0.122 **</td>
+      <td>0.045 ± 0.030 ns</td>
+      <td>0.131 ± 0.040 **</td>
+      <td>0.032 ± 0.030 ns</td>
+      <td>0.119 ± 0.030 **</td>
+      <td>0.304 ± 0.040 **</td>
+      <td>0.125 ± 0.040 **</td>
+      <td>0.145 ± 0.030 **</td>
+      <td>0.045 ± 0.040 ns</td>
+    </tr>
+    <tr>
+      <td>motherEdu  ->  SMS</td>
+      <td>0.032 ns</td>
+      <td>0.014 ± 0.040 ns</td>
+      <td>-0.051 ± 0.050 ns</td>
+      <td>-0.022 ± 0.050 ns</td>
+      <td>-0.036 ± 0.050 ns</td>
+      <td>-0.091 ± 0.050 ns</td>
+      <td>0.044 ± 0.050 ns</td>
+      <td>0.029 ± 0.040 ns</td>
+      <td>0.287 ± 0.050 **</td>
+    </tr>
+    <tr>
+      <td>motherEdu  ->  SMP</td>
+      <td>-0.145 **</td>
+      <td>0.007 ± 0.040 ns</td>
+      <td>-0.082 ± 0.050 ns</td>
+      <td>-0.046 ± 0.040 ns</td>
+      <td>-0.095 ± 0.050 ns</td>
+      <td>0.162 ± 0.050 ns</td>
+      <td>-0.077 ± 0.040 ns</td>
+      <td>-0.014 ± 0.040 ns</td>
+      <td>0.001 ± 0.040 ns</td>
+    </tr>
+    <tr>
+      <td>ESCS  ->  SMS</td>
+      <td>0.049 ns</td>
+      <td>-0.072 ± 0.040 ns</td>
+      <td>0.066 ± 0.060 ns</td>
+      <td>0.288 ± 0.050 **</td>
+      <td>0.241 ± 0.050 **</td>
+      <td>0.056 ± 0.050 ns</td>
+      <td>0.073 ± 0.050 ns</td>
+      <td>0.045 ± 0.040 ns</td>
+      <td>-0.024 ± 0.050 ns</td>
+    </tr>
+    <tr>
+      <td>ESCS  ->  SMP</td>
+      <td>0.380 **</td>
+      <td>0.241 ± 0.030 **</td>
+      <td>0.293 ± 0.050 **</td>
+      <td>0.300 ± 0.050 **</td>
+      <td>0.434 ± 0.040 **</td>
+      <td>0.446 ± 0.050 **</td>
+      <td>0.341 ± 0.040 **</td>
+      <td>0.262 ± 0.040 **</td>
+      <td>0.208 ± 0.050 **</td>
+    </tr>
+    <tr>
+      <td>age  ->  SMS</td>
+      <td>-0.027 ns</td>
+      <td>0.092 ± 0.040 ns</td>
+      <td>-0.017 ± 0.040 ns</td>
+      <td>-0.099 ± 0.030 **</td>
+      <td>0.013 ± 0.040 ns</td>
+      <td>0.017 ± 0.040 ns</td>
+      <td>-0.016 ± 0.040 ns</td>
+      <td>-0.066 ± 0.040 ns</td>
+      <td>-0.066 ± 0.040 ns</td>
+    </tr>
+    <tr>
+      <td>age  ->  SMP</td>
+      <td>0.027 ns</td>
+      <td>0.054 ± 0.030 ns</td>
+      <td>0.020 ± 0.030 ns</td>
+      <td>0.006 ± 0.030 ns</td>
+      <td>0.040 ± 0.030 ns</td>
+      <td>-0.006 ± 0.030 ns</td>
+      <td>0.023 ± 0.030 ns</td>
+      <td>0.019 ± 0.030 ns</td>
+      <td>0.019 ± 0.030 ns</td>
+    </tr>
+    <tr>
+      <td>immig  ->  SMS</td>
+      <td>0.091 *</td>
+      <td>0.075 ± 0.040 ns</td>
+      <td>0.047 ± 0.050 ns</td>
+      <td>0.134 ± 0.040 **</td>
+      <td>0.036 ± 0.040 ns</td>
+      <td>0.293 ± 0.040 ns</td>
+      <td>0.147 ± 0.050 *</td>
+      <td>0.146 ± 0.050 **</td>
+      <td>-0.113 ± 0.050 ns</td>
+    </tr>
+    <tr>
+      <td>immig  ->  SMP</td>
+      <td>0.035 ns</td>
+      <td>0.086 ± 0.030 **</td>
+      <td>-0.016 ± 0.050 ns</td>
+      <td>-0.010 ± 0.030 ns</td>
+      <td>0.032 ± 0.030 ns</td>
+      <td>-0.549 ± 0.040 ns</td>
+      <td>0.031 ± 0.040 ns</td>
+      <td>0.041 ± 0.040 ns</td>
+      <td>0.127 ± 0.040 *</td>
+    </tr>
+    <tr>
+      <td>classSize  ->  SMS</td>
+      <td>0.014 ns</td>
+      <td>0.092 ± 0.040 *</td>
+      <td>0.018 ± 0.040 ns</td>
+      <td>0.111 ± 0.040 **</td>
+      <td>0.027 ± 0.040 ns</td>
+      <td>-0.208 ± 0.040 ns</td>
+      <td>0.000 ± 0.040 ns</td>
+      <td>0.043 ± 0.040 ns</td>
+      <td>0.042 ± 0.040 ns</td>
+    </tr>
+    <tr>
+      <td>classSize  ->  SMP</td>
+      <td>0.092 **</td>
+      <td>0.048 ± 0.030 *</td>
+      <td>0.083 ± 0.040 ns</td>
+      <td>0.058 ± 0.030 ns</td>
+      <td>0.080 ± 0.030 *</td>
+      <td>0.672 ± 0.040 ns</td>
+      <td>0.100 ± 0.030 **</td>
+      <td>0.091 ± 0.030 ns</td>
+      <td>0.064 ± 0.040 ns</td>
+    </tr>
+    <tr>
+      <td>schoolSize  ->  SMS</td>
+      <td>-0.112 **</td>
+      <td>-0.006 ± 0.040 ns</td>
+      <td>-0.068 ± 0.040 ns</td>
+      <td>-0.061 ± 0.040 ns</td>
+      <td>-0.008 ± 0.040 ns</td>
+      <td>-0.022 ± 0.040 *</td>
+      <td>-0.164 ± 0.050 **</td>
+      <td>-0.138 ± 0.050 **</td>
+      <td>-0.034 ± 0.050 ns</td>
+    </tr>
+    <tr>
+      <td>schoolSize  ->  SMP</td>
+      <td>0.059 ns</td>
+      <td>0.011 ± 0.030 ns</td>
+      <td>0.050 ± 0.040 ns</td>
+      <td>0.124 ± 0.030 **</td>
+      <td>-0.005 ± 0.040 ns</td>
+      <td>-0.084 ± 0.040 ns</td>
+      <td>0.062 ± 0.040 ns</td>
+      <td>0.083 ± 0.040 ns</td>
+      <td>-0.009 ± 0.040 ns</td>
+    </tr>
+    <tr>
+      <td>SMS  ->  SMP</td>
+      <td>0.316 **</td>
+      <td>0.438 ± 0.030 **</td>
+      <td>0.258 ± 0.030 **</td>
+      <td>0.485 ± 0.030 **</td>
+      <td>0.319 ± 0.030 **</td>
+      <td>0.268 ± 0.030 *</td>
+      <td>0.284 ± 0.030 **</td>
+      <td>0.312 ± 0.030 **</td>
+      <td>0.446 ± 0.030 **</td>
+    </tr>
+  </tbody>
+</table><div class="apa-table-note"><em>Note.</em> Entries report standardized β coefficients; asterisks denote statistical significance (* p < .05, ** p < .01).</div>

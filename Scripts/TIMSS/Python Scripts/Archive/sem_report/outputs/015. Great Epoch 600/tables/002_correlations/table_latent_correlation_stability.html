@@ -1,0 +1,180 @@
+
+<style>
+/* =====================================================
+   APA 7 TABLE FORMAT (MINIMAL RULES)
+   ===================================================== */
+
+.sem-table {
+  border-collapse: collapse;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12pt;
+  color: #000;
+  margin: 12px 0;
+
+  /* APA: only top & bottom rules */
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+/* -----------------------------------------------------
+   HEADER
+   ----------------------------------------------------- */
+.sem-table thead th {
+  padding: 6px 8px;
+  text-align: center;
+  font-weight: 600;
+
+  /* APA: header separator rule */
+  border-bottom: 1px solid #000;
+
+  /* APA: NEVER vertical rules */
+  border-left: none;
+  border-right: none;
+}
+
+/* -----------------------------------------------------
+   BODY
+   ----------------------------------------------------- */
+.sem-table td {
+  padding: 6px 8px;
+  text-align: center;
+  vertical-align: middle;
+
+  /* APA: no inner gridlines */
+  border: none;
+  white-space: nowrap;
+}
+
+/* First column left-aligned (row labels) */
+.sem-table th:first-child,
+.sem-table td:first-child {
+  text-align: left;
+}
+
+/* Remove zebra striping / shading */
+.sem-table tbody tr {
+  background: transparent;
+}
+
+/* -----------------------------------------------------
+   TABLE NOTES
+   ----------------------------------------------------- */
+.apa-table-note {
+  font-size: 11pt;
+  margin-top: 6px;
+}
+
+/* -----------------------------------------------------
+   TABLE NUMBER & TITLE
+   ----------------------------------------------------- */
+.apa-table-number {
+  margin-top: 12px;
+  font-size: 12pt;
+  font-weight: 600;
+}
+
+.apa-table-title {
+  margin-bottom: 6px;
+  font-size: 12pt;
+  font-style: italic;
+}
+
+</style>
+
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+  svg: { fontCache: 'global' }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+<div class="apa-table-number"><strong>Table 3</strong></div><div class="apa-table-title"><em>Latent Correlation Stability Across Synthetic Data Techniques</em></div><table border="1" class="dataframe sem-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Model</th>
+      <th>Metric</th>
+      <th>CTGAN</th>
+      <th>GReaT</th>
+      <th>Tabula</th>
+      <th>TapTap</th>
+      <th>PredLLM</th>
+      <th>TabSyn</th>
+      <th>TabDiff</th>
+      <th>REaLTabFormer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PLS</td>
+      <td>Mean |Δr|</td>
+      <td>0.047339</td>
+      <td>0.039779</td>
+      <td>0.064801</td>
+      <td>0.037031</td>
+      <td>0.061455</td>
+      <td>0.037017</td>
+      <td>0.012060</td>
+      <td>0.078193</td>
+    </tr>
+    <tr>
+      <td>PLS</td>
+      <td>Median |Δr|</td>
+      <td>0.048814</td>
+      <td>0.048910</td>
+      <td>0.084121</td>
+      <td>0.050591</td>
+      <td>0.039339</td>
+      <td>0.043315</td>
+      <td>0.011121</td>
+      <td>0.085804</td>
+    </tr>
+    <tr>
+      <td>PLS</td>
+      <td>Max |Δr|</td>
+      <td>0.064260</td>
+      <td>0.054386</td>
+      <td>0.095908</td>
+      <td>0.053672</td>
+      <td>0.144645</td>
+      <td>0.052032</td>
+      <td>0.021696</td>
+      <td>0.104267</td>
+    </tr>
+    <tr>
+      <td>CB</td>
+      <td>Mean |Δr|</td>
+      <td>0.042297</td>
+      <td>0.043977</td>
+      <td>0.104393</td>
+      <td>0.028694</td>
+      <td>0.010904</td>
+      <td>0.020778</td>
+      <td>0.020807</td>
+      <td>0.061695</td>
+    </tr>
+    <tr>
+      <td>CB</td>
+      <td>Median |Δr|</td>
+      <td>0.016057</td>
+      <td>0.045215</td>
+      <td>0.054891</td>
+      <td>0.025525</td>
+      <td>0.006990</td>
+      <td>0.019666</td>
+      <td>0.026326</td>
+      <td>0.068201</td>
+    </tr>
+    <tr>
+      <td>CB</td>
+      <td>Max |Δr|</td>
+      <td>0.101778</td>
+      <td>0.053022</td>
+      <td>0.208696</td>
+      <td>0.051465</td>
+      <td>0.025191</td>
+      <td>0.033797</td>
+      <td>0.035195</td>
+      <td>0.096843</td>
+    </tr>
+  </tbody>
+</table><div class="apa-table-note"><em>Note.</em> Values represent mean, median, and maximum absolute Δr across latent construct pairs.</div>

@@ -1,0 +1,104 @@
+
+<style>
+.sem-table {
+  border-collapse: collapse;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 14px;
+  border: 2px solid #444;              /* strong outer border */
+  margin: 12px 0;
+}
+
+/* Header cells */
+.sem-table th {
+  background: #f5f7fa;
+  padding: 8px 10px;
+  border: 1px solid #666;              /* solid header grid */
+  border-bottom: 2px solid #444;       /* strong header separator */
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Body cells */
+.sem-table td {
+  padding: 8px 10px;
+  border: 1px solid #999;              /* solid inner grid */
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+/* Zebra striping for readability */
+.sem-table tbody tr:nth-child(even) {
+  background: #fafafa;
+}
+
+/* Emphasise first column (Path / Technique) */
+.sem-table td:first-child,
+.sem-table th:first-child {
+  text-align: left;
+  font-weight: 500;
+}
+
+/* Optional: hover highlight (harmless in PDF) */
+.sem-table tbody tr:hover {
+  background: #f0f4ff;
+}
+
+/* Significance colouring (optional, subtle) */
+.sem-table td:contains("ns") {
+  color: #666;
+}
+
+/* HTMT pass/fail retained */
+.htmt-pass {
+  color: #1a7f37;
+  font-weight: 600;
+}
+
+.htmt-fail {
+  color: #b42318;
+  font-weight: 600;
+}
+</style>
+
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+  svg: { fontCache: 'global' }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+<table border="1" class="dataframe sem-table">
+  <colgroup><col style="width:25.00%;"><col style="width:25.00%;"><col style="width:25.00%;"><col style="width:25.00%;"></colgroup><thead>
+    <tr style="text-align: right;">
+      <th>Construct</th>
+      <th>Construct</th>
+      <th>SPI</th>
+      <th>SMS</th>
+      <th>SMP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th></th>
+      <td>SPI</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td>SMS</td>
+      <td>0.036812</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td>SMP</td>
+      <td>0.028994</td>
+      <td>0.012487</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,391 @@
+
+<style>
+.sem-table {
+  border-collapse: collapse;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 14px;
+  border: 2px solid #444;              /* strong outer border */
+  margin: 12px 0;
+}
+
+/* Header cells */
+.sem-table th {
+  background: #f5f7fa;
+  padding: 8px 10px;
+  border: 1px solid #666;              /* solid header grid */
+  border-bottom: 2px solid #444;       /* strong header separator */
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Body cells */
+.sem-table td {
+  padding: 8px 10px;
+  border: 1px solid #999;              /* solid inner grid */
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+/* Zebra striping for readability */
+.sem-table tbody tr:nth-child(even) {
+  background: #fafafa;
+}
+
+/* Emphasise first column (Path / Technique) */
+.sem-table td:first-child,
+.sem-table th:first-child {
+  text-align: left;
+  font-weight: 500;
+}
+
+/* Optional: hover highlight (harmless in PDF) */
+.sem-table tbody tr:hover {
+  background: #f0f4ff;
+}
+
+/* Significance colouring (optional, subtle) */
+.sem-table td:contains("ns") {
+  color: #666;
+}
+
+/* HTMT pass/fail retained */
+.htmt-pass {
+  color: #1a7f37;
+  font-weight: 600;
+}
+
+.htmt-fail {
+  color: #b42318;
+  font-weight: 600;
+}
+</style>
+
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+  svg: { fontCache: 'global' }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+<table border="1" class="dataframe sem-table">
+  <colgroup><col style="width:7.69%;"><col style="width:7.69%;"><col style="width:7.69%;"><col style="width:7.69%;"><col style="width:7.69%;"><col style="width:7.69%;"><col style="width:7.69%;"><col style="width:7.69%;"><col style="width:7.69%;"><col style="width:7.69%;"><col style="width:7.69%;"><col style="width:7.69%;"><col style="width:7.69%;"></colgroup><thead>
+    <tr style="text-align: right;">
+      <th>Indicator</th>
+      <th>CTGAN</th>
+      <th>GReaT_DistilGPT2</th>
+      <th>GReaT_GPT2</th>
+      <th>Tabula_DistilGPT2</th>
+      <th>Tabula_GPT2</th>
+      <th>TapTap_DistilGPT2</th>
+      <th>TapTap_GPT2</th>
+      <th>PredLLM_DistilGPT2</th>
+      <th>PredLLM_GPT2</th>
+      <th>TabSyn</th>
+      <th>TabDiff</th>
+      <th>REaLTabFormer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PV10MATH</td>
+      <td>0.088025</td>
+      <td>0.021888</td>
+      <td>0.021334</td>
+      <td>0.015449</td>
+      <td>0.012963</td>
+      <td>0.009900</td>
+      <td>0.006746</td>
+      <td>0.011903</td>
+      <td>0.006986</td>
+      <td>0.007012</td>
+      <td>0.283892</td>
+      <td>0.022797</td>
+    </tr>
+    <tr>
+      <td>PV1MATH</td>
+      <td>0.081158</td>
+      <td>0.017136</td>
+      <td>0.021532</td>
+      <td>0.010868</td>
+      <td>0.010368</td>
+      <td>0.012101</td>
+      <td>0.011507</td>
+      <td>0.002259</td>
+      <td>0.009710</td>
+      <td>0.002541</td>
+      <td>0.208750</td>
+      <td>0.022430</td>
+    </tr>
+    <tr>
+      <td>PV2MATH</td>
+      <td>0.089504</td>
+      <td>0.023709</td>
+      <td>0.030851</td>
+      <td>0.013575</td>
+      <td>0.008778</td>
+      <td>0.010996</td>
+      <td>0.008401</td>
+      <td>0.000924</td>
+      <td>0.012075</td>
+      <td>0.003046</td>
+      <td>0.286785</td>
+      <td>0.036386</td>
+    </tr>
+    <tr>
+      <td>PV3MATH</td>
+      <td>0.078262</td>
+      <td>0.026523</td>
+      <td>0.022278</td>
+      <td>0.011082</td>
+      <td>0.007135</td>
+      <td>0.011732</td>
+      <td>0.010685</td>
+      <td>0.000975</td>
+      <td>0.015644</td>
+      <td>0.001157</td>
+      <td>0.255087</td>
+      <td>0.033601</td>
+    </tr>
+    <tr>
+      <td>PV4MATH</td>
+      <td>0.080373</td>
+      <td>0.027215</td>
+      <td>0.030315</td>
+      <td>0.006610</td>
+      <td>0.005188</td>
+      <td>0.011759</td>
+      <td>0.011967</td>
+      <td>0.005018</td>
+      <td>0.014631</td>
+      <td>0.008000</td>
+      <td>0.273388</td>
+      <td>0.025903</td>
+    </tr>
+    <tr>
+      <td>PV5MATH</td>
+      <td>0.075275</td>
+      <td>0.021477</td>
+      <td>0.023975</td>
+      <td>0.014882</td>
+      <td>0.008924</td>
+      <td>0.010531</td>
+      <td>0.009670</td>
+      <td>0.008677</td>
+      <td>0.009243</td>
+      <td>0.005846</td>
+      <td>0.025425</td>
+      <td>0.030430</td>
+    </tr>
+    <tr>
+      <td>PV6MATH</td>
+      <td>0.099149</td>
+      <td>0.025434</td>
+      <td>0.025301</td>
+      <td>0.015205</td>
+      <td>0.011487</td>
+      <td>0.009743</td>
+      <td>0.011528</td>
+      <td>0.005019</td>
+      <td>0.009677</td>
+      <td>0.002982</td>
+      <td>0.306159</td>
+      <td>0.027678</td>
+    </tr>
+    <tr>
+      <td>PV7MATH</td>
+      <td>0.090628</td>
+      <td>0.018964</td>
+      <td>0.022332</td>
+      <td>0.007707</td>
+      <td>0.004308</td>
+      <td>0.012573</td>
+      <td>0.012818</td>
+      <td>0.002164</td>
+      <td>0.013888</td>
+      <td>0.006806</td>
+      <td>0.298485</td>
+      <td>0.038507</td>
+    </tr>
+    <tr>
+      <td>PV8MATH</td>
+      <td>0.084920</td>
+      <td>0.020770</td>
+      <td>0.026303</td>
+      <td>0.014815</td>
+      <td>0.010975</td>
+      <td>0.011779</td>
+      <td>0.009938</td>
+      <td>0.007885</td>
+      <td>0.006167</td>
+      <td>0.003947</td>
+      <td>0.271582</td>
+      <td>0.023780</td>
+    </tr>
+    <tr>
+      <td>PV9MATH</td>
+      <td>0.078379</td>
+      <td>0.014973</td>
+      <td>0.018981</td>
+      <td>0.011244</td>
+      <td>0.006411</td>
+      <td>0.011870</td>
+      <td>0.011811</td>
+      <td>0.007003</td>
+      <td>0.011403</td>
+      <td>0.001679</td>
+      <td>0.267495</td>
+      <td>0.023790</td>
+    </tr>
+    <tr>
+      <td>ST268Q01JA</td>
+      <td>0.086112</td>
+      <td>0.023237</td>
+      <td>0.017317</td>
+      <td>0.028245</td>
+      <td>0.012124</td>
+      <td>0.014016</td>
+      <td>0.014382</td>
+      <td>0.008179</td>
+      <td>0.032949</td>
+      <td>0.053741</td>
+      <td>0.016331</td>
+      <td>0.030061</td>
+    </tr>
+    <tr>
+      <td>ST268Q04JA</td>
+      <td>0.069629</td>
+      <td>0.011933</td>
+      <td>0.004794</td>
+      <td>0.061928</td>
+      <td>0.008301</td>
+      <td>0.016946</td>
+      <td>0.006226</td>
+      <td>0.016236</td>
+      <td>0.007417</td>
+      <td>0.001558</td>
+      <td>0.005022</td>
+      <td>0.032800</td>
+    </tr>
+    <tr>
+      <td>ST268Q07JA</td>
+      <td>0.153120</td>
+      <td>0.009110</td>
+      <td>0.092246</td>
+      <td>0.142461</td>
+      <td>0.141298</td>
+      <td>0.015219</td>
+      <td>0.030802</td>
+      <td>0.022482</td>
+      <td>0.019805</td>
+      <td>0.073305</td>
+      <td>0.041315</td>
+      <td>0.027013</td>
+    </tr>
+    <tr>
+      <td>SC064Q01TA</td>
+      <td>0.041034</td>
+      <td>0.010379</td>
+      <td>0.332560</td>
+      <td>0.027772</td>
+      <td>0.446400</td>
+      <td>0.146928</td>
+      <td>0.027838</td>
+      <td>0.390534</td>
+      <td>0.678886</td>
+      <td>0.067643</td>
+      <td>0.087998</td>
+      <td>0.177912</td>
+    </tr>
+    <tr>
+      <td>SC064Q02TA</td>
+      <td>0.091835</td>
+      <td>0.093858</td>
+      <td>0.347961</td>
+      <td>0.183688</td>
+      <td>0.362150</td>
+      <td>0.204358</td>
+      <td>0.120620</td>
+      <td>0.688842</td>
+      <td>0.854810</td>
+      <td>0.018653</td>
+      <td>0.073008</td>
+      <td>0.159899</td>
+    </tr>
+    <tr>
+      <td>SC064Q03TA</td>
+      <td>0.099829</td>
+      <td>0.024339</td>
+      <td>0.044753</td>
+      <td>0.003120</td>
+      <td>0.298634</td>
+      <td>0.061131</td>
+      <td>0.047910</td>
+      <td>0.199871</td>
+      <td>0.255057</td>
+      <td>0.029279</td>
+      <td>0.041443</td>
+      <td>0.029953</td>
+    </tr>
+    <tr>
+      <td>SC064Q04NA</td>
+      <td>0.019042</td>
+      <td>0.000158</td>
+      <td>0.169389</td>
+      <td>0.156625</td>
+      <td>0.102749</td>
+      <td>0.154399</td>
+      <td>0.048094</td>
+      <td>0.131495</td>
+      <td>0.181118</td>
+      <td>0.056616</td>
+      <td>0.083558</td>
+      <td>0.155715</td>
+    </tr>
+    <tr>
+      <td>SC064Q05WA</td>
+      <td>0.015184</td>
+      <td>0.038397</td>
+      <td>0.245901</td>
+      <td>0.036927</td>
+      <td>0.319949</td>
+      <td>0.170968</td>
+      <td>0.004172</td>
+      <td>0.309897</td>
+      <td>0.323308</td>
+      <td>0.073079</td>
+      <td>0.129047</td>
+      <td>0.094098</td>
+    </tr>
+    <tr>
+      <td>SC064Q06WA</td>
+      <td>0.060109</td>
+      <td>0.028144</td>
+      <td>0.023364</td>
+      <td>0.023236</td>
+      <td>0.018121</td>
+      <td>0.000324</td>
+      <td>0.035210</td>
+      <td>0.409666</td>
+      <td>0.540532</td>
+      <td>0.013399</td>
+      <td>0.010663</td>
+      <td>0.138076</td>
+    </tr>
+    <tr>
+      <td>SC064Q07WA</td>
+      <td>0.121777</td>
+      <td>0.075614</td>
+      <td>0.290697</td>
+      <td>0.054170</td>
+      <td>0.078649</td>
+      <td>0.048188</td>
+      <td>0.057066</td>
+      <td>0.157019</td>
+      <td>0.224917</td>
+      <td>0.006020</td>
+      <td>0.023503</td>
+      <td>0.043514</td>
+    </tr>
+  </tbody>
+</table>

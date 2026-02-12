@@ -1,0 +1,14 @@
+Metric,Technique,Value
+N,CTGAN,856
+N,GReaT_DistilGPT2,855
+N,GReaT_GPT2,855
+N,PredLLM_DistilGPT2,850
+N,PredLLM_GPT2,666
+N,REAL,856
+N,REaLTabFormer,831
+N,TabDiff,856
+N,TabSyn,856
+N,Tabula_DistilGPT2,848
+N,Tabula_GPT2,855
+N,TapTap_DistilGPT2,856
+N,TapTap_GPT2,814

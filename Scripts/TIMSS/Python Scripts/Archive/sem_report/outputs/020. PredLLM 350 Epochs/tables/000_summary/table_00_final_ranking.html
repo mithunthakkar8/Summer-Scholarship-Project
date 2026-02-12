@@ -1,0 +1,303 @@
+
+<style>
+/* =====================================================
+   APA 7 TABLE FORMAT (MINIMAL RULES)
+   ===================================================== */
+
+.sem-table {
+  border-collapse: collapse;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12pt;
+  color: #000;
+  margin: 12px 0;
+
+  /* APA: only top & bottom rules */
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+/* -----------------------------------------------------
+   HEADER
+   ----------------------------------------------------- */
+.sem-table thead th {
+  padding: 6px 8px;
+  text-align: center;
+  font-weight: 600;
+
+  /* APA: header separator rule */
+  border-bottom: 1px solid #000;
+
+  /* APA: NEVER vertical rules */
+  border-left: none;
+  border-right: none;
+}
+
+/* -----------------------------------------------------
+   BODY
+   ----------------------------------------------------- */
+.sem-table td {
+  padding: 6px 8px;
+  text-align: center;
+  vertical-align: middle;
+
+  /* APA: no inner gridlines */
+  border: none;
+  white-space: nowrap;
+}
+
+/* First column left-aligned (row labels) */
+.sem-table th:first-child,
+.sem-table td:first-child {
+  text-align: left;
+}
+
+/* Remove zebra striping / shading */
+.sem-table tbody tr {
+  background: transparent;
+}
+
+/* -----------------------------------------------------
+   TABLE NOTES
+   ----------------------------------------------------- */
+.apa-table-note {
+  font-size: 11pt;
+  margin-top: 6px;
+}
+
+/* -----------------------------------------------------
+   TABLE NUMBER & TITLE
+   ----------------------------------------------------- */
+.apa-table-number {
+  margin-top: 12px;
+  font-size: 12pt;
+  font-weight: 600;
+}
+
+.apa-table-title {
+  margin-bottom: 6px;
+  font-size: 12pt;
+  font-style: italic;
+}
+
+</style>
+
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+  svg: { fontCache: 'global' }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+<div class="apa-table-number"><strong>Table 32</strong></div><div class="apa-table-title"><em>Composite Performance Scores and Overall Ranking of Synthetic Data Techniques</em></div><table border="1" class="dataframe sem-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Overall_Rank</th>
+      <th>Technique</th>
+      <th>Distribution_Score</th>
+      <th>Distribution_Rank</th>
+      <th>Path_Score</th>
+      <th>Path_Rank</th>
+      <th>LatentCorr_Score</th>
+      <th>LatentCorr_Rank</th>
+      <th>Covariate_Score</th>
+      <th>Covariate_Rank</th>
+      <th>Loading_Score</th>
+      <th>Loading_Rank</th>
+      <th>Reliability_Score</th>
+      <th>Reliability_Rank</th>
+      <th>HTMT_Score</th>
+      <th>HTMT_Rank</th>
+      <th>Fit_Score</th>
+      <th>Fit_Rank</th>
+      <th>Privacy_Score</th>
+      <th>Privacy_Rank</th>
+      <th>Overall_Score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>TabSyn</td>
+      <td>-0.100</td>
+      <td>1</td>
+      <td>1.872</td>
+      <td>1</td>
+      <td>-0.0290</td>
+      <td>2</td>
+      <td>-0.024833</td>
+      <td>2</td>
+      <td>-0.028333</td>
+      <td>1</td>
+      <td>-0.031667</td>
+      <td>2</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>5</td>
+      <td>154.773</td>
+      <td>5</td>
+      <td>0.587895</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>TabDiff</td>
+      <td>-0.270</td>
+      <td>2</td>
+      <td>1.707</td>
+      <td>2</td>
+      <td>-0.0165</td>
+      <td>1</td>
+      <td>-0.016367</td>
+      <td>1</td>
+      <td>-0.111000</td>
+      <td>8</td>
+      <td>-0.074167</td>
+      <td>8</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>4</td>
+      <td>417.707</td>
+      <td>1</td>
+      <td>0.526484</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>TapTap</td>
+      <td>-0.581</td>
+      <td>6</td>
+      <td>1.468</td>
+      <td>5</td>
+      <td>-0.0330</td>
+      <td>4</td>
+      <td>-0.033133</td>
+      <td>4</td>
+      <td>-0.046000</td>
+      <td>4</td>
+      <td>-0.016667</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>4</td>
+      <td>1</td>
+      <td>146.630</td>
+      <td>6</td>
+      <td>0.471134</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Tabula</td>
+      <td>-0.430</td>
+      <td>4</td>
+      <td>1.614</td>
+      <td>4</td>
+      <td>-0.0390</td>
+      <td>5</td>
+      <td>-0.033833</td>
+      <td>5</td>
+      <td>-0.037000</td>
+      <td>2</td>
+      <td>-0.033333</td>
+      <td>4</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>5</td>
+      <td>138.297</td>
+      <td>7</td>
+      <td>0.409693</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>PredLLM</td>
+      <td>-0.591</td>
+      <td>7</td>
+      <td>1.451</td>
+      <td>6</td>
+      <td>-0.0295</td>
+      <td>3</td>
+      <td>-0.042933</td>
+      <td>7</td>
+      <td>-0.073000</td>
+      <td>6</td>
+      <td>-0.032500</td>
+      <td>3</td>
+      <td>0</td>
+      <td>1</td>
+      <td>4</td>
+      <td>1</td>
+      <td>156.888</td>
+      <td>4</td>
+      <td>0.386242</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>GReaT</td>
+      <td>-0.400</td>
+      <td>3</td>
+      <td>1.621</td>
+      <td>3</td>
+      <td>-0.0425</td>
+      <td>6</td>
+      <td>-0.039933</td>
+      <td>6</td>
+      <td>-0.044000</td>
+      <td>3</td>
+      <td>-0.036667</td>
+      <td>5</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>5</td>
+      <td>134.357</td>
+      <td>8</td>
+      <td>0.380945</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>CTGAN</td>
+      <td>-0.472</td>
+      <td>5</td>
+      <td>0.963</td>
+      <td>8</td>
+      <td>-0.0445</td>
+      <td>7</td>
+      <td>-0.031267</td>
+      <td>3</td>
+      <td>-0.084000</td>
+      <td>7</td>
+      <td>-0.059167</td>
+      <td>7</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>291.145</td>
+      <td>2</td>
+      <td>0.317650</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>REaLTabFormer</td>
+      <td>-0.621</td>
+      <td>8</td>
+      <td>1.139</td>
+      <td>7</td>
+      <td>-0.0765</td>
+      <td>8</td>
+      <td>-0.049967</td>
+      <td>8</td>
+      <td>-0.054667</td>
+      <td>5</td>
+      <td>-0.039167</td>
+      <td>6</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>5</td>
+      <td>161.257</td>
+      <td>3</td>
+      <td>0.182055</td>
+    </tr>
+  </tbody>
+</table><div class="apa-table-note"><em>Note.</em> Scores are min–max normalized within each evaluation dimension and combined using predefined weights; higher scores indicate better overall performance. REAL data are excluded from ranking.</div>

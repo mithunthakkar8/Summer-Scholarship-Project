@@ -1,0 +1,168 @@
+
+<style>
+/* =====================================================
+   APA 7 TABLE FORMAT (MINIMAL RULES)
+   ===================================================== */
+
+.sem-table {
+  border-collapse: collapse;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12pt;
+  color: #000;
+  margin: 12px 0;
+
+  /* APA: only top & bottom rules */
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+/* -----------------------------------------------------
+   HEADER
+   ----------------------------------------------------- */
+.sem-table thead th {
+  padding: 6px 8px;
+  text-align: center;
+  font-weight: 600;
+
+  /* APA: header separator rule */
+  border-bottom: 1px solid #000;
+
+  /* APA: NEVER vertical rules */
+  border-left: none;
+  border-right: none;
+}
+
+/* -----------------------------------------------------
+   BODY
+   ----------------------------------------------------- */
+.sem-table td {
+  padding: 6px 8px;
+  text-align: center;
+  vertical-align: middle;
+
+  /* APA: no inner gridlines */
+  border: none;
+  white-space: nowrap;
+}
+
+/* First column left-aligned (row labels) */
+.sem-table th:first-child,
+.sem-table td:first-child {
+  text-align: left;
+}
+
+/* Remove zebra striping / shading */
+.sem-table tbody tr {
+  background: transparent;
+}
+
+/* -----------------------------------------------------
+   TABLE NOTES
+   ----------------------------------------------------- */
+.apa-table-note {
+  font-size: 11pt;
+  margin-top: 6px;
+}
+
+/* -----------------------------------------------------
+   TABLE NUMBER & TITLE
+   ----------------------------------------------------- */
+.apa-table-number {
+  margin-top: 12px;
+  font-size: 12pt;
+  font-weight: 600;
+}
+
+.apa-table-title {
+  margin-bottom: 6px;
+  font-size: 12pt;
+  font-style: italic;
+}
+
+</style>
+
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+  svg: { fontCache: 'global' }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+<div class="apa-table-number"><strong>Table 27</strong></div><div class="apa-table-title"><em>Mean Privacy Risk Metrics Across Synthetic Data Techniques</em></div><table border="1" class="dataframe sem-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Technique</th>
+      <th>Metric</th>
+      <th>CTGAN</th>
+      <th>GReaT</th>
+      <th>PredLLM</th>
+      <th>REaLTabFormer</th>
+      <th>TabDiff</th>
+      <th>TabSyn</th>
+      <th>Tabula</th>
+      <th>TapTap</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th></th>
+      <td>Exact Match Rate</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td>NNDR</td>
+      <td>187.353695</td>
+      <td>81.832626</td>
+      <td>100.342932</td>
+      <td>99.166520</td>
+      <td>271.228306</td>
+      <td>99.199600</td>
+      <td>82.046292</td>
+      <td>89.826062</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td>Membership Inference risk</td>
+      <td>0.531308</td>
+      <td>0.965654</td>
+      <td>0.874731</td>
+      <td>0.869574</td>
+      <td>0.382710</td>
+      <td>0.862617</td>
+      <td>0.961213</td>
+      <td>0.917290</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td>DCR_p05</td>
+      <td>104.322073</td>
+      <td>55.977597</td>
+      <td>65.335290</td>
+      <td>57.467190</td>
+      <td>146.861877</td>
+      <td>56.436298</td>
+      <td>56.425447</td>
+      <td>57.721134</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td>KAnonymity_mean_k_distance</td>
+      <td>216.498643</td>
+      <td>110.643061</td>
+      <td>131.867526</td>
+      <td>132.508127</td>
+      <td>300.344686</td>
+      <td>129.869958</td>
+      <td>110.220330</td>
+      <td>122.190885</td>
+    </tr>
+  </tbody>
+</table><div class="apa-table-note"><em>Note.</em> Reported values are averaged across synthetic replicates. Lower values indicate better privacy protection except for NNDR, where higher values indicate lower disclosure risk.</div>

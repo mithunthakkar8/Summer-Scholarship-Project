@@ -1,0 +1,13 @@
+Technique,Mean_Category_Adherence
+CTGAN,0.768
+GReaT_DistilGPT2,1.000
+GReaT_GPT2,1.000
+PredLLM_DistilGPT2,0.500
+PredLLM_GPT2,0.500
+REaLTabFormer,0.500
+TabDiff,1.000
+TabSyn,1.000
+Tabula_DistilGPT2,1.000
+Tabula_GPT2,1.000
+TapTap_DistilGPT2,0.500
+TapTap_GPT2,0.500

@@ -1,0 +1,476 @@
+
+<style>
+.sem-table {
+  border-collapse: collapse;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 14px;
+  border: 2px solid #444;              /* strong outer border */
+  margin: 12px 0;
+}
+
+/* Header cells */
+.sem-table th {
+  background: #f5f7fa;
+  padding: 8px 10px;
+  border: 1px solid #666;              /* solid header grid */
+  border-bottom: 2px solid #444;       /* strong header separator */
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Body cells */
+.sem-table td {
+  padding: 8px 10px;
+  border: 1px solid #999;              /* solid inner grid */
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+/* Zebra striping for readability */
+.sem-table tbody tr:nth-child(even) {
+  background: #fafafa;
+}
+
+/* Emphasise first column (Path / Technique) */
+.sem-table td:first-child,
+.sem-table th:first-child {
+  text-align: left;
+  font-weight: 500;
+}
+
+/* Optional: hover highlight (harmless in PDF) */
+.sem-table tbody tr:hover {
+  background: #f0f4ff;
+}
+
+/* Significance colouring (optional, subtle) */
+.sem-table td:contains("ns") {
+  color: #666;
+}
+
+/* HTMT pass/fail retained */
+.htmt-pass {
+  color: #1a7f37;
+  font-weight: 600;
+}
+
+.htmt-fail {
+  color: #b42318;
+  font-weight: 600;
+}
+</style>
+
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+  svg: { fontCache: 'global' }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+<table border="1" class="dataframe sem-table">
+  <colgroup><col style="width:7.14%;"><col style="width:7.14%;"><col style="width:7.14%;"><col style="width:7.14%;"><col style="width:7.14%;"><col style="width:7.14%;"><col style="width:7.14%;"><col style="width:7.14%;"><col style="width:7.14%;"><col style="width:7.14%;"><col style="width:7.14%;"><col style="width:7.14%;"><col style="width:7.14%;"><col style="width:7.14%;"></colgroup><thead>
+    <tr style="text-align: right;">
+      <th>Variable</th>
+      <th>Metric</th>
+      <th>CTGAN</th>
+      <th>GReaT_DistilGPT2</th>
+      <th>GReaT_GPT2</th>
+      <th>PredLLM_DistilGPT2</th>
+      <th>PredLLM_GPT2</th>
+      <th>REaLTabFormer</th>
+      <th>TabDiff</th>
+      <th>TabSyn</th>
+      <th>Tabula_DistilGPT2</th>
+      <th>Tabula_GPT2</th>
+      <th>TapTap_DistilGPT2</th>
+      <th>TapTap_GPT2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ESCS → SMP</td>
+      <td>$r_{\mathrm{REAL}} \in [\min(r_{\mathrm{SYN}}), \max(r_{\mathrm{SYN}})]$</td>
+      <td>[0.36, 0.44] ✓</td>
+      <td>[0.23, 0.33] ✗</td>
+      <td>[0.16, 0.24] ✗</td>
+      <td>[0.33, 0.47] ✓</td>
+      <td>[0.39, 0.43] ✗</td>
+      <td>[0.40, 0.48] ✗</td>
+      <td>[0.26, 0.37] ✗</td>
+      <td>[0.36, 0.45] ✓</td>
+      <td>[0.23, 0.29] ✗</td>
+      <td>[0.24, 0.30] ✗</td>
+      <td>[0.45, 0.50] ✗</td>
+      <td>[0.45, 0.51] ✗</td>
+    </tr>
+    <tr>
+      <td>ESCS → SMS</td>
+      <td>$r_{\mathrm{REAL}} \in [\min(r_{\mathrm{SYN}}), \max(r_{\mathrm{SYN}})]$</td>
+      <td>[-0.07, 0.03] ✗</td>
+      <td>[-0.01, 0.03] ✗</td>
+      <td>[-0.05, 0.03] ✗</td>
+      <td>[0.06, 0.18] ✗</td>
+      <td>[0.08, 0.16] ✗</td>
+      <td>[0.13, 0.21] ✗</td>
+      <td>[-0.01, 0.08] ✓</td>
+      <td>[0.06, 0.11] ✗</td>
+      <td>[0.03, 0.11] ✓</td>
+      <td>[0.05, 0.07] ✗</td>
+      <td>[0.15, 0.22] ✗</td>
+      <td>[0.13, 0.21] ✗</td>
+    </tr>
+    <tr>
+      <td>ESCS → SPI</td>
+      <td>$r_{\mathrm{REAL}} \in [\min(r_{\mathrm{SYN}}), \max(r_{\mathrm{SYN}})]$</td>
+      <td>[-0.12, -0.01] ✓</td>
+      <td>[-0.14, -0.01] ✓</td>
+      <td>[-0.06, 0.00] ✗</td>
+      <td>[0.03, 0.13] ✗</td>
+      <td>[0.01, 0.11] ✗</td>
+      <td>[-0.08, -0.02] ✗</td>
+      <td>[-0.10, 0.00] ✓</td>
+      <td>[-0.18, -0.14] ✗</td>
+      <td>[-0.13, -0.03] ✓</td>
+      <td>[-0.05, 0.03] ✗</td>
+      <td>[-0.12, -0.05] ✓</td>
+      <td>[-0.09, 0.01] ✓</td>
+    </tr>
+    <tr>
+      <td>age → SMP</td>
+      <td>$r_{\mathrm{REAL}} \in [\min(r_{\mathrm{SYN}}), \max(r_{\mathrm{SYN}})]$</td>
+      <td>[0.07, 0.29] ✓</td>
+      <td>[-0.02, 0.05] ✗</td>
+      <td>[-0.02, 0.05] ✗</td>
+      <td>[0.01, 0.12] ✓</td>
+      <td>[0.03, 0.15] ✓</td>
+      <td>[-0.06, 0.02] ✗</td>
+      <td>[0.01, 0.08] ✓</td>
+      <td>[0.02, 0.13] ✓</td>
+      <td>[0.00, 0.08] ✓</td>
+      <td>[0.02, 0.07] ✗</td>
+      <td>[0.06, 0.10] ✓</td>
+      <td>[0.03, 0.14] ✓</td>
+    </tr>
+    <tr>
+      <td>age → SMS</td>
+      <td>$r_{\mathrm{REAL}} \in [\min(r_{\mathrm{SYN}}), \max(r_{\mathrm{SYN}})]$</td>
+      <td>[0.04, 0.14] ✗</td>
+      <td>[-0.05, 0.02] ✓</td>
+      <td>[0.00, 0.05] ✓</td>
+      <td>[0.00, 0.08] ✓</td>
+      <td>[0.03, 0.15] ✗</td>
+      <td>[-0.14, 0.00] ✗</td>
+      <td>[-0.07, 0.00] ✗</td>
+      <td>[-0.04, 0.04] ✓</td>
+      <td>[-0.04, 0.04] ✓</td>
+      <td>[-0.03, 0.01] ✓</td>
+      <td>[-0.03, 0.06] ✓</td>
+      <td>[-0.03, 0.01] ✓</td>
+    </tr>
+    <tr>
+      <td>age → SPI</td>
+      <td>$r_{\mathrm{REAL}} \in [\min(r_{\mathrm{SYN}}), \max(r_{\mathrm{SYN}})]$</td>
+      <td>[-0.12, 0.15] ✓</td>
+      <td>[-0.03, 0.05] ✓</td>
+      <td>[0.01, 0.04] ✗</td>
+      <td>[-0.06, 0.04] ✓</td>
+      <td>[-0.06, 0.09] ✓</td>
+      <td>[-0.02, 0.11] ✓</td>
+      <td>[-0.03, 0.10] ✓</td>
+      <td>[-0.04, 0.02] ✓</td>
+      <td>[-0.05, 0.04] ✓</td>
+      <td>[-0.06, 0.04] ✓</td>
+      <td>[-0.12, 0.07] ✓</td>
+      <td>[-0.09, 0.00] ✓</td>
+    </tr>
+    <tr>
+      <td>classSize → SMP</td>
+      <td>$r_{\mathrm{REAL}} \in [\min(r_{\mathrm{SYN}}), \max(r_{\mathrm{SYN}})]$</td>
+      <td>[0.07, 0.13] ✓</td>
+      <td>[0.02, 0.13] ✓</td>
+      <td>[-0.01, 0.07] ✗</td>
+      <td>[0.06, 0.09] ✗</td>
+      <td>[-0.03, 0.14] ✓</td>
+      <td>[0.01, 0.09] ✗</td>
+      <td>[0.08, 0.15] ✓</td>
+      <td>[0.05, 0.16] ✓</td>
+      <td>[0.09, 0.15] ✓</td>
+      <td>[0.11, 0.15] ✗</td>
+      <td>[0.11, 0.17] ✗</td>
+      <td>[0.05, 0.22] ✓</td>
+    </tr>
+    <tr>
+      <td>classSize → SMS</td>
+      <td>$r_{\mathrm{REAL}} \in [\min(r_{\mathrm{SYN}}), \max(r_{\mathrm{SYN}})]$</td>
+      <td>[0.05, 0.11] ✗</td>
+      <td>[0.00, 0.07] ✓</td>
+      <td>[-0.06, 0.02] ✗</td>
+      <td>[-0.06, 0.08] ✓</td>
+      <td>[-0.06, 0.05] ✓</td>
+      <td>[0.03, 0.08] ✓</td>
+      <td>[0.01, 0.08] ✓</td>
+      <td>[-0.05, 0.05] ✓</td>
+      <td>[-0.05, 0.05] ✓</td>
+      <td>[-0.06, 0.07] ✓</td>
+      <td>[0.02, 0.05] ✓</td>
+      <td>[-0.02, 0.10] ✓</td>
+    </tr>
+    <tr>
+      <td>classSize → SPI</td>
+      <td>$r_{\mathrm{REAL}} \in [\min(r_{\mathrm{SYN}}), \max(r_{\mathrm{SYN}})]$</td>
+      <td>[-0.25, -0.18] ✗</td>
+      <td>[-0.17, -0.09] ✓</td>
+      <td>[-0.13, -0.02] ✗</td>
+      <td>[-0.05, 0.00] ✗</td>
+      <td>[-0.07, 0.00] ✗</td>
+      <td>[-0.30, -0.21] ✗</td>
+      <td>[-0.23, -0.11] ✓</td>
+      <td>[-0.17, -0.12] ✓</td>
+      <td>[-0.09, 0.00] ✗</td>
+      <td>[-0.24, -0.15] ✓</td>
+      <td>[-0.18, -0.07] ✓</td>
+      <td>[-0.12, -0.05] ✗</td>
+    </tr>
+    <tr>
+      <td>gender → SMP</td>
+      <td>$r_{\mathrm{REAL}} \in [\min(r_{\mathrm{SYN}}), \max(r_{\mathrm{SYN}})]$</td>
+      <td>[-0.08, -0.01] ✓</td>
+      <td>[-0.02, 0.15] ✓</td>
+      <td>[0.04, 0.11] ✗</td>
+      <td>[0.00, 0.09] ✗</td>
+      <td>[0.03, 0.07] ✗</td>
+      <td>[-0.01, 0.07] ✗</td>
+      <td>[0.00, 0.03] ✗</td>
+      <td>[-0.05, 0.04] ✓</td>
+      <td>[0.10, 0.14] ✗</td>
+      <td>[0.14, 0.22] ✗</td>
+      <td>[-0.09, 0.09] ✓</td>
+      <td>[-0.04, 0.01] ✓</td>
+    </tr>
+    <tr>
+      <td>gender → SMS</td>
+      <td>$r_{\mathrm{REAL}} \in [\min(r_{\mathrm{SYN}}), \max(r_{\mathrm{SYN}})]$</td>
+      <td>[0.02, 0.08] ✗</td>
+      <td>[0.04, 0.12] ✓</td>
+      <td>[0.10, 0.18] ✓</td>
+      <td>[0.05, 0.13] ✓</td>
+      <td>[0.05, 0.14] ✓</td>
+      <td>[0.04, 0.13] ✓</td>
+      <td>[0.10, 0.14] ✓</td>
+      <td>[0.06, 0.12] ✓</td>
+      <td>[0.01, 0.15] ✓</td>
+      <td>[0.03, 0.14] ✓</td>
+      <td>[0.04, 0.12] ✓</td>
+      <td>[0.06, 0.13] ✓</td>
+    </tr>
+    <tr>
+      <td>gender → SPI</td>
+      <td>$r_{\mathrm{REAL}} \in [\min(r_{\mathrm{SYN}}), \max(r_{\mathrm{SYN}})]$</td>
+      <td>[-0.08, 0.06] ✓</td>
+      <td>[-0.07, 0.00] ✓</td>
+      <td>[-0.02, 0.03] ✗</td>
+      <td>[-0.08, -0.04] ✗</td>
+      <td>[-0.11, -0.03] ✓</td>
+      <td>[-0.10, -0.02] ✓</td>
+      <td>[-0.06, 0.00] ✓</td>
+      <td>[-0.04, 0.04] ✓</td>
+      <td>[-0.08, 0.01] ✓</td>
+      <td>[-0.13, -0.03] ✓</td>
+      <td>[-0.06, 0.01] ✓</td>
+      <td>[-0.07, 0.04] ✓</td>
+    </tr>
+    <tr>
+      <td>grade → SMP</td>
+      <td>$r_{\mathrm{REAL}} \in [\min(r_{\mathrm{SYN}}), \max(r_{\mathrm{SYN}})]$</td>
+      <td>[0.18, 0.26] ✓</td>
+      <td>[0.11, 0.17] ✗</td>
+      <td>[0.14, 0.21] ✓</td>
+      <td>[0.12, 0.19] ✗</td>
+      <td>[0.11, 0.18] ✗</td>
+      <td>[0.02, 0.10] ✗</td>
+      <td>[0.16, 0.22] ✓</td>
+      <td>[0.13, 0.26] ✓</td>
+      <td>[0.05, 0.15] ✗</td>
+      <td>[0.11, 0.18] ✗</td>
+      <td>[0.14, 0.24] ✓</td>
+      <td>[0.20, 0.23] ✗</td>
+    </tr>
+    <tr>
+      <td>grade → SMS</td>
+      <td>$r_{\mathrm{REAL}} \in [\min(r_{\mathrm{SYN}}), \max(r_{\mathrm{SYN}})]$</td>
+      <td>[0.04, 0.14] ✓</td>
+      <td>[0.01, 0.08] ✗</td>
+      <td>[0.05, 0.13] ✓</td>
+      <td>[0.04, 0.14] ✓</td>
+      <td>[0.04, 0.12] ✓</td>
+      <td>[0.03, 0.08] ✗</td>
+      <td>[0.06, 0.11] ✓</td>
+      <td>[0.01, 0.08] ✗</td>
+      <td>[-0.07, 0.03] ✗</td>
+      <td>[0.01, 0.08] ✗</td>
+      <td>[0.04, 0.09] ✓</td>
+      <td>[0.05, 0.10] ✓</td>
+    </tr>
+    <tr>
+      <td>grade → SPI</td>
+      <td>$r_{\mathrm{REAL}} \in [\min(r_{\mathrm{SYN}}), \max(r_{\mathrm{SYN}})]$</td>
+      <td>[-0.07, -0.01] ✓</td>
+      <td>[-0.04, 0.03] ✗</td>
+      <td>[-0.05, 0.04] ✓</td>
+      <td>[-0.11, -0.02] ✓</td>
+      <td>[-0.09, 0.02] ✓</td>
+      <td>[-0.07, 0.04] ✓</td>
+      <td>[-0.05, 0.07] ✓</td>
+      <td>[-0.09, 0.03] ✓</td>
+      <td>[-0.05, 0.05] ✓</td>
+      <td>[-0.04, 0.06] ✗</td>
+      <td>[-0.06, -0.02] ✓</td>
+      <td>[-0.09, 0.02] ✓</td>
+    </tr>
+    <tr>
+      <td>immig → SMP</td>
+      <td>$r_{\mathrm{REAL}} \in [\min(r_{\mathrm{SYN}}), \max(r_{\mathrm{SYN}})]$</td>
+      <td>[0.07, 0.14] ✗</td>
+      <td>[-0.07, -0.04] ✗</td>
+      <td>[-0.07, 0.00] ✗</td>
+      <td>[-0.03, 0.12] ✓</td>
+      <td>[0.02, 0.11] ✓</td>
+      <td>[0.02, 0.14] ✓</td>
+      <td>[0.02, 0.10] ✓</td>
+      <td>[0.05, 0.12] ✓</td>
+      <td>[-0.19, -0.13] ✗</td>
+      <td>[-0.19, -0.07] ✗</td>
+      <td>[0.00, 0.08] ✓</td>
+      <td>[-0.01, 0.10] ✓</td>
+    </tr>
+    <tr>
+      <td>immig → SMS</td>
+      <td>$r_{\mathrm{REAL}} \in [\min(r_{\mathrm{SYN}}), \max(r_{\mathrm{SYN}})]$</td>
+      <td>[-0.04, 0.10] ✓</td>
+      <td>[-0.05, 0.00] ✗</td>
+      <td>[-0.04, 0.01] ✗</td>
+      <td>[-0.04, 0.07] ✓</td>
+      <td>[0.01, 0.06] ✓</td>
+      <td>[-0.15, -0.06] ✗</td>
+      <td>[0.00, 0.08] ✓</td>
+      <td>[0.01, 0.10] ✓</td>
+      <td>[-0.05, 0.01] ✗</td>
+      <td>[-0.06, 0.01] ✗</td>
+      <td>[0.00, 0.10] ✓</td>
+      <td>[-0.05, 0.08] ✓</td>
+    </tr>
+    <tr>
+      <td>immig → SPI</td>
+      <td>$r_{\mathrm{REAL}} \in [\min(r_{\mathrm{SYN}}), \max(r_{\mathrm{SYN}})]$</td>
+      <td>[0.02, 0.11] ✗</td>
+      <td>[0.13, 0.20] ✗</td>
+      <td>[0.12, 0.26] ✓</td>
+      <td>[0.15, 0.30] ✗</td>
+      <td>[0.20, 0.30] ✗</td>
+      <td>[0.19, 0.30] ✗</td>
+      <td>[0.07, 0.16] ✓</td>
+      <td>[0.01, 0.12] ✗</td>
+      <td>[0.07, 0.14] ✓</td>
+      <td>[0.12, 0.18] ✓</td>
+      <td>[0.08, 0.18] ✓</td>
+      <td>[0.11, 0.18] ✓</td>
+    </tr>
+    <tr>
+      <td>motherEdu → SMP</td>
+      <td>$r_{\mathrm{REAL}} \in [\min(r_{\mathrm{SYN}}), \max(r_{\mathrm{SYN}})]$</td>
+      <td>[0.15, 0.31] ✓</td>
+      <td>[0.06, 0.18] ✗</td>
+      <td>[0.04, 0.12] ✗</td>
+      <td>[0.19, 0.36] ✗</td>
+      <td>[0.28, 0.33] ✗</td>
+      <td>[0.33, 0.45] ✗</td>
+      <td>[0.08, 0.22] ✓</td>
+      <td>[0.12, 0.24] ✓</td>
+      <td>[0.07, 0.16] ✗</td>
+      <td>[0.04, 0.16] ✗</td>
+      <td>[0.25, 0.32] ✗</td>
+      <td>[0.22, 0.31] ✗</td>
+    </tr>
+    <tr>
+      <td>motherEdu → SMS</td>
+      <td>$r_{\mathrm{REAL}} \in [\min(r_{\mathrm{SYN}}), \max(r_{\mathrm{SYN}})]$</td>
+      <td>[-0.07, 0.05] ✓</td>
+      <td>[-0.06, 0.02] ✗</td>
+      <td>[-0.03, 0.03] ✗</td>
+      <td>[0.04, 0.11] ✓</td>
+      <td>[0.08, 0.15] ✗</td>
+      <td>[0.17, 0.33] ✗</td>
+      <td>[0.01, 0.06] ✓</td>
+      <td>[0.04, 0.11] ✓</td>
+      <td>[0.02, 0.11] ✓</td>
+      <td>[-0.02, 0.07] ✓</td>
+      <td>[0.07, 0.17] ✗</td>
+      <td>[0.07, 0.16] ✗</td>
+    </tr>
+    <tr>
+      <td>motherEdu → SPI</td>
+      <td>$r_{\mathrm{REAL}} \in [\min(r_{\mathrm{SYN}}), \max(r_{\mathrm{SYN}})]$</td>
+      <td>[-0.10, 0.00] ✓</td>
+      <td>[-0.10, -0.01] ✓</td>
+      <td>[-0.09, 0.02] ✓</td>
+      <td>[0.00, 0.10] ✗</td>
+      <td>[0.04, 0.13] ✗</td>
+      <td>[-0.04, 0.02] ✓</td>
+      <td>[-0.09, 0.08] ✓</td>
+      <td>[-0.09, -0.04] ✗</td>
+      <td>[-0.10, -0.02] ✗</td>
+      <td>[-0.02, 0.06] ✓</td>
+      <td>[-0.05, 0.01] ✓</td>
+      <td>[-0.04, 0.02] ✓</td>
+    </tr>
+    <tr>
+      <td>schoolSize → SMP</td>
+      <td>$r_{\mathrm{REAL}} \in [\min(r_{\mathrm{SYN}}), \max(r_{\mathrm{SYN}})]$</td>
+      <td>[0.10, 0.17] ✓</td>
+      <td>[-0.01, 0.05] ✗</td>
+      <td>[0.00, 0.08] ✗</td>
+      <td>[-0.02, 0.12] ✓</td>
+      <td>[-0.02, 0.11] ✗</td>
+      <td>[0.10, 0.18] ✓</td>
+      <td>[0.05, 0.12] ✓</td>
+      <td>[0.10, 0.19] ✓</td>
+      <td>[-0.03, 0.06] ✗</td>
+      <td>[-0.10, 0.03] ✗</td>
+      <td>[0.07, 0.13] ✓</td>
+      <td>[0.00, 0.15] ✓</td>
+    </tr>
+    <tr>
+      <td>schoolSize → SMS</td>
+      <td>$r_{\mathrm{REAL}} \in [\min(r_{\mathrm{SYN}}), \max(r_{\mathrm{SYN}})]$</td>
+      <td>[-0.06, 0.05] ✓</td>
+      <td>[-0.07, -0.03] ✓</td>
+      <td>[-0.08, 0.00] ✓</td>
+      <td>[0.02, 0.05] ✗</td>
+      <td>[-0.03, 0.04] ✗</td>
+      <td>[-0.05, 0.01] ✗</td>
+      <td>[-0.09, -0.05] ✓</td>
+      <td>[-0.09, 0.00] ✓</td>
+      <td>[-0.06, 0.01] ✓</td>
+      <td>[-0.09, 0.01] ✓</td>
+      <td>[0.00, 0.10] ✗</td>
+      <td>[-0.05, 0.08] ✗</td>
+    </tr>
+    <tr>
+      <td>schoolSize → SPI</td>
+      <td>$r_{\mathrm{REAL}} \in [\min(r_{\mathrm{SYN}}), \max(r_{\mathrm{SYN}})]$</td>
+      <td>[-0.03, 0.10] ✓</td>
+      <td>[-0.06, -0.01] ✗</td>
+      <td>[-0.12, 0.02] ✓</td>
+      <td>[0.22, 0.33] ✗</td>
+      <td>[0.19, 0.28] ✗</td>
+      <td>[0.28, 0.38] ✗</td>
+      <td>[-0.04, 0.09] ✓</td>
+      <td>[-0.12, 0.01] ✗</td>
+      <td>[-0.08, 0.02] ✓</td>
+      <td>[0.04, 0.14] ✗</td>
+      <td>[-0.14, -0.02] ✗</td>
+      <td>[-0.05, 0.01] ✗</td>
+    </tr>
+  </tbody>
+</table>

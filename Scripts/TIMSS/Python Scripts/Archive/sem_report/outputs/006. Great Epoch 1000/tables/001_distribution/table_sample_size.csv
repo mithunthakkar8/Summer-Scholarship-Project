@@ -1,0 +1,10 @@
+Metric,Technique,Value
+N,CTGAN,856
+N,GReaT,854
+N,PredLLM,850
+N,REAL,856
+N,REaLTabFormer,831
+N,TabDiff,856
+N,TabSyn,856
+N,Tabula,849
+N,TapTap,856

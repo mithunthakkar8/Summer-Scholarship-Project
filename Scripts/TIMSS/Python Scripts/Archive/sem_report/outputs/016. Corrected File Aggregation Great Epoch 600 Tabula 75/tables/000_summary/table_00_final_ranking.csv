@@ -1,0 +1,9 @@
+Overall_Rank,Technique,Distribution_Score,Distribution_Rank,Path_Score,Path_Rank,LatentCorr_Score,LatentCorr_Rank,Covariate_Score,Covariate_Rank,Loading_Score,Loading_Rank,Reliability_Score,Reliability_Rank,HTMT_Score,HTMT_Rank,Fit_Score,Fit_Rank,Privacy_Score,Privacy_Rank,Overall_Score
+1,TabSyn,-0.100,1,1.872,1,-0.029,3,-0.025,2,-0.028,1,-0.032,2,0,1,0,5,154.773,5,0.589
+2,TabDiff,-0.270,2,1.707,2,-0.017,1,-0.016,1,-0.111,7,-0.074,7,0,1,1,4,417.707,1,0.574
+3,TapTap,-0.581,6,1.468,4,-0.033,4,-0.033,4,-0.046,4,-0.017,1,0,1,4,1,146.630,6,0.481
+4,GReaT,-0.400,3,1.621,3,-0.042,6,-0.040,5,-0.044,3,-0.037,5,0,1,0,5,134.357,8,0.392
+5,CTGAN,-0.472,4,0.963,8,-0.044,7,-0.031,3,-0.084,5,-0.059,6,0,1,2,3,291.145,2,0.349
+6,PredLLM,-0.601,7,1.084,7,-0.036,5,-0.046,7,-0.096,6,-0.033,3,0,1,4,1,161.717,3,0.327
+7,REaLTabFormer,-0.611,8,1.268,6,-0.070,8,-0.046,6,-0.040,2,-0.036,4,0,1,0,5,161.397,4,0.253
+8,Tabula,-0.520,5,1.286,5,-0.027,2,-0.055,8,-0.164,8,-0.075,8,0,1,0,5,137.510,7,0.135

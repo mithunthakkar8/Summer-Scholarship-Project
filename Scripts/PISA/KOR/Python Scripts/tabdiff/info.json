@@ -1,0 +1,20 @@
+{
+  "name": "pisa_kor",
+  "task_type": "regression",
+  "file_type": "csv",
+  "data_path": "data/pisa_kor/train.csv",
+  "test_path": null,
+  "column_names": null,
+  "header": "infer",
+  "val_path": null,
+
+  "num_col_idx": [
+    5, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 26, 27
+  ],
+
+  "cat_col_idx": [
+    0, 1, 2, 3, 4, 6, 7, 19, 20, 21, 22, 23, 24, 25
+  ],
+
+  "target_col_idx": [28]
+}

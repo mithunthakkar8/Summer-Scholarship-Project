@@ -1,0 +1,136 @@
+
+<style>
+.sem-table {
+  border-collapse: collapse;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 14px;
+  border: 2px solid #444;              /* strong outer border */
+  margin: 12px 0;
+}
+
+/* Header cells */
+.sem-table th {
+  background: #f5f7fa;
+  padding: 8px 10px;
+  border: 1px solid #666;              /* solid header grid */
+  border-bottom: 2px solid #444;       /* strong header separator */
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Body cells */
+.sem-table td {
+  padding: 8px 10px;
+  border: 1px solid #999;              /* solid inner grid */
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+/* Zebra striping for readability */
+.sem-table tbody tr:nth-child(even) {
+  background: #fafafa;
+}
+
+/* Emphasise first column (Path / Technique) */
+.sem-table td:first-child,
+.sem-table th:first-child {
+  text-align: left;
+  font-weight: 500;
+}
+
+/* Optional: hover highlight (harmless in PDF) */
+.sem-table tbody tr:hover {
+  background: #f0f4ff;
+}
+
+/* Significance colouring (optional, subtle) */
+.sem-table td:contains("ns") {
+  color: #666;
+}
+
+/* HTMT pass/fail retained */
+.htmt-pass {
+  color: #1a7f37;
+  font-weight: 600;
+}
+
+.htmt-fail {
+  color: #b42318;
+  font-weight: 600;
+}
+</style>
+
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+  svg: { fontCache: 'global' }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+<table border="1" class="dataframe sem-table">
+  <colgroup><col style="width:7.69%;"><col style="width:7.69%;"><col style="width:7.69%;"><col style="width:7.69%;"><col style="width:7.69%;"><col style="width:7.69%;"><col style="width:7.69%;"><col style="width:7.69%;"><col style="width:7.69%;"><col style="width:7.69%;"><col style="width:7.69%;"><col style="width:7.69%;"><col style="width:7.69%;"></colgroup><thead>
+    <tr style="text-align: right;">
+      <th>Path</th>
+      <th>CTGAN</th>
+      <th>GReaT_DistilGPT2</th>
+      <th>GReaT_GPT2</th>
+      <th>Tabula_DistilGPT2</th>
+      <th>Tabula_GPT2</th>
+      <th>TapTap_DistilGPT2</th>
+      <th>TapTap_GPT2</th>
+      <th>PredLLM_DistilGPT2</th>
+      <th>PredLLM_GPT2</th>
+      <th>TabSyn</th>
+      <th>TabDiff</th>
+      <th>REaLTabFormer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SMP–SMS</td>
+      <td>0.064260</td>
+      <td>-0.070730</td>
+      <td>-0.029999</td>
+      <td>0.016070</td>
+      <td>-0.001089</td>
+      <td>0.053672</td>
+      <td>0.030190</td>
+      <td>0.007206</td>
+      <td>0.036075</td>
+      <td>-0.015702</td>
+      <td>-0.011121</td>
+      <td>0.154084</td>
+    </tr>
+    <tr>
+      <td>SMP–SPI</td>
+      <td>-0.048814</td>
+      <td>0.076046</td>
+      <td>0.070144</td>
+      <td>0.078736</td>
+      <td>0.065567</td>
+      <td>0.050591</td>
+      <td>0.059161</td>
+      <td>0.217239</td>
+      <td>0.247092</td>
+      <td>-0.043315</td>
+      <td>-0.003364</td>
+      <td>-0.026094</td>
+    </tr>
+    <tr>
+      <td>SMS–SPI</td>
+      <td>0.028941</td>
+      <td>0.020982</td>
+      <td>0.032510</td>
+      <td>0.034454</td>
+      <td>-0.030112</td>
+      <td>-0.006830</td>
+      <td>0.001863</td>
+      <td>0.060522</td>
+      <td>0.075735</td>
+      <td>-0.052032</td>
+      <td>-0.021696</td>
+      <td>-0.104954</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,13 @@
+Technique,KAnonymity_mean_k_distance
+CTGAN,216.499
+GReaT_DistilGPT2,114.198
+GReaT_GPT2,114.601
+PredLLM_DistilGPT2,131.868
+PredLLM_GPT2,128.554
+REaLTabFormer,132.508
+TabDiff,300.345
+TabSyn,129.870
+Tabula_DistilGPT2,111.302
+Tabula_GPT2,110.560
+TapTap_DistilGPT2,122.191
+TapTap_GPT2,122.019

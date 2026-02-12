@@ -1,0 +1,129 @@
+
+<style>
+/* =====================================================
+   APA 7 TABLE FORMAT (MINIMAL RULES)
+   ===================================================== */
+
+.sem-table {
+  border-collapse: collapse;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12pt;
+  color: #000;
+  margin: 12px 0;
+
+  /* APA: only top & bottom rules */
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+/* -----------------------------------------------------
+   HEADER
+   ----------------------------------------------------- */
+.sem-table thead th {
+  padding: 6px 8px;
+  text-align: center;
+  font-weight: 600;
+
+  /* APA: header separator rule */
+  border-bottom: 1px solid #000;
+
+  /* APA: NEVER vertical rules */
+  border-left: none;
+  border-right: none;
+}
+
+/* -----------------------------------------------------
+   BODY
+   ----------------------------------------------------- */
+.sem-table td {
+  padding: 6px 8px;
+  text-align: center;
+  vertical-align: middle;
+
+  /* APA: no inner gridlines */
+  border: none;
+  white-space: nowrap;
+}
+
+/* First column left-aligned (row labels) */
+.sem-table th:first-child,
+.sem-table td:first-child {
+  text-align: left;
+}
+
+/* Remove zebra striping / shading */
+.sem-table tbody tr {
+  background: transparent;
+}
+
+/* -----------------------------------------------------
+   TABLE NOTES
+   ----------------------------------------------------- */
+.apa-table-note {
+  font-size: 11pt;
+  margin-top: 6px;
+}
+
+/* -----------------------------------------------------
+   TABLE NUMBER & TITLE
+   ----------------------------------------------------- */
+.apa-table-number {
+  margin-top: 12px;
+  font-size: 12pt;
+  font-weight: 600;
+}
+
+.apa-table-title {
+  margin-bottom: 6px;
+  font-size: 12pt;
+  font-style: italic;
+}
+
+</style>
+
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+  svg: { fontCache: 'global' }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+<div class="apa-table-number"><strong>Table 25</strong></div><div class="apa-table-title"><em>Directional Consistency and Rank Preservation of Structural Paths</em></div><table border="1" class="dataframe sem-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Metric</th>
+      <th>CTGAN</th>
+      <th>GReaT</th>
+      <th>Tabula</th>
+      <th>TapTap</th>
+      <th>PredLLM</th>
+      <th>TabSyn</th>
+      <th>TabDiff</th>
+      <th>REaLTabFormer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Directional Consistency</td>
+      <td>0.842</td>
+      <td>0.842</td>
+      <td>0.895</td>
+      <td>0.842</td>
+      <td>0.421</td>
+      <td>1.000</td>
+      <td>1.000</td>
+      <td>0.789</td>
+    </tr>
+    <tr>
+      <td>Rank Preservation (Spearman ρ)</td>
+      <td>0.121</td>
+      <td>0.761</td>
+      <td>0.156</td>
+      <td>0.626</td>
+      <td>0.370</td>
+      <td>0.872</td>
+      <td>0.707</td>
+      <td>0.191</td>
+    </tr>
+  </tbody>
+</table><div class="apa-table-note"><em>Note.</em> Directional consistency reports the proportion of paths with matching signs relative to real data; rank preservation is measured using Spearman’s ρ.</div>

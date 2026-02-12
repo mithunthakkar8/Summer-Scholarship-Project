@@ -1,0 +1,13 @@
+Technique,Mean_|Δμ|,Mean_|Δσ|,Mean_Continuous_Adherence
+CTGAN,0.1,0.14,1.000
+GReaT_DistilGPT2,0.17,0.24,1.000
+GReaT_GPT2,0.19,0.23,1.000
+PredLLM_DistilGPT2,0.05,0.07,0.999
+PredLLM_GPT2,0.04,0.02,0.999
+REaLTabFormer,0.1,0.11,0.999
+TabDiff,0.03,0.24,1.000
+TabSyn,0.03,0.07,1.000
+Tabula_DistilGPT2,0.2,0.28,1.000
+Tabula_GPT2,0.23,0.27,1.000
+TapTap_DistilGPT2,0.04,0.03,0.989
+TapTap_GPT2,0.03,0.04,0.991

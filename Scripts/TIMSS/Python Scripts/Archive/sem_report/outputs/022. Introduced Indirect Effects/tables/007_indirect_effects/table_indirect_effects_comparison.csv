@@ -1,0 +1,9 @@
+IV,Mediator,DV,Technique,|Δβ|,Sig Match
+SPI,SMS,SMP,CTGAN,0.006,False
+SPI,SMS,SMP,GReaT,0.006,True
+SPI,SMS,SMP,Tabula,0.013,True
+SPI,SMS,SMP,TapTap,0.011,True
+SPI,SMS,SMP,PredLLM,0.010,True
+SPI,SMS,SMP,TabSyn,0.022,False
+SPI,SMS,SMP,TabDiff,0.013,True
+SPI,SMS,SMP,REaLTabFormer,0.030,False

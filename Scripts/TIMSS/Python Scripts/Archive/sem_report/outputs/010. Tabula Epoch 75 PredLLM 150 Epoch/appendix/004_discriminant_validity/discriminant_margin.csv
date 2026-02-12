@@ -1,0 +1,2 @@
+Metric,CTGAN,GReaT,Tabula,TapTap,PredLLM,TabSyn,TabDiff,REaLTabFormer
+Minimum discriminant margin,0.505,0.656,0.544,0.611,0.641,0.655,0.421,0.471

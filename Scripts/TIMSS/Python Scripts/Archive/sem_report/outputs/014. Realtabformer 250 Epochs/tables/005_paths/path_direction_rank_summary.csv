@@ -1,0 +1,3 @@
+Metric,CTGAN,GReaT,Tabula,TapTap,PredLLM,TabSyn,TabDiff,REaLTabFormer
+Directional Consistency,0.842,0.789,0.842,0.842,0.579,1.000,1.000,0.789
+Rank Preservation (Spearman ρ),0.121,0.868,0.686,0.626,0.505,0.872,0.707,0.479

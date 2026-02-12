@@ -1,0 +1,444 @@
+
+<style>
+/* =====================================================
+   APA 7 TABLE FORMAT (MINIMAL RULES)
+   ===================================================== */
+
+.sem-table {
+  border-collapse: collapse;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12pt;
+  color: #000;
+  margin: 12px 0;
+
+  /* APA: only top & bottom rules */
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+/* -----------------------------------------------------
+   HEADER
+   ----------------------------------------------------- */
+.sem-table thead th {
+  padding: 6px 8px;
+  text-align: center;
+  font-weight: 600;
+
+  /* APA: header separator rule */
+  border-bottom: 1px solid #000;
+
+  /* APA: NEVER vertical rules */
+  border-left: none;
+  border-right: none;
+}
+
+/* -----------------------------------------------------
+   BODY
+   ----------------------------------------------------- */
+.sem-table td {
+  padding: 6px 8px;
+  text-align: center;
+  vertical-align: middle;
+
+  /* APA: no inner gridlines */
+  border: none;
+  white-space: nowrap;
+}
+
+/* First column left-aligned (row labels) */
+.sem-table th:first-child,
+.sem-table td:first-child {
+  text-align: left;
+}
+
+/* Remove zebra striping / shading */
+.sem-table tbody tr {
+  background: transparent;
+}
+
+/* -----------------------------------------------------
+   TABLE NOTES
+   ----------------------------------------------------- */
+.apa-table-note {
+  font-size: 11pt;
+  margin-top: 6px;
+}
+
+/* -----------------------------------------------------
+   TABLE NUMBER & TITLE
+   ----------------------------------------------------- */
+.apa-table-number {
+  margin-top: 12px;
+  font-size: 12pt;
+  font-weight: 600;
+}
+
+.apa-table-title {
+  margin-bottom: 6px;
+  font-size: 12pt;
+  font-style: italic;
+}
+
+</style>
+
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+  svg: { fontCache: 'global' }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+<div class="apa-table-number"><strong>Table 1</strong></div><div class="apa-table-title"><em>Boundary Adherence Differences Relative to Real Data</em></div><table border="1" class="dataframe sem-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Variable</th>
+      <th>Metric</th>
+      <th>CTGAN</th>
+      <th>GReaT</th>
+      <th>PredLLM</th>
+      <th>REaLTabFormer</th>
+      <th>TabDiff</th>
+      <th>TabSyn</th>
+      <th>Tabula</th>
+      <th>TapTap</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AGE</td>
+      <td>Δ Mean (Synthetic − Real)</td>
+      <td>0.11</td>
+      <td>-0.02</td>
+      <td>-0.03</td>
+      <td>0.01</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>-0.03</td>
+      <td>-0.03</td>
+    </tr>
+    <tr>
+      <td>AGE</td>
+      <td>Δ SD (Synthetic − Real)</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>-0.01</td>
+      <td>-0.05</td>
+      <td>0.04</td>
+      <td>-0.01</td>
+      <td>-0.00</td>
+      <td>-0.01</td>
+    </tr>
+    <tr>
+      <td>ESCS</td>
+      <td>Δ Mean (Synthetic − Real)</td>
+      <td>-0.02</td>
+      <td>0.14</td>
+      <td>0.01</td>
+      <td>-0.11</td>
+      <td>0.02</td>
+      <td>0.09</td>
+      <td>0.16</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>ESCS</td>
+      <td>Δ SD (Synthetic − Real)</td>
+      <td>0.11</td>
+      <td>-0.15</td>
+      <td>-0.08</td>
+      <td>-0.01</td>
+      <td>0.05</td>
+      <td>-0.10</td>
+      <td>-0.18</td>
+      <td>-0.06</td>
+    </tr>
+    <tr>
+      <td>MCLSIZE</td>
+      <td>Δ Mean (Synthetic − Real)</td>
+      <td>-0.30</td>
+      <td>-0.01</td>
+      <td>0.83</td>
+      <td>0.10</td>
+      <td>-0.09</td>
+      <td>-0.16</td>
+      <td>0.25</td>
+      <td>0.50</td>
+    </tr>
+    <tr>
+      <td>MCLSIZE</td>
+      <td>Δ SD (Synthetic − Real)</td>
+      <td>-0.19</td>
+      <td>0.02</td>
+      <td>-0.06</td>
+      <td>0.16</td>
+      <td>0.19</td>
+      <td>0.02</td>
+      <td>0.05</td>
+      <td>-0.02</td>
+    </tr>
+    <tr>
+      <td>PV10MATH</td>
+      <td>Δ Mean (Synthetic − Real)</td>
+      <td>-9.39</td>
+      <td>20.05</td>
+      <td>3.92</td>
+      <td>6.01</td>
+      <td>-6.24</td>
+      <td>4.78</td>
+      <td>19.52</td>
+      <td>2.42</td>
+    </tr>
+    <tr>
+      <td>PV10MATH</td>
+      <td>Δ SD (Synthetic − Real)</td>
+      <td>11.30</td>
+      <td>-31.53</td>
+      <td>-5.42</td>
+      <td>-11.97</td>
+      <td>35.92</td>
+      <td>-8.67</td>
+      <td>-33.46</td>
+      <td>-1.91</td>
+    </tr>
+    <tr>
+      <td>PV1MATH</td>
+      <td>Δ Mean (Synthetic − Real)</td>
+      <td>-7.17</td>
+      <td>20.44</td>
+      <td>3.37</td>
+      <td>-3.78</td>
+      <td>2.94</td>
+      <td>-0.74</td>
+      <td>17.90</td>
+      <td>2.35</td>
+    </tr>
+    <tr>
+      <td>PV1MATH</td>
+      <td>Δ SD (Synthetic − Real)</td>
+      <td>24.90</td>
+      <td>-31.32</td>
+      <td>-4.62</td>
+      <td>-4.61</td>
+      <td>33.40</td>
+      <td>-5.28</td>
+      <td>-34.70</td>
+      <td>-2.43</td>
+    </tr>
+    <tr>
+      <td>PV2MATH</td>
+      <td>Δ Mean (Synthetic − Real)</td>
+      <td>18.01</td>
+      <td>21.52</td>
+      <td>2.98</td>
+      <td>-5.23</td>
+      <td>-4.35</td>
+      <td>2.74</td>
+      <td>20.61</td>
+      <td>2.76</td>
+    </tr>
+    <tr>
+      <td>PV2MATH</td>
+      <td>Δ SD (Synthetic − Real)</td>
+      <td>14.33</td>
+      <td>-33.47</td>
+      <td>-5.07</td>
+      <td>-2.46</td>
+      <td>36.43</td>
+      <td>-7.50</td>
+      <td>-35.15</td>
+      <td>-1.10</td>
+    </tr>
+    <tr>
+      <td>PV3MATH</td>
+      <td>Δ Mean (Synthetic − Real)</td>
+      <td>6.35</td>
+      <td>19.63</td>
+      <td>3.52</td>
+      <td>7.41</td>
+      <td>-1.64</td>
+      <td>6.13</td>
+      <td>19.91</td>
+      <td>2.85</td>
+    </tr>
+    <tr>
+      <td>PV3MATH</td>
+      <td>Δ SD (Synthetic − Real)</td>
+      <td>14.39</td>
+      <td>-31.89</td>
+      <td>-4.15</td>
+      <td>-8.26</td>
+      <td>28.76</td>
+      <td>-8.69</td>
+      <td>-32.41</td>
+      <td>-1.79</td>
+    </tr>
+    <tr>
+      <td>PV4MATH</td>
+      <td>Δ Mean (Synthetic − Real)</td>
+      <td>2.19</td>
+      <td>20.92</td>
+      <td>4.58</td>
+      <td>6.88</td>
+      <td>-7.87</td>
+      <td>2.99</td>
+      <td>20.56</td>
+      <td>1.81</td>
+    </tr>
+    <tr>
+      <td>PV4MATH</td>
+      <td>Δ SD (Synthetic − Real)</td>
+      <td>23.00</td>
+      <td>-33.73</td>
+      <td>-3.65</td>
+      <td>-1.28</td>
+      <td>40.91</td>
+      <td>-9.58</td>
+      <td>-36.29</td>
+      <td>-2.06</td>
+    </tr>
+    <tr>
+      <td>PV5MATH</td>
+      <td>Δ Mean (Synthetic − Real)</td>
+      <td>0.51</td>
+      <td>21.97</td>
+      <td>3.63</td>
+      <td>-5.49</td>
+      <td>0.42</td>
+      <td>-0.00</td>
+      <td>20.60</td>
+      <td>2.60</td>
+    </tr>
+    <tr>
+      <td>PV5MATH</td>
+      <td>Δ SD (Synthetic − Real)</td>
+      <td>24.17</td>
+      <td>-30.65</td>
+      <td>-5.09</td>
+      <td>-14.77</td>
+      <td>0.89</td>
+      <td>-8.24</td>
+      <td>-33.98</td>
+      <td>-1.58</td>
+    </tr>
+    <tr>
+      <td>PV6MATH</td>
+      <td>Δ Mean (Synthetic − Real)</td>
+      <td>13.37</td>
+      <td>19.68</td>
+      <td>3.35</td>
+      <td>4.48</td>
+      <td>-6.13</td>
+      <td>3.20</td>
+      <td>19.76</td>
+      <td>2.29</td>
+    </tr>
+    <tr>
+      <td>PV6MATH</td>
+      <td>Δ SD (Synthetic − Real)</td>
+      <td>16.75</td>
+      <td>-32.88</td>
+      <td>-6.09</td>
+      <td>-2.47</td>
+      <td>36.44</td>
+      <td>-9.10</td>
+      <td>-33.99</td>
+      <td>-2.01</td>
+    </tr>
+    <tr>
+      <td>PV7MATH</td>
+      <td>Δ Mean (Synthetic − Real)</td>
+      <td>14.59</td>
+      <td>21.43</td>
+      <td>4.10</td>
+      <td>5.58</td>
+      <td>-2.07</td>
+      <td>4.66</td>
+      <td>18.70</td>
+      <td>2.78</td>
+    </tr>
+    <tr>
+      <td>PV7MATH</td>
+      <td>Δ SD (Synthetic − Real)</td>
+      <td>10.90</td>
+      <td>-30.71</td>
+      <td>-4.12</td>
+      <td>-4.07</td>
+      <td>38.40</td>
+      <td>-5.65</td>
+      <td>-32.88</td>
+      <td>-1.17</td>
+    </tr>
+    <tr>
+      <td>PV8MATH</td>
+      <td>Δ Mean (Synthetic − Real)</td>
+      <td>6.46</td>
+      <td>22.16</td>
+      <td>3.86</td>
+      <td>-3.55</td>
+      <td>-4.30</td>
+      <td>3.89</td>
+      <td>20.36</td>
+      <td>3.47</td>
+    </tr>
+    <tr>
+      <td>PV8MATH</td>
+      <td>Δ SD (Synthetic − Real)</td>
+      <td>12.84</td>
+      <td>-31.88</td>
+      <td>-4.82</td>
+      <td>-5.74</td>
+      <td>30.43</td>
+      <td>-6.75</td>
+      <td>-33.74</td>
+      <td>-0.97</td>
+    </tr>
+    <tr>
+      <td>PV9MATH</td>
+      <td>Δ Mean (Synthetic − Real)</td>
+      <td>5.74</td>
+      <td>19.58</td>
+      <td>3.39</td>
+      <td>-0.10</td>
+      <td>-4.15</td>
+      <td>2.91</td>
+      <td>20.12</td>
+      <td>2.20</td>
+    </tr>
+    <tr>
+      <td>PV9MATH</td>
+      <td>Δ SD (Synthetic − Real)</td>
+      <td>15.54</td>
+      <td>-32.58</td>
+      <td>-5.45</td>
+      <td>-13.35</td>
+      <td>37.70</td>
+      <td>-8.37</td>
+      <td>-33.04</td>
+      <td>-1.45</td>
+    </tr>
+    <tr>
+      <td>SCHSIZE</td>
+      <td>Δ Mean (Synthetic − Real)</td>
+      <td>128.94</td>
+      <td>9.33</td>
+      <td>32.07</td>
+      <td>67.95</td>
+      <td>1.99</td>
+      <td>-30.30</td>
+      <td>-69.25</td>
+      <td>-61.08</td>
+    </tr>
+    <tr>
+      <td>SCHSIZE</td>
+      <td>Δ SD (Synthetic − Real)</td>
+      <td>75.98</td>
+      <td>-31.05</td>
+      <td>-114.66</td>
+      <td>47.71</td>
+      <td>-21.18</td>
+      <td>-45.42</td>
+      <td>-25.45</td>
+      <td>-129.88</td>
+    </tr>
+  </tbody>
+</table><div class="apa-table-note"><em>Note.</em> Rows report differences in mean and standard deviation between synthetic and real distributions.</div>

@@ -1,0 +1,182 @@
+[2026-01-04 16:17:09] [INFO] Discovered 5 CSV file(s)
+[2026-01-04 16:17:09] [INFO] Loaded data: 6253 rows x 28 cols
+[2026-01-04 16:17:09] [INFO] Continuous columns present: AGE, ESCS, MCLSIZE, SCHSIZE, PV1MATH, PV2MATH, PV3MATH, PV4MATH, PV5MATH, PV6MATH, PV7MATH, PV8MATH, PV9MATH, PV10MATH
+[2026-01-04 16:17:09] [INFO] Categorical columns present: ST001D01T, ST004D01T, MISCED, IMMIG, ST268Q01JA, ST268Q04JA, ST268Q07JA, SC064Q01TA, SC064Q02TA, SC064Q03TA, SC064Q04NA, SC064Q05WA, SC064Q06WA, SC064Q07WA
+[2026-01-04 16:17:09] [INFO] Entering continuous imputation loop
+[2026-01-04 16:17:09] [INFO] Imputing column: AGE
+[2026-01-04 16:17:09] [INFO] Finished: AGE | NA before: 0 | NA after: 0
+[2026-01-04 16:17:09] [INFO] Imputing column: ESCS
+[2026-01-04 16:17:09] [INFO] Finished: ESCS | NA before: 0 | NA after: 0
+[2026-01-04 16:17:09] [INFO] Imputing column: MCLSIZE
+[2026-01-04 16:17:09] [INFO] Finished: MCLSIZE | NA before: 0 | NA after: 0
+[2026-01-04 16:17:09] [INFO] Imputing column: SCHSIZE
+[2026-01-04 16:17:09] [INFO] Finished: SCHSIZE | NA before: 0 | NA after: 0
+[2026-01-04 16:17:09] [INFO] Imputing column: PV1MATH
+[2026-01-04 16:17:09] [INFO] Finished: PV1MATH | NA before: 0 | NA after: 0
+[2026-01-04 16:17:09] [INFO] Imputing column: PV2MATH
+[2026-01-04 16:17:09] [INFO] Finished: PV2MATH | NA before: 0 | NA after: 0
+[2026-01-04 16:17:09] [INFO] Imputing column: PV3MATH
+[2026-01-04 16:17:09] [INFO] Finished: PV3MATH | NA before: 0 | NA after: 0
+[2026-01-04 16:17:09] [INFO] Imputing column: PV4MATH
+[2026-01-04 16:17:09] [INFO] Finished: PV4MATH | NA before: 0 | NA after: 0
+[2026-01-04 16:17:09] [INFO] Imputing column: PV5MATH
+[2026-01-04 16:17:09] [INFO] Finished: PV5MATH | NA before: 0 | NA after: 0
+[2026-01-04 16:17:09] [INFO] Imputing column: PV6MATH
+[2026-01-04 16:17:09] [INFO] Finished: PV6MATH | NA before: 0 | NA after: 0
+[2026-01-04 16:17:09] [INFO] Imputing column: PV7MATH
+[2026-01-04 16:17:09] [INFO] Finished: PV7MATH | NA before: 0 | NA after: 0
+[2026-01-04 16:17:09] [INFO] Imputing column: PV8MATH
+[2026-01-04 16:17:09] [INFO] Finished: PV8MATH | NA before: 0 | NA after: 0
+[2026-01-04 16:17:09] [INFO] Imputing column: PV9MATH
+[2026-01-04 16:17:09] [INFO] Finished: PV9MATH | NA before: 0 | NA after: 0
+[2026-01-04 16:17:09] [INFO] Imputing column: PV10MATH
+[2026-01-04 16:17:09] [INFO] Finished: PV10MATH | NA before: 0 | NA after: 0
+[2026-01-04 16:17:09] [INFO] Total remaining NA count: 0
+[2026-01-04 16:17:09] [INFO] All required SEM variables present.
+[2026-01-04 16:17:10] [INFO] Applied tiny jitter to ALL mmVariables (including single-item controls) for bootstrap stability.
+[2026-01-04 16:17:10] [INFO] Loaded data: 6253 rows x 28 cols
+[2026-01-04 16:17:10] [INFO] Continuous columns present: AGE, ESCS, MCLSIZE, SCHSIZE, PV1MATH, PV2MATH, PV3MATH, PV4MATH, PV5MATH, PV6MATH, PV7MATH, PV8MATH, PV9MATH, PV10MATH
+[2026-01-04 16:17:10] [INFO] Categorical columns present: ST001D01T, ST004D01T, MISCED, IMMIG, ST268Q01JA, ST268Q04JA, ST268Q07JA, SC064Q01TA, SC064Q02TA, SC064Q03TA, SC064Q04NA, SC064Q05WA, SC064Q06WA, SC064Q07WA
+[2026-01-04 16:17:10] [INFO] Entering continuous imputation loop
+[2026-01-04 16:17:10] [INFO] Imputing column: AGE
+[2026-01-04 16:17:10] [INFO] Finished: AGE | NA before: 0 | NA after: 0
+[2026-01-04 16:17:10] [INFO] Imputing column: ESCS
+[2026-01-04 16:17:10] [INFO] Finished: ESCS | NA before: 0 | NA after: 0
+[2026-01-04 16:17:10] [INFO] Imputing column: MCLSIZE
+[2026-01-04 16:17:10] [INFO] Finished: MCLSIZE | NA before: 0 | NA after: 0
+[2026-01-04 16:17:10] [INFO] Imputing column: SCHSIZE
+[2026-01-04 16:17:10] [INFO] Finished: SCHSIZE | NA before: 0 | NA after: 0
+[2026-01-04 16:17:10] [INFO] Imputing column: PV1MATH
+[2026-01-04 16:17:10] [INFO] Finished: PV1MATH | NA before: 0 | NA after: 0
+[2026-01-04 16:17:10] [INFO] Imputing column: PV2MATH
+[2026-01-04 16:17:10] [INFO] Finished: PV2MATH | NA before: 0 | NA after: 0
+[2026-01-04 16:17:10] [INFO] Imputing column: PV3MATH
+[2026-01-04 16:17:10] [INFO] Finished: PV3MATH | NA before: 0 | NA after: 0
+[2026-01-04 16:17:10] [INFO] Imputing column: PV4MATH
+[2026-01-04 16:17:10] [INFO] Finished: PV4MATH | NA before: 0 | NA after: 0
+[2026-01-04 16:17:10] [INFO] Imputing column: PV5MATH
+[2026-01-04 16:17:10] [INFO] Finished: PV5MATH | NA before: 0 | NA after: 0
+[2026-01-04 16:17:10] [INFO] Imputing column: PV6MATH
+[2026-01-04 16:17:10] [INFO] Finished: PV6MATH | NA before: 0 | NA after: 0
+[2026-01-04 16:17:10] [INFO] Imputing column: PV7MATH
+[2026-01-04 16:17:10] [INFO] Finished: PV7MATH | NA before: 0 | NA after: 0
+[2026-01-04 16:17:10] [INFO] Imputing column: PV8MATH
+[2026-01-04 16:17:10] [INFO] Finished: PV8MATH | NA before: 0 | NA after: 0
+[2026-01-04 16:17:10] [INFO] Imputing column: PV9MATH
+[2026-01-04 16:17:10] [INFO] Finished: PV9MATH | NA before: 0 | NA after: 0
+[2026-01-04 16:17:10] [INFO] Imputing column: PV10MATH
+[2026-01-04 16:17:10] [INFO] Finished: PV10MATH | NA before: 0 | NA after: 0
+[2026-01-04 16:17:10] [INFO] Total remaining NA count: 0
+[2026-01-04 16:17:10] [INFO] All required SEM variables present.
+[2026-01-04 16:17:10] [INFO] Applied tiny jitter to ALL mmVariables (including single-item controls) for bootstrap stability.
+[2026-01-04 16:17:10] [INFO] Loaded data: 6253 rows x 28 cols
+[2026-01-04 16:17:10] [INFO] Continuous columns present: AGE, ESCS, MCLSIZE, SCHSIZE, PV1MATH, PV2MATH, PV3MATH, PV4MATH, PV5MATH, PV6MATH, PV7MATH, PV8MATH, PV9MATH, PV10MATH
+[2026-01-04 16:17:10] [INFO] Categorical columns present: ST001D01T, ST004D01T, MISCED, IMMIG, ST268Q01JA, ST268Q04JA, ST268Q07JA, SC064Q01TA, SC064Q02TA, SC064Q03TA, SC064Q04NA, SC064Q05WA, SC064Q06WA, SC064Q07WA
+[2026-01-04 16:17:10] [INFO] Entering continuous imputation loop
+[2026-01-04 16:17:10] [INFO] Imputing column: AGE
+[2026-01-04 16:17:10] [INFO] Finished: AGE | NA before: 0 | NA after: 0
+[2026-01-04 16:17:10] [INFO] Imputing column: ESCS
+[2026-01-04 16:17:10] [INFO] Finished: ESCS | NA before: 0 | NA after: 0
+[2026-01-04 16:17:10] [INFO] Imputing column: MCLSIZE
+[2026-01-04 16:17:10] [INFO] Finished: MCLSIZE | NA before: 0 | NA after: 0
+[2026-01-04 16:17:10] [INFO] Imputing column: SCHSIZE
+[2026-01-04 16:17:10] [INFO] Finished: SCHSIZE | NA before: 0 | NA after: 0
+[2026-01-04 16:17:10] [INFO] Imputing column: PV1MATH
+[2026-01-04 16:17:10] [INFO] Finished: PV1MATH | NA before: 0 | NA after: 0
+[2026-01-04 16:17:10] [INFO] Imputing column: PV2MATH
+[2026-01-04 16:17:10] [INFO] Finished: PV2MATH | NA before: 0 | NA after: 0
+[2026-01-04 16:17:10] [INFO] Imputing column: PV3MATH
+[2026-01-04 16:17:10] [INFO] Finished: PV3MATH | NA before: 0 | NA after: 0
+[2026-01-04 16:17:10] [INFO] Imputing column: PV4MATH
+[2026-01-04 16:17:10] [INFO] Finished: PV4MATH | NA before: 0 | NA after: 0
+[2026-01-04 16:17:10] [INFO] Imputing column: PV5MATH
+[2026-01-04 16:17:10] [INFO] Finished: PV5MATH | NA before: 0 | NA after: 0
+[2026-01-04 16:17:10] [INFO] Imputing column: PV6MATH
+[2026-01-04 16:17:10] [INFO] Finished: PV6MATH | NA before: 0 | NA after: 0
+[2026-01-04 16:17:10] [INFO] Imputing column: PV7MATH
+[2026-01-04 16:17:10] [INFO] Finished: PV7MATH | NA before: 0 | NA after: 0
+[2026-01-04 16:17:10] [INFO] Imputing column: PV8MATH
+[2026-01-04 16:17:10] [INFO] Finished: PV8MATH | NA before: 0 | NA after: 0
+[2026-01-04 16:17:10] [INFO] Imputing column: PV9MATH
+[2026-01-04 16:17:10] [INFO] Finished: PV9MATH | NA before: 0 | NA after: 0
+[2026-01-04 16:17:10] [INFO] Imputing column: PV10MATH
+[2026-01-04 16:17:10] [INFO] Finished: PV10MATH | NA before: 0 | NA after: 0
+[2026-01-04 16:17:10] [INFO] Total remaining NA count: 0
+[2026-01-04 16:17:10] [INFO] All required SEM variables present.
+[2026-01-04 16:17:10] [INFO] Applied tiny jitter to ALL mmVariables (including single-item controls) for bootstrap stability.
+[2026-01-04 16:17:10] [INFO] Loaded data: 6253 rows x 28 cols
+[2026-01-04 16:17:10] [INFO] Continuous columns present: AGE, ESCS, MCLSIZE, SCHSIZE, PV1MATH, PV2MATH, PV3MATH, PV4MATH, PV5MATH, PV6MATH, PV7MATH, PV8MATH, PV9MATH, PV10MATH
+[2026-01-04 16:17:10] [INFO] Categorical columns present: ST001D01T, ST004D01T, MISCED, IMMIG, ST268Q01JA, ST268Q04JA, ST268Q07JA, SC064Q01TA, SC064Q02TA, SC064Q03TA, SC064Q04NA, SC064Q05WA, SC064Q06WA, SC064Q07WA
+[2026-01-04 16:17:10] [INFO] Entering continuous imputation loop
+[2026-01-04 16:17:10] [INFO] Imputing column: AGE
+[2026-01-04 16:17:10] [INFO] Finished: AGE | NA before: 0 | NA after: 0
+[2026-01-04 16:17:10] [INFO] Imputing column: ESCS
+[2026-01-04 16:17:10] [INFO] Finished: ESCS | NA before: 1 | NA after: 0
+[2026-01-04 16:17:10] [INFO] Imputing column: MCLSIZE
+[2026-01-04 16:17:10] [INFO] Finished: MCLSIZE | NA before: 0 | NA after: 0
+[2026-01-04 16:17:10] [INFO] Imputing column: SCHSIZE
+[2026-01-04 16:17:10] [INFO] Finished: SCHSIZE | NA before: 0 | NA after: 0
+[2026-01-04 16:17:10] [INFO] Imputing column: PV1MATH
+[2026-01-04 16:17:10] [INFO] Finished: PV1MATH | NA before: 0 | NA after: 0
+[2026-01-04 16:17:10] [INFO] Imputing column: PV2MATH
+[2026-01-04 16:17:10] [INFO] Finished: PV2MATH | NA before: 0 | NA after: 0
+[2026-01-04 16:17:10] [INFO] Imputing column: PV3MATH
+[2026-01-04 16:17:10] [INFO] Finished: PV3MATH | NA before: 0 | NA after: 0
+[2026-01-04 16:17:10] [INFO] Imputing column: PV4MATH
+[2026-01-04 16:17:10] [INFO] Finished: PV4MATH | NA before: 0 | NA after: 0
+[2026-01-04 16:17:10] [INFO] Imputing column: PV5MATH
+[2026-01-04 16:17:10] [INFO] Finished: PV5MATH | NA before: 0 | NA after: 0
+[2026-01-04 16:17:10] [INFO] Imputing column: PV6MATH
+[2026-01-04 16:17:10] [INFO] Finished: PV6MATH | NA before: 0 | NA after: 0
+[2026-01-04 16:17:10] [INFO] Imputing column: PV7MATH
+[2026-01-04 16:17:10] [INFO] Finished: PV7MATH | NA before: 0 | NA after: 0
+[2026-01-04 16:17:10] [INFO] Imputing column: PV8MATH
+[2026-01-04 16:17:10] [INFO] Finished: PV8MATH | NA before: 0 | NA after: 0
+[2026-01-04 16:17:10] [INFO] Imputing column: PV9MATH
+[2026-01-04 16:17:10] [INFO] Finished: PV9MATH | NA before: 0 | NA after: 0
+[2026-01-04 16:17:10] [INFO] Imputing column: PV10MATH
+[2026-01-04 16:17:10] [INFO] Finished: PV10MATH | NA before: 0 | NA after: 0
+[2026-01-04 16:17:10] [INFO] Total remaining NA count: 0
+[2026-01-04 16:17:10] [INFO] All required SEM variables present.
+[2026-01-04 16:17:10] [INFO] Applied tiny jitter to ALL mmVariables (including single-item controls) for bootstrap stability.
+[2026-01-04 16:17:10] [INFO] Loaded data: 6253 rows x 28 cols
+[2026-01-04 16:17:10] [INFO] Continuous columns present: AGE, ESCS, MCLSIZE, SCHSIZE, PV1MATH, PV2MATH, PV3MATH, PV4MATH, PV5MATH, PV6MATH, PV7MATH, PV8MATH, PV9MATH, PV10MATH
+[2026-01-04 16:17:10] [INFO] Categorical columns present: ST001D01T, ST004D01T, MISCED, IMMIG, ST268Q01JA, ST268Q04JA, ST268Q07JA, SC064Q01TA, SC064Q02TA, SC064Q03TA, SC064Q04NA, SC064Q05WA, SC064Q06WA, SC064Q07WA
+[2026-01-04 16:17:10] [INFO] Entering continuous imputation loop
+[2026-01-04 16:17:10] [INFO] Imputing column: AGE
+[2026-01-04 16:17:10] [INFO] Finished: AGE | NA before: 0 | NA after: 0
+[2026-01-04 16:17:10] [INFO] Imputing column: ESCS
+[2026-01-04 16:17:10] [INFO] Finished: ESCS | NA before: 0 | NA after: 0
+[2026-01-04 16:17:10] [INFO] Imputing column: MCLSIZE
+[2026-01-04 16:17:10] [INFO] Finished: MCLSIZE | NA before: 0 | NA after: 0
+[2026-01-04 16:17:10] [INFO] Imputing column: SCHSIZE
+[2026-01-04 16:17:11] [INFO] Finished: SCHSIZE | NA before: 0 | NA after: 0
+[2026-01-04 16:17:11] [INFO] Imputing column: PV1MATH
+[2026-01-04 16:17:11] [INFO] Finished: PV1MATH | NA before: 0 | NA after: 0
+[2026-01-04 16:17:11] [INFO] Imputing column: PV2MATH
+[2026-01-04 16:17:11] [INFO] Finished: PV2MATH | NA before: 0 | NA after: 0
+[2026-01-04 16:17:11] [INFO] Imputing column: PV3MATH
+[2026-01-04 16:17:11] [INFO] Finished: PV3MATH | NA before: 0 | NA after: 0
+[2026-01-04 16:17:11] [INFO] Imputing column: PV4MATH
+[2026-01-04 16:17:11] [INFO] Finished: PV4MATH | NA before: 0 | NA after: 0
+[2026-01-04 16:17:11] [INFO] Imputing column: PV5MATH
+[2026-01-04 16:17:11] [INFO] Finished: PV5MATH | NA before: 0 | NA after: 0
+[2026-01-04 16:17:11] [INFO] Imputing column: PV6MATH
+[2026-01-04 16:17:11] [INFO] Finished: PV6MATH | NA before: 0 | NA after: 0
+[2026-01-04 16:17:11] [INFO] Imputing column: PV7MATH
+[2026-01-04 16:17:11] [INFO] Finished: PV7MATH | NA before: 0 | NA after: 0
+[2026-01-04 16:17:11] [INFO] Imputing column: PV8MATH
+[2026-01-04 16:17:11] [INFO] Finished: PV8MATH | NA before: 0 | NA after: 0
+[2026-01-04 16:17:11] [INFO] Imputing column: PV9MATH
+[2026-01-04 16:17:11] [INFO] Finished: PV9MATH | NA before: 0 | NA after: 0
+[2026-01-04 16:17:11] [INFO] Imputing column: PV10MATH
+[2026-01-04 16:17:11] [INFO] Finished: PV10MATH | NA before: 0 | NA after: 0
+[2026-01-04 16:17:11] [INFO] Total remaining NA count: 0
+[2026-01-04 16:17:11] [INFO] All required SEM variables present.
+[2026-01-04 16:17:11] [INFO] Applied tiny jitter to ALL mmVariables (including single-item controls) for bootstrap stability.
+[2026-01-04 16:17:11] [INFO] Applied tiny jitter to measurement indicators for bootstrap stability.
+[2026-01-04 16:17:11] [INFO] Estimating PLS-SEM model...
+[2026-01-04 16:17:11] [INFO] PLS model estimated.
+[2026-01-04 16:17:17] [WARN] Indicator diagnostics (lowest SD first):
+[2026-01-04 16:17:17] [WARN]             indicator   class n_unique         sd           min        max | ST268Q07JA ST268Q07JA numeric     6253  0.5255990  9.999980e-01   4.000002 | ST268Q04JA ST268Q04JA numeric     6253  0.7847270  9.999980e-01   4.000002 | ST268Q01JA ST268Q01JA numeric     6253  0.9103133  9.999980e-01   4.000002 | PV9MATH       PV9MATH numeric     6253  1.0000000 -3.292370e+00   4.076559 | PV5MATH       PV5MATH numeric     6253  1.0000000 -3.639181e+00   4.218524 | PV8MATH       PV8MATH numeric     6253  1.0000000 -3.641109e+00   4.354801 | PV4MATH       PV4MATH numeric     6253  1.0000000 -3.729721e+00   4.294490 | PV7MATH       PV7MATH numeric     6253  1.0000000 -3.590815e+00   4.229192 | PV2MATH       PV2MATH numeric     6253  1.0000000 -3.612467e+00   3.820116 | PV3MATH       PV3MATH numeric     6253  1.0000000 -3.445421e+00   4.301766 | PV1MATH       PV1MATH numeric     6253  1.0000000 -3.509701e+00   4.277461 | PV6MATH       PV6MATH numeric     6253  1.0000000 -3.319155e+00   4.236884 | PV10MATH     PV10MATH numeric     6253  1.0000000 -3.464811e+00   4.183525 | SC064Q07WA SC064Q07WA numeric     6253  7.9021476 -1.999608e-06 100.000002 | SC064Q04NA SC064Q04NA numeric     6253 26.4621553 -1.999938e-06 100.000002
+[2026-01-04 16:17:17] [WARN] Indicators flagged as bootstrap-unstable (sd==0/NA or n_unique<=1): <none>

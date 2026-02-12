@@ -1,0 +1,336 @@
+
+<style>
+/* =====================================================
+   APA 7 TABLE FORMAT (MINIMAL RULES)
+   ===================================================== */
+
+.sem-table {
+  border-collapse: collapse;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12pt;
+  color: #000;
+  margin: 12px 0;
+
+  /* APA: only top & bottom rules */
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+/* -----------------------------------------------------
+   HEADER
+   ----------------------------------------------------- */
+.sem-table thead th {
+  padding: 6px 8px;
+  text-align: center;
+  font-weight: 600;
+
+  /* APA: header separator rule */
+  border-bottom: 1px solid #000;
+
+  /* APA: NEVER vertical rules */
+  border-left: none;
+  border-right: none;
+}
+
+/* -----------------------------------------------------
+   BODY
+   ----------------------------------------------------- */
+.sem-table td {
+  padding: 6px 8px;
+  text-align: center;
+  vertical-align: middle;
+
+  /* APA: no inner gridlines */
+  border: none;
+  white-space: nowrap;
+}
+
+/* First column left-aligned (row labels) */
+.sem-table th:first-child,
+.sem-table td:first-child {
+  text-align: left;
+}
+
+/* Remove zebra striping / shading */
+.sem-table tbody tr {
+  background: transparent;
+}
+
+/* -----------------------------------------------------
+   TABLE NOTES
+   ----------------------------------------------------- */
+.apa-table-note {
+  font-size: 11pt;
+  margin-top: 6px;
+}
+
+/* -----------------------------------------------------
+   TABLE NUMBER & TITLE
+   ----------------------------------------------------- */
+.apa-table-number {
+  margin-top: 12px;
+  font-size: 12pt;
+  font-weight: 600;
+}
+
+.apa-table-title {
+  margin-bottom: 6px;
+  font-size: 12pt;
+  font-style: italic;
+}
+
+</style>
+
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+  svg: { fontCache: 'global' }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+<div class="apa-table-number"><strong>Table 26</strong></div><div class="apa-table-title"><em>Overlap of Synthetic Path Intervals with Real Coefficients</em></div><table border="1" class="dataframe sem-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Path</th>
+      <th>REAL β</th>
+      <th>CTGAN</th>
+      <th>GReaT</th>
+      <th>Tabula</th>
+      <th>TapTap</th>
+      <th>PredLLM</th>
+      <th>TabSyn</th>
+      <th>TabDiff</th>
+      <th>REaLTabFormer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SPI  ->  SMS</td>
+      <td>-0.05</td>
+      <td>[-0.11, 0.03] ✓</td>
+      <td>[-0.13, 0.01] ✓</td>
+      <td>[-0.43, -0.11] ✗</td>
+      <td>[-0.09, 0.05] ✓</td>
+      <td>[-0.52, -0.36] ✗</td>
+      <td>[-0.17, -0.09] ✗</td>
+      <td>[-0.13, -0.05] ✓</td>
+      <td>[-0.34, -0.14] ✗</td>
+    </tr>
+    <tr>
+      <td>SPI  ->  SMP</td>
+      <td>-0.21</td>
+      <td>[-0.42, -0.32] ✗</td>
+      <td>[-0.40, -0.12] ✓</td>
+      <td>[-1.00, -0.66] ✗</td>
+      <td>[-0.16, -0.08] ✗</td>
+      <td>[0.99, 1.19] ✗</td>
+      <td>[-0.24, -0.18] ✓</td>
+      <td>[-0.28, -0.22] ✗</td>
+      <td>[-0.37, -0.19] ✓</td>
+    </tr>
+    <tr>
+      <td>gender  ->  SMS</td>
+      <td>0.12</td>
+      <td>[0.02, 0.10] ✗</td>
+      <td>[0.07, 0.15] ✓</td>
+      <td>[0.04, 0.12] ✓</td>
+      <td>[0.06, 0.12] ✓</td>
+      <td>[-0.10, -0.04] ✗</td>
+      <td>[0.07, 0.15] ✓</td>
+      <td>[0.10, 0.18] ✓</td>
+      <td>[0.02, 0.10] ✗</td>
+    </tr>
+    <tr>
+      <td>gender  ->  SMP</td>
+      <td>-0.04</td>
+      <td>[-0.09, -0.03] ✓</td>
+      <td>[-0.03, 0.03] ✗</td>
+      <td>[-0.20, -0.14] ✗</td>
+      <td>[-0.06, 0.00] ✓</td>
+      <td>[0.32, 0.38] ✗</td>
+      <td>[-0.05, 0.01] ✓</td>
+      <td>[-0.06, 0.00] ✓</td>
+      <td>[-0.07, -0.01] ✓</td>
+    </tr>
+    <tr>
+      <td>grade  ->  SMS</td>
+      <td>0.09</td>
+      <td>[0.06, 0.14] ✓</td>
+      <td>[0.05, 0.13] ✓</td>
+      <td>[0.04, 0.14] ✓</td>
+      <td>[0.03, 0.11] ✓</td>
+      <td>[-0.07, 0.01] ✗</td>
+      <td>[-0.00, 0.08] ✗</td>
+      <td>[0.06, 0.14] ✓</td>
+      <td>[-0.01, 0.07] ✗</td>
+    </tr>
+    <tr>
+      <td>grade  ->  SMP</td>
+      <td>0.12</td>
+      <td>[0.02, 0.08] ✗</td>
+      <td>[0.13, 0.21] ✗</td>
+      <td>[0.01, 0.07] ✗</td>
+      <td>[0.09, 0.15] ✓</td>
+      <td>[0.26, 0.34] ✗</td>
+      <td>[0.09, 0.17] ✓</td>
+      <td>[0.11, 0.17] ✓</td>
+      <td>[0.00, 0.08] ✗</td>
+    </tr>
+    <tr>
+      <td>motherEdu  ->  SMS</td>
+      <td>0.03</td>
+      <td>[-0.03, 0.05] ✓</td>
+      <td>[-0.06, 0.04] ✓</td>
+      <td>[-0.29, -0.19] ✗</td>
+      <td>[-0.09, 0.01] ✗</td>
+      <td>[-0.14, -0.04] ✗</td>
+      <td>[-0.01, 0.09] ✓</td>
+      <td>[-0.01, 0.07] ✓</td>
+      <td>[0.24, 0.34] ✗</td>
+    </tr>
+    <tr>
+      <td>motherEdu  ->  SMP</td>
+      <td>-0.14</td>
+      <td>[-0.03, 0.05] ✗</td>
+      <td>[-0.06, 0.02] ✗</td>
+      <td>[-0.57, -0.49] ✗</td>
+      <td>[-0.15, -0.05] ✓</td>
+      <td>[0.11, 0.21] ✗</td>
+      <td>[-0.12, -0.04] ✗</td>
+      <td>[-0.05, 0.03] ✗</td>
+      <td>[-0.04, 0.04] ✗</td>
+    </tr>
+    <tr>
+      <td>ESCS  ->  SMS</td>
+      <td>0.05</td>
+      <td>[-0.11, -0.03] ✗</td>
+      <td>[0.01, 0.11] ✓</td>
+      <td>[-0.08, 0.02] ✗</td>
+      <td>[0.19, 0.29] ✗</td>
+      <td>[0.01, 0.11] ✓</td>
+      <td>[0.02, 0.12] ✓</td>
+      <td>[0.00, 0.08] ✓</td>
+      <td>[-0.07, 0.03] ✗</td>
+    </tr>
+    <tr>
+      <td>ESCS  ->  SMP</td>
+      <td>0.38</td>
+      <td>[0.21, 0.27] ✗</td>
+      <td>[0.16, 0.24] ✗</td>
+      <td>[-0.10, -0.02] ✗</td>
+      <td>[0.39, 0.47] ✗</td>
+      <td>[0.40, 0.50] ✗</td>
+      <td>[0.30, 0.38] ✓</td>
+      <td>[0.22, 0.30] ✗</td>
+      <td>[0.16, 0.26] ✗</td>
+    </tr>
+    <tr>
+      <td>age  ->  SMS</td>
+      <td>-0.03</td>
+      <td>[0.05, 0.13] ✗</td>
+      <td>[-0.09, -0.01] ✓</td>
+      <td>[-0.02, 0.04] ✗</td>
+      <td>[-0.03, 0.05] ✗</td>
+      <td>[-0.02, 0.06] ✗</td>
+      <td>[-0.06, 0.02] ✓</td>
+      <td>[-0.11, -0.03] ✓</td>
+      <td>[-0.11, -0.03] ✓</td>
+    </tr>
+    <tr>
+      <td>age  ->  SMP</td>
+      <td>0.03</td>
+      <td>[0.02, 0.08] ✓</td>
+      <td>[0.03, 0.09] ✓</td>
+      <td>[0.04, 0.10] ✗</td>
+      <td>[0.01, 0.07] ✓</td>
+      <td>[-0.04, 0.02] ✗</td>
+      <td>[-0.01, 0.05] ✓</td>
+      <td>[-0.01, 0.05] ✓</td>
+      <td>[-0.01, 0.05] ✓</td>
+    </tr>
+    <tr>
+      <td>immig  ->  SMS</td>
+      <td>0.09</td>
+      <td>[0.03, 0.11] ✓</td>
+      <td>[-0.02, 0.08] ✗</td>
+      <td>[0.16, 0.22] ✗</td>
+      <td>[-0.00, 0.08] ✗</td>
+      <td>[0.25, 0.33] ✗</td>
+      <td>[0.10, 0.20] ✗</td>
+      <td>[0.10, 0.20] ✗</td>
+      <td>[-0.16, -0.06] ✗</td>
+    </tr>
+    <tr>
+      <td>immig  ->  SMP</td>
+      <td>0.03</td>
+      <td>[0.06, 0.12] ✗</td>
+      <td>[-0.05, 0.03] ✓</td>
+      <td>[0.37, 0.43] ✗</td>
+      <td>[0.00, 0.06] ✓</td>
+      <td>[-0.59, -0.51] ✗</td>
+      <td>[-0.01, 0.07] ✓</td>
+      <td>[0.00, 0.08] ✓</td>
+      <td>[0.09, 0.17] ✗</td>
+    </tr>
+    <tr>
+      <td>classSize  ->  SMS</td>
+      <td>0.01</td>
+      <td>[0.05, 0.13] ✗</td>
+      <td>[-0.06, 0.02] ✓</td>
+      <td>[0.26, 0.34] ✗</td>
+      <td>[-0.01, 0.07] ✓</td>
+      <td>[-0.25, -0.17] ✗</td>
+      <td>[-0.04, 0.04] ✓</td>
+      <td>[0.00, 0.08] ✓</td>
+      <td>[0.00, 0.08] ✓</td>
+    </tr>
+    <tr>
+      <td>classSize  ->  SMP</td>
+      <td>0.09</td>
+      <td>[0.02, 0.08] ✗</td>
+      <td>[0.07, 0.15] ✓</td>
+      <td>[0.61, 0.69] ✗</td>
+      <td>[0.05, 0.11] ✓</td>
+      <td>[0.63, 0.71] ✗</td>
+      <td>[0.07, 0.13] ✓</td>
+      <td>[0.06, 0.12] ✓</td>
+      <td>[0.02, 0.10] ✓</td>
+    </tr>
+    <tr>
+      <td>schoolSize  ->  SMS</td>
+      <td>-0.11</td>
+      <td>[-0.05, 0.03] ✗</td>
+      <td>[-0.17, -0.07] ✓</td>
+      <td>[-0.19, -0.11] ✗</td>
+      <td>[-0.05, 0.03] ✗</td>
+      <td>[-0.06, 0.02] ✗</td>
+      <td>[-0.21, -0.11] ✗</td>
+      <td>[-0.19, -0.09] ✓</td>
+      <td>[-0.08, 0.02] ✗</td>
+    </tr>
+    <tr>
+      <td>schoolSize  ->  SMP</td>
+      <td>0.06</td>
+      <td>[-0.02, 0.04] ✗</td>
+      <td>[0.05, 0.13] ✓</td>
+      <td>[-0.15, -0.09] ✗</td>
+      <td>[-0.04, 0.04] ✗</td>
+      <td>[-0.12, -0.04] ✗</td>
+      <td>[0.02, 0.10] ✓</td>
+      <td>[0.04, 0.12] ✓</td>
+      <td>[-0.05, 0.03] ✗</td>
+    </tr>
+    <tr>
+      <td>SMS  ->  SMP</td>
+      <td>0.32</td>
+      <td>[0.41, 0.47] ✗</td>
+      <td>[0.26, 0.34] ✓</td>
+      <td>[0.18, 0.24] ✗</td>
+      <td>[0.29, 0.35] ✓</td>
+      <td>[0.24, 0.30] ✗</td>
+      <td>[0.25, 0.31] ✗</td>
+      <td>[0.28, 0.34] ✓</td>
+      <td>[0.42, 0.48] ✗</td>
+    </tr>
+  </tbody>
+</table><div class="apa-table-note"><em>Note.</em> Intervals are defined as mean ± bootstrap standard deviation; check marks indicate containment of the real coefficient.</div>

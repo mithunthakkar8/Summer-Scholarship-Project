@@ -1,0 +1,140 @@
+
+<style>
+/* =====================================================
+   APA 7 TABLE FORMAT (MINIMAL RULES)
+   ===================================================== */
+
+.sem-table {
+  border-collapse: collapse;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12pt;
+  color: #000;
+  margin: 12px 0;
+
+  /* APA: only top & bottom rules */
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+/* -----------------------------------------------------
+   HEADER
+   ----------------------------------------------------- */
+.sem-table thead th {
+  padding: 6px 8px;
+  text-align: center;
+  font-weight: 600;
+
+  /* APA: header separator rule */
+  border-bottom: 1px solid #000;
+
+  /* APA: NEVER vertical rules */
+  border-left: none;
+  border-right: none;
+}
+
+/* -----------------------------------------------------
+   BODY
+   ----------------------------------------------------- */
+.sem-table td {
+  padding: 6px 8px;
+  text-align: center;
+  vertical-align: middle;
+
+  /* APA: no inner gridlines */
+  border: none;
+  white-space: nowrap;
+}
+
+/* First column left-aligned (row labels) */
+.sem-table th:first-child,
+.sem-table td:first-child {
+  text-align: left;
+}
+
+/* Remove zebra striping / shading */
+.sem-table tbody tr {
+  background: transparent;
+}
+
+/* -----------------------------------------------------
+   TABLE NOTES
+   ----------------------------------------------------- */
+.apa-table-note {
+  font-size: 11pt;
+  margin-top: 6px;
+}
+
+/* -----------------------------------------------------
+   TABLE NUMBER & TITLE
+   ----------------------------------------------------- */
+.apa-table-number {
+  margin-top: 12px;
+  font-size: 12pt;
+  font-weight: 600;
+}
+
+.apa-table-title {
+  margin-bottom: 6px;
+  font-size: 12pt;
+  font-style: italic;
+}
+
+</style>
+
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+  svg: { fontCache: 'global' }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+<div class="apa-table-number"><strong>Table 1</strong></div><div class="apa-table-title"><em>PLS Latent Correlation Differences Relative to Real Data</em></div><table border="1" class="dataframe sem-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Path</th>
+      <th>CTGAN</th>
+      <th>GReaT</th>
+      <th>Tabula</th>
+      <th>TapTap</th>
+      <th>PredLLM</th>
+      <th>TabSyn</th>
+      <th>TabDiff</th>
+      <th>REaLTabFormer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SMP–SMS</td>
+      <td>0.064260</td>
+      <td>-0.051575</td>
+      <td>-0.042086</td>
+      <td>0.053672</td>
+      <td>-0.000380</td>
+      <td>-0.015702</td>
+      <td>-0.011121</td>
+      <td>0.057961</td>
+    </tr>
+    <tr>
+      <td>SMP–SPI</td>
+      <td>-0.048814</td>
+      <td>0.046230</td>
+      <td>0.092039</td>
+      <td>0.050591</td>
+      <td>0.144645</td>
+      <td>-0.043315</td>
+      <td>-0.003364</td>
+      <td>-0.046589</td>
+    </tr>
+    <tr>
+      <td>SMS–SPI</td>
+      <td>0.028941</td>
+      <td>-0.020550</td>
+      <td>0.027661</td>
+      <td>-0.006830</td>
+      <td>0.039339</td>
+      <td>-0.052032</td>
+      <td>-0.021696</td>
+      <td>-0.056482</td>
+    </tr>
+  </tbody>
+</table><div class="apa-table-note"><em>Note.</em> Entries are signed Δr values computed as synthetic minus real correlations.</div>

@@ -1,0 +1,327 @@
+
+<style>
+/* =====================================================
+   APA 7 TABLE FORMAT (MINIMAL RULES)
+   ===================================================== */
+
+.sem-table {
+  border-collapse: collapse;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12pt;
+  color: #000;
+  margin: 12px 0;
+
+  /* APA: only top & bottom rules */
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+/* -----------------------------------------------------
+   HEADER
+   ----------------------------------------------------- */
+.sem-table thead th {
+  padding: 6px 8px;
+  text-align: center;
+  font-weight: 600;
+
+  /* APA: header separator rule */
+  border-bottom: 1px solid #000;
+
+  /* APA: NEVER vertical rules */
+  border-left: none;
+  border-right: none;
+}
+
+/* -----------------------------------------------------
+   BODY
+   ----------------------------------------------------- */
+.sem-table td {
+  padding: 6px 8px;
+  text-align: center;
+  vertical-align: middle;
+
+  /* APA: no inner gridlines */
+  border: none;
+  white-space: nowrap;
+}
+
+/* First column left-aligned (row labels) */
+.sem-table th:first-child,
+.sem-table td:first-child {
+  text-align: left;
+}
+
+/* Remove zebra striping / shading */
+.sem-table tbody tr {
+  background: transparent;
+}
+
+/* -----------------------------------------------------
+   TABLE NOTES
+   ----------------------------------------------------- */
+.apa-table-note {
+  font-size: 11pt;
+  margin-top: 6px;
+}
+
+/* -----------------------------------------------------
+   TABLE NUMBER & TITLE
+   ----------------------------------------------------- */
+.apa-table-number {
+  margin-top: 12px;
+  font-size: 12pt;
+  font-weight: 600;
+}
+
+.apa-table-title {
+  margin-bottom: 6px;
+  font-size: 12pt;
+  font-style: italic;
+}
+
+</style>
+
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+  svg: { fontCache: 'global' }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+<div class="apa-table-number"><strong>Table 21</strong></div><div class="apa-table-title"><em>Absolute Loading Differences by Indicator and Technique</em></div><table border="1" class="dataframe sem-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Indicator</th>
+      <th>CTGAN</th>
+      <th>GReaT</th>
+      <th>Tabula</th>
+      <th>TapTap</th>
+      <th>PredLLM</th>
+      <th>TabSyn</th>
+      <th>TabDiff</th>
+      <th>REaLTabFormer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PV10MATH</td>
+      <td>0.088025</td>
+      <td>0.020586</td>
+      <td>0.010745</td>
+      <td>0.009900</td>
+      <td>0.007654</td>
+      <td>0.007012</td>
+      <td>0.283892</td>
+      <td>0.010293</td>
+    </tr>
+    <tr>
+      <td>PV1MATH</td>
+      <td>0.081158</td>
+      <td>0.021455</td>
+      <td>0.006282</td>
+      <td>0.012101</td>
+      <td>0.006860</td>
+      <td>0.002541</td>
+      <td>0.208750</td>
+      <td>0.007942</td>
+    </tr>
+    <tr>
+      <td>PV2MATH</td>
+      <td>0.089504</td>
+      <td>0.027173</td>
+      <td>0.010925</td>
+      <td>0.010996</td>
+      <td>0.005703</td>
+      <td>0.003046</td>
+      <td>0.286785</td>
+      <td>0.017757</td>
+    </tr>
+    <tr>
+      <td>PV3MATH</td>
+      <td>0.078262</td>
+      <td>0.025864</td>
+      <td>0.006551</td>
+      <td>0.011732</td>
+      <td>0.004699</td>
+      <td>0.001157</td>
+      <td>0.255087</td>
+      <td>0.018449</td>
+    </tr>
+    <tr>
+      <td>PV4MATH</td>
+      <td>0.080373</td>
+      <td>0.033519</td>
+      <td>0.012960</td>
+      <td>0.011759</td>
+      <td>0.005553</td>
+      <td>0.008000</td>
+      <td>0.273388</td>
+      <td>0.034369</td>
+    </tr>
+    <tr>
+      <td>PV5MATH</td>
+      <td>0.075275</td>
+      <td>0.028406</td>
+      <td>0.011001</td>
+      <td>0.010531</td>
+      <td>0.006927</td>
+      <td>0.005846</td>
+      <td>0.025425</td>
+      <td>0.021988</td>
+    </tr>
+    <tr>
+      <td>PV6MATH</td>
+      <td>0.099149</td>
+      <td>0.029138</td>
+      <td>0.010537</td>
+      <td>0.009743</td>
+      <td>0.007239</td>
+      <td>0.002982</td>
+      <td>0.306159</td>
+      <td>0.012463</td>
+    </tr>
+    <tr>
+      <td>PV7MATH</td>
+      <td>0.090628</td>
+      <td>0.023731</td>
+      <td>0.004298</td>
+      <td>0.012573</td>
+      <td>0.006426</td>
+      <td>0.006806</td>
+      <td>0.298485</td>
+      <td>0.007447</td>
+    </tr>
+    <tr>
+      <td>PV8MATH</td>
+      <td>0.084920</td>
+      <td>0.027464</td>
+      <td>0.010361</td>
+      <td>0.011779</td>
+      <td>0.009112</td>
+      <td>0.003947</td>
+      <td>0.271582</td>
+      <td>0.007828</td>
+    </tr>
+    <tr>
+      <td>PV9MATH</td>
+      <td>0.078379</td>
+      <td>0.022463</td>
+      <td>0.006203</td>
+      <td>0.011870</td>
+      <td>0.004193</td>
+      <td>0.001679</td>
+      <td>0.267495</td>
+      <td>0.017318</td>
+    </tr>
+    <tr>
+      <td>ST268Q01JA</td>
+      <td>0.086112</td>
+      <td>0.029243</td>
+      <td>0.010128</td>
+      <td>0.014016</td>
+      <td>0.013377</td>
+      <td>0.053741</td>
+      <td>0.016331</td>
+      <td>0.020389</td>
+    </tr>
+    <tr>
+      <td>ST268Q04JA</td>
+      <td>0.069629</td>
+      <td>0.012775</td>
+      <td>0.005958</td>
+      <td>0.016946</td>
+      <td>0.014539</td>
+      <td>0.001558</td>
+      <td>0.005022</td>
+      <td>0.016929</td>
+    </tr>
+    <tr>
+      <td>ST268Q07JA</td>
+      <td>0.153120</td>
+      <td>0.053204</td>
+      <td>0.079781</td>
+      <td>0.015219</td>
+      <td>0.035330</td>
+      <td>0.073305</td>
+      <td>0.041315</td>
+      <td>0.196446</td>
+    </tr>
+    <tr>
+      <td>SC064Q01TA</td>
+      <td>0.041034</td>
+      <td>0.011669</td>
+      <td>0.079041</td>
+      <td>0.146928</td>
+      <td>0.054075</td>
+      <td>0.067643</td>
+      <td>0.087998</td>
+      <td>0.186772</td>
+    </tr>
+    <tr>
+      <td>SC064Q02TA</td>
+      <td>0.091835</td>
+      <td>0.088117</td>
+      <td>0.122052</td>
+      <td>0.204358</td>
+      <td>0.257954</td>
+      <td>0.018653</td>
+      <td>0.073008</td>
+      <td>0.093451</td>
+    </tr>
+    <tr>
+      <td>SC064Q03TA</td>
+      <td>0.099829</td>
+      <td>0.132849</td>
+      <td>0.168292</td>
+      <td>0.061131</td>
+      <td>0.096867</td>
+      <td>0.029279</td>
+      <td>0.041443</td>
+      <td>0.144397</td>
+    </tr>
+    <tr>
+      <td>SC064Q04NA</td>
+      <td>0.019042</td>
+      <td>0.030230</td>
+      <td>0.045684</td>
+      <td>0.154399</td>
+      <td>0.189682</td>
+      <td>0.056616</td>
+      <td>0.083558</td>
+      <td>0.438502</td>
+    </tr>
+    <tr>
+      <td>SC064Q05WA</td>
+      <td>0.015184</td>
+      <td>0.064314</td>
+      <td>0.021004</td>
+      <td>0.170968</td>
+      <td>0.168730</td>
+      <td>0.073079</td>
+      <td>0.129047</td>
+      <td>0.290196</td>
+    </tr>
+    <tr>
+      <td>SC064Q06WA</td>
+      <td>0.060109</td>
+      <td>0.071263</td>
+      <td>0.012946</td>
+      <td>0.000324</td>
+      <td>0.206352</td>
+      <td>0.013399</td>
+      <td>0.010663</td>
+      <td>0.144321</td>
+    </tr>
+    <tr>
+      <td>SC064Q07WA</td>
+      <td>0.121777</td>
+      <td>0.116921</td>
+      <td>0.039729</td>
+      <td>0.048188</td>
+      <td>0.372984</td>
+      <td>0.006020</td>
+      <td>0.023503</td>
+      <td>0.311714</td>
+    </tr>
+  </tbody>
+</table><div class="apa-table-note"><em>Note.</em> Each cell reports the absolute difference between synthetic and real factor loadings.</div>

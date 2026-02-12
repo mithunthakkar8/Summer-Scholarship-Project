@@ -1,0 +1,3 @@
+Metric,CTGAN,GReaT,Tabula,TapTap,PredLLM,TabSyn,TabDiff,REaLTabFormer
+Max HTMT,,,,,,,,
+HTMT < 0.85,✗,✗,✗,✗,✗,✗,✗,✗

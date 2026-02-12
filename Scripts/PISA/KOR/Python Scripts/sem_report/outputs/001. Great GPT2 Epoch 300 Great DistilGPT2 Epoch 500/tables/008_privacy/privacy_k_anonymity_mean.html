@@ -1,0 +1,128 @@
+
+<style>
+.sem-table {
+  border-collapse: collapse;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 14px;
+  border: 2px solid #444;              /* strong outer border */
+  margin: 12px 0;
+}
+
+/* Header cells */
+.sem-table th {
+  background: #f5f7fa;
+  padding: 8px 10px;
+  border: 1px solid #666;              /* solid header grid */
+  border-bottom: 2px solid #444;       /* strong header separator */
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Body cells */
+.sem-table td {
+  padding: 8px 10px;
+  border: 1px solid #999;              /* solid inner grid */
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+/* Zebra striping for readability */
+.sem-table tbody tr:nth-child(even) {
+  background: #fafafa;
+}
+
+/* Emphasise first column (Path / Technique) */
+.sem-table td:first-child,
+.sem-table th:first-child {
+  text-align: left;
+  font-weight: 500;
+}
+
+/* Optional: hover highlight (harmless in PDF) */
+.sem-table tbody tr:hover {
+  background: #f0f4ff;
+}
+
+/* Significance colouring (optional, subtle) */
+.sem-table td:contains("ns") {
+  color: #666;
+}
+
+/* HTMT pass/fail retained */
+.htmt-pass {
+  color: #1a7f37;
+  font-weight: 600;
+}
+
+.htmt-fail {
+  color: #b42318;
+  font-weight: 600;
+}
+</style>
+
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+  svg: { fontCache: 'global' }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+<table border="1" class="dataframe sem-table">
+  <colgroup><col style="width:50.00%;"><col style="width:50.00%;"></colgroup><thead>
+    <tr style="text-align: right;">
+      <th>Technique</th>
+      <th>KAnonymity_mean_k_distance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CTGAN</td>
+      <td>216.498643</td>
+    </tr>
+    <tr>
+      <td>GReaT_DistilGPT2</td>
+      <td>114.198047</td>
+    </tr>
+    <tr>
+      <td>GReaT_GPT2</td>
+      <td>114.601293</td>
+    </tr>
+    <tr>
+      <td>PredLLM_DistilGPT2</td>
+      <td>131.867526</td>
+    </tr>
+    <tr>
+      <td>PredLLM_GPT2</td>
+      <td>128.554049</td>
+    </tr>
+    <tr>
+      <td>REaLTabFormer</td>
+      <td>132.508127</td>
+    </tr>
+    <tr>
+      <td>TabDiff</td>
+      <td>300.344686</td>
+    </tr>
+    <tr>
+      <td>TabSyn</td>
+      <td>129.869958</td>
+    </tr>
+    <tr>
+      <td>Tabula_DistilGPT2</td>
+      <td>111.302423</td>
+    </tr>
+    <tr>
+      <td>Tabula_GPT2</td>
+      <td>110.559634</td>
+    </tr>
+    <tr>
+      <td>TapTap_DistilGPT2</td>
+      <td>122.190885</td>
+    </tr>
+    <tr>
+      <td>TapTap_GPT2</td>
+      <td>122.019198</td>
+    </tr>
+  </tbody>
+</table>

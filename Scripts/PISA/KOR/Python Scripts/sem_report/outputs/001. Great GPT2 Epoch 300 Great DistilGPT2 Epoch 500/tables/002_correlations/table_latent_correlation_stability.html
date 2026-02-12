@@ -1,0 +1,188 @@
+
+<style>
+.sem-table {
+  border-collapse: collapse;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 14px;
+  border: 2px solid #444;              /* strong outer border */
+  margin: 12px 0;
+}
+
+/* Header cells */
+.sem-table th {
+  background: #f5f7fa;
+  padding: 8px 10px;
+  border: 1px solid #666;              /* solid header grid */
+  border-bottom: 2px solid #444;       /* strong header separator */
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Body cells */
+.sem-table td {
+  padding: 8px 10px;
+  border: 1px solid #999;              /* solid inner grid */
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+/* Zebra striping for readability */
+.sem-table tbody tr:nth-child(even) {
+  background: #fafafa;
+}
+
+/* Emphasise first column (Path / Technique) */
+.sem-table td:first-child,
+.sem-table th:first-child {
+  text-align: left;
+  font-weight: 500;
+}
+
+/* Optional: hover highlight (harmless in PDF) */
+.sem-table tbody tr:hover {
+  background: #f0f4ff;
+}
+
+/* Significance colouring (optional, subtle) */
+.sem-table td:contains("ns") {
+  color: #666;
+}
+
+/* HTMT pass/fail retained */
+.htmt-pass {
+  color: #1a7f37;
+  font-weight: 600;
+}
+
+.htmt-fail {
+  color: #b42318;
+  font-weight: 600;
+}
+</style>
+
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+  svg: { fontCache: 'global' }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+<table border="1" class="dataframe sem-table">
+  <colgroup><col style="width:7.14%;"><col style="width:7.14%;"><col style="width:7.14%;"><col style="width:7.14%;"><col style="width:7.14%;"><col style="width:7.14%;"><col style="width:7.14%;"><col style="width:7.14%;"><col style="width:7.14%;"><col style="width:7.14%;"><col style="width:7.14%;"><col style="width:7.14%;"><col style="width:7.14%;"><col style="width:7.14%;"></colgroup><thead>
+    <tr style="text-align: right;">
+      <th>Model</th>
+      <th>Metric</th>
+      <th>CTGAN</th>
+      <th>GReaT_DistilGPT2</th>
+      <th>GReaT_GPT2</th>
+      <th>Tabula_DistilGPT2</th>
+      <th>Tabula_GPT2</th>
+      <th>TapTap_DistilGPT2</th>
+      <th>TapTap_GPT2</th>
+      <th>PredLLM_DistilGPT2</th>
+      <th>PredLLM_GPT2</th>
+      <th>TabSyn</th>
+      <th>TabDiff</th>
+      <th>REaLTabFormer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PLS</td>
+      <td>Mean |Δr|</td>
+      <td>0.047339</td>
+      <td>0.055919</td>
+      <td>0.065077</td>
+      <td>0.043087</td>
+      <td>0.032256</td>
+      <td>0.037031</td>
+      <td>0.030405</td>
+      <td>0.094989</td>
+      <td>0.119634</td>
+      <td>0.037017</td>
+      <td>0.012060</td>
+      <td>0.095044</td>
+    </tr>
+    <tr>
+      <td>PLS</td>
+      <td>Median |Δr|</td>
+      <td>0.048814</td>
+      <td>0.070730</td>
+      <td>0.074689</td>
+      <td>0.034454</td>
+      <td>0.030112</td>
+      <td>0.050591</td>
+      <td>0.030190</td>
+      <td>0.060522</td>
+      <td>0.075735</td>
+      <td>0.043315</td>
+      <td>0.011121</td>
+      <td>0.104954</td>
+    </tr>
+    <tr>
+      <td>PLS</td>
+      <td>Max |Δr|</td>
+      <td>0.064260</td>
+      <td>0.076046</td>
+      <td>0.093331</td>
+      <td>0.078736</td>
+      <td>0.065567</td>
+      <td>0.053672</td>
+      <td>0.059161</td>
+      <td>0.217239</td>
+      <td>0.247092</td>
+      <td>0.052032</td>
+      <td>0.021696</td>
+      <td>0.154084</td>
+    </tr>
+    <tr>
+      <td>CB</td>
+      <td>Mean |Δr|</td>
+      <td>0.042297</td>
+      <td>0.047979</td>
+      <td>0.026084</td>
+      <td>0.062721</td>
+      <td>0.036387</td>
+      <td>0.028694</td>
+      <td>0.031847</td>
+      <td>0.008179</td>
+      <td>0.031402</td>
+      <td>0.020778</td>
+      <td>0.020807</td>
+      <td>0.079049</td>
+    </tr>
+    <tr>
+      <td>CB</td>
+      <td>Median |Δr|</td>
+      <td>0.016057</td>
+      <td>0.047321</td>
+      <td>0.017660</td>
+      <td>0.046124</td>
+      <td>0.029479</td>
+      <td>0.025525</td>
+      <td>0.036774</td>
+      <td>0.000807</td>
+      <td>0.034249</td>
+      <td>0.019666</td>
+      <td>0.026326</td>
+      <td>0.064382</td>
+    </tr>
+    <tr>
+      <td>CB</td>
+      <td>Max |Δr|</td>
+      <td>0.101778</td>
+      <td>0.080669</td>
+      <td>0.046345</td>
+      <td>0.109447</td>
+      <td>0.052618</td>
+      <td>0.051465</td>
+      <td>0.039018</td>
+      <td>0.023031</td>
+      <td>0.051714</td>
+      <td>0.033797</td>
+      <td>0.035195</td>
+      <td>0.122041</td>
+    </tr>
+  </tbody>
+</table>

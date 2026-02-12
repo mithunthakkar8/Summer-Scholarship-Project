@@ -1,0 +1,13 @@
+Technique,Distribution_Rank,Path_Rank,LatentCorr_Rank,Covariate_Rank,Loading_Rank,Reliability_Rank,HTMT_Rank,Fit_Rank,Overall_Rank
+TabSyn,1,1,2,2,3,4,1,9,1
+TapTap_GPT2,9,4,4,4,2,2,1,1,2
+TapTap_DistilGPT2,10,6,5,5,4,1,1,1,3
+GReaT_DistilGPT2,3,2,9,7,1,3,1,9,4
+TabDiff,2,3,1,1,10,12,1,6,5
+GReaT_GPT2,4,5,3,6,8,5,1,6,6
+CTGAN,5,11,7,3,7,10,1,5,7
+Tabula_GPT2,7,7,6,8,9,7,1,9,8
+Tabula_DistilGPT2,6,8,10,9,5,9,1,6,9
+PredLLM_DistilGPT2,11,12,8,10,11,8,1,1,10
+PredLLM_GPT2,8,9,11,11,12,6,1,1,11
+REaLTabFormer,12,10,12,12,6,11,1,9,12
