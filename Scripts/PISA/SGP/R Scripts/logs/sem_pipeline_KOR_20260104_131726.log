@@ -1,0 +1,78 @@
+[2026-01-04 13:17:26] [INFO] Discovered 5 CSV file(s)
+[2026-01-04 13:17:28] [INFO] Loaded data: 6253 rows x 28 cols
+[2026-01-04 13:17:28] [INFO] Continuous columns present: AGE, ESCS, MCLSIZE, SCHSIZE, PV1MATH, PV2MATH, PV3MATH, PV4MATH, PV5MATH, PV6MATH, PV7MATH, PV8MATH, PV9MATH, PV10MATH
+[2026-01-04 13:17:28] [INFO] Categorical columns present: ST001D01T, ST004D01T, MISCED, IMMIG, ST268Q01JA, ST268Q04JA, ST268Q07JA, SC064Q01TA, SC064Q02TA, SC064Q03TA, SC064Q04NA, SC064Q05WA, SC064Q06WA, SC064Q07WA
+[2026-01-04 13:17:28] [INFO] Entering continuous imputation loop
+[2026-01-04 13:17:28] [INFO] Imputing column: AGE
+[2026-01-04 13:17:28] [INFO] Finished: AGE | NA before: 0 | NA after: 0
+[2026-01-04 13:17:28] [INFO] Imputing column: ESCS
+[2026-01-04 13:17:28] [INFO] Finished: ESCS | NA before: 0 | NA after: 0
+[2026-01-04 13:17:28] [INFO] Imputing column: MCLSIZE
+[2026-01-04 13:17:28] [INFO] Finished: MCLSIZE | NA before: 0 | NA after: 0
+[2026-01-04 13:17:28] [INFO] Imputing column: SCHSIZE
+[2026-01-04 13:17:28] [INFO] Finished: SCHSIZE | NA before: 0 | NA after: 0
+[2026-01-04 13:17:28] [INFO] Imputing column: PV1MATH
+[2026-01-04 13:17:28] [INFO] Finished: PV1MATH | NA before: 0 | NA after: 0
+[2026-01-04 13:17:28] [INFO] Imputing column: PV2MATH
+[2026-01-04 13:17:28] [INFO] Finished: PV2MATH | NA before: 0 | NA after: 0
+[2026-01-04 13:17:28] [INFO] Imputing column: PV3MATH
+[2026-01-04 13:17:28] [INFO] Finished: PV3MATH | NA before: 0 | NA after: 0
+[2026-01-04 13:17:28] [INFO] Imputing column: PV4MATH
+[2026-01-04 13:17:28] [INFO] Finished: PV4MATH | NA before: 0 | NA after: 0
+[2026-01-04 13:17:28] [INFO] Imputing column: PV5MATH
+[2026-01-04 13:17:28] [INFO] Finished: PV5MATH | NA before: 0 | NA after: 0
+[2026-01-04 13:17:28] [INFO] Imputing column: PV6MATH
+[2026-01-04 13:17:28] [INFO] Finished: PV6MATH | NA before: 0 | NA after: 0
+[2026-01-04 13:17:28] [INFO] Imputing column: PV7MATH
+[2026-01-04 13:17:28] [INFO] Finished: PV7MATH | NA before: 0 | NA after: 0
+[2026-01-04 13:17:28] [INFO] Imputing column: PV8MATH
+[2026-01-04 13:17:28] [INFO] Finished: PV8MATH | NA before: 0 | NA after: 0
+[2026-01-04 13:17:28] [INFO] Imputing column: PV9MATH
+[2026-01-04 13:17:28] [INFO] Finished: PV9MATH | NA before: 0 | NA after: 0
+[2026-01-04 13:17:28] [INFO] Imputing column: PV10MATH
+[2026-01-04 13:17:28] [INFO] Finished: PV10MATH | NA before: 0 | NA after: 0
+[2026-01-04 13:17:28] [INFO] Total remaining NA count: 0
+[2026-01-04 13:17:28] [INFO] All required SEM variables present.
+[2026-01-04 13:17:28] [INFO] Estimating PLS-SEM model...
+[2026-01-04 13:17:28] [INFO] PLS model estimated.
+[2026-01-04 13:17:35] [INFO] Starting bootstrap: nboot=1000 cores=4 seed=123
+[2026-01-04 13:17:47] [INFO] Bootstrap completed successfully.
+[2026-01-04 13:17:48] [INFO] Lavaan model converged successfully.
+[2026-01-04 13:17:50] [INFO] Excel export completed.
+[2026-01-04 13:17:51] [INFO] Writing Excel workbook: C:/Users/mithu/Documents/MEGA/VUW/Summer Research Project/Experiments/PISA-SEM/KOR/GReaT/DistilGPT2/sem_results_synthetic_great_distilgpt2_rep_1.xlsx
+[2026-01-04 13:17:51] [INFO] Excel export completed.
+[2026-01-04 13:17:51] [INFO] Loaded data: 6253 rows x 28 cols
+[2026-01-04 13:17:51] [INFO] Continuous columns present: AGE, ESCS, MCLSIZE, SCHSIZE, PV1MATH, PV2MATH, PV3MATH, PV4MATH, PV5MATH, PV6MATH, PV7MATH, PV8MATH, PV9MATH, PV10MATH
+[2026-01-04 13:17:51] [INFO] Categorical columns present: ST001D01T, ST004D01T, MISCED, IMMIG, ST268Q01JA, ST268Q04JA, ST268Q07JA, SC064Q01TA, SC064Q02TA, SC064Q03TA, SC064Q04NA, SC064Q05WA, SC064Q06WA, SC064Q07WA
+[2026-01-04 13:17:51] [INFO] Entering continuous imputation loop
+[2026-01-04 13:17:51] [INFO] Imputing column: AGE
+[2026-01-04 13:17:51] [INFO] Finished: AGE | NA before: 0 | NA after: 0
+[2026-01-04 13:17:51] [INFO] Imputing column: ESCS
+[2026-01-04 13:17:51] [INFO] Finished: ESCS | NA before: 0 | NA after: 0
+[2026-01-04 13:17:51] [INFO] Imputing column: MCLSIZE
+[2026-01-04 13:17:51] [INFO] Finished: MCLSIZE | NA before: 0 | NA after: 0
+[2026-01-04 13:17:51] [INFO] Imputing column: SCHSIZE
+[2026-01-04 13:17:51] [INFO] Finished: SCHSIZE | NA before: 0 | NA after: 0
+[2026-01-04 13:17:51] [INFO] Imputing column: PV1MATH
+[2026-01-04 13:17:51] [INFO] Finished: PV1MATH | NA before: 0 | NA after: 0
+[2026-01-04 13:17:51] [INFO] Imputing column: PV2MATH
+[2026-01-04 13:17:51] [INFO] Finished: PV2MATH | NA before: 0 | NA after: 0
+[2026-01-04 13:17:51] [INFO] Imputing column: PV3MATH
+[2026-01-04 13:17:51] [INFO] Finished: PV3MATH | NA before: 0 | NA after: 0
+[2026-01-04 13:17:51] [INFO] Imputing column: PV4MATH
+[2026-01-04 13:17:51] [INFO] Finished: PV4MATH | NA before: 0 | NA after: 0
+[2026-01-04 13:17:51] [INFO] Imputing column: PV5MATH
+[2026-01-04 13:17:51] [INFO] Finished: PV5MATH | NA before: 0 | NA after: 0
+[2026-01-04 13:17:51] [INFO] Imputing column: PV6MATH
+[2026-01-04 13:17:51] [INFO] Finished: PV6MATH | NA before: 0 | NA after: 0
+[2026-01-04 13:17:51] [INFO] Imputing column: PV7MATH
+[2026-01-04 13:17:51] [INFO] Finished: PV7MATH | NA before: 0 | NA after: 0
+[2026-01-04 13:17:51] [INFO] Imputing column: PV8MATH
+[2026-01-04 13:17:51] [INFO] Finished: PV8MATH | NA before: 0 | NA after: 0
+[2026-01-04 13:17:51] [INFO] Imputing column: PV9MATH
+[2026-01-04 13:17:51] [INFO] Finished: PV9MATH | NA before: 0 | NA after: 0
+[2026-01-04 13:17:51] [INFO] Imputing column: PV10MATH
+[2026-01-04 13:17:51] [INFO] Finished: PV10MATH | NA before: 0 | NA after: 0
+[2026-01-04 13:17:51] [INFO] Total remaining NA count: 0
+[2026-01-04 13:17:51] [INFO] All required SEM variables present.
+[2026-01-04 13:17:51] [INFO] Estimating PLS-SEM model...

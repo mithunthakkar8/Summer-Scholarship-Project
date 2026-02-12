@@ -1,0 +1,63 @@
+sem_report/
+│
+├── loaders/
+│   ├── __init__.py
+│   └── sem_comparison_loader.py
+│
+├── evaluators/
+│   ├── __init__.py
+│   ├── distribution.py
+│   ├── covariate_correlation_evaluator.py
+│   ├── global_fit_measures.py
+│   ├── discriminant_validity.py
+│   ├── correlations.py
+│   ├── loadings.py
+│   ├── reliability.py
+│   └── paths.py
+│
+├── reporting/
+│   ├── __init__.py
+│   └── sem_synthetic_report.py
+│
+├── utils/
+│   ├── __init__.py
+│   ├── thresholds.py
+│   ├── export_config.py
+│   ├── exporter.py
+│   └── thresholds.py
+│
+├── outputs/
+│   ├── appendix/
+│   │   ├── 001_distribution/
+│   │   ├── 002_correlations/
+│   │   ├── 003_reliability/
+│   │   ├── 004_discriminant_validity/
+│   │   ├── 005_paths/
+│   │   ├── 006_loadings/
+│   │   ├── 007_global_fit_measures/
+│   │   └── 008_summary/
+│   │
+│   ├── figures/                   # All plots as PNG + PDF
+│   │   ├── 001_distribution/
+│   │   ├── 002_correlations/
+│   │   ├── 003_reliability/
+│   │   ├── 004_discriminant_validity/
+│   │   ├── 005_paths/
+│   │   ├── 006_loadings/
+│   │   ├── 007_global_fit_measures/
+│   │   └── 008_summary/
+│   │
+│   ├── tables/                   # Final reports as HTML + PDF
+│   │   ├── 001_distribution/
+│   │   ├── 002_correlations/
+│   │   ├── 003_reliability/
+│   │   ├── 004_discriminant_validity/
+│   │   ├── 005_paths/
+│   │   ├── 006_loadings/
+│   │   ├── 007_global_fit_measures/
+│   │   └── 008_summary/
+│   │
+│   └── logs/
+├── run_report.py
+├── requirements.txt
+└── README.md

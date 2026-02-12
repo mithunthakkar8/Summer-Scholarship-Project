@@ -1,0 +1,25 @@
+__pycache__/
+*.pyc
+.env
+outputs/
+data/
+*.zip
+*.pt
+*.ckpt
+
+# Ignore all outputs
+outputs/
+**/outputs/
+
+# Ignore archives
+Archive/
+
+# Ignore large experiment folders
+Scripts/TIMSS/Python Scripts/Archive/
+Scripts/PISA/SGP/Slurm Scripts/Archive/
+
+# R history
+.Rhistory
+
+# CSV experiment outputs
+*.csv
