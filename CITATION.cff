@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+title: "Your Software Title"
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - family-names: "Thakkar"
+    given-names: "Mithun"
+    orcid: "https://orcid.org/0009-0008-1209-8566"
+repository-code: "https://github.com/mithunthakkar8/Summer-Scholarship-Project"
+license: "CC-BY-NC-SA-4.0"
+version: "1.0.0"
+date-released: 2026-04-25
