@@ -51,6 +51,15 @@ This repository implements a fully automated SEM-oriented evaluation pipeline:
 This project is licensed under the **GNU General Public License v3.0**.
 See the [LICENSE](LICENSE) file for details.
 
+For questions, collaborations, or code access:
+
+mithun.thakkar8@gmail.com
+
+
+Associated Paper: arXiv preprint (forthcoming)
+
+Note: This work represents pioneering results at the intersection of generative AI and Structural Equation Modeling. If you build upon this work, please maintain the citation and license terms.
+
 ## 📝 Citation
 
 If you use this software or build upon these methods in your research, please cite:
@@ -67,11 +76,5 @@ If you use this software or build upon these methods in your research, please ci
   year = {2026}
 }
 
-For questions, collaborations, or code access:
-
-mithun.thakkar8@gmail.com
 
 
-Associated Paper: arXiv preprint (forthcoming)
-
-Note: This work represents pioneering results at the intersection of generative AI and Structural Equation Modeling. If you build upon this work, please maintain the citation and license terms.
