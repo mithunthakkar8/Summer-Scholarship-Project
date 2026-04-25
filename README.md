@@ -70,3 +70,8 @@ If you use this software or build upon these methods in your research, please ci
 For questions, collaborations, or code access:
 
 mithun.thakkar8@gmail.com
+
+
+Associated Paper: arXiv preprint (forthcoming)
+
+Note: This work represents pioneering results at the intersection of generative AI and Structural Equation Modeling. If you build upon this work, please maintain the citation and license terms.
