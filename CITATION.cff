@@ -1,13 +1,5 @@
 cff-version: 1.2.0
-description: "Benchmarking synthetic tabular data generators (LLM-based and diffusion-based) for structural coherence in behavioral and educational datasets using Structural Equation Modeling (SEM) metrics including directional consistency and rank preservation."
-keywords:
-  - synthetic-data
-  - diffusion-models
-  - large-language-models
-  - structural-equation-modeling
-  - timss
-  - pisa
-  - tabular-data
+title: "Benchmarking Synthetic Tabular Data Generators for Structural Coherence of Behavioral and Educational Datasets"
 message: "If you use this software, please cite it as below."
 type: software
 authors:
@@ -18,3 +10,12 @@ repository-code: "https://github.com/mithunthakkar8/Summer-Scholarship-Project"
 license: "CC-BY-NC-SA-4.0"
 version: "1.0.0"
 date-released: 2026-04-25
+description: "Benchmarking synthetic tabular data generators for structural coherence in behavioral and educational datasets (TIMSS, PISA) using Structural Equation Modeling (SEM) metrics including directional consistency and rank preservation."
+keywords:
+  - synthetic-data
+  - diffusion-models
+  - large-language-models
+  - structural-equation-modeling
+  - tabular-data
+  - timss
+  - pisa
