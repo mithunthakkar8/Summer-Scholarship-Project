@@ -1,5 +1,13 @@
 cff-version: 1.2.0
-title: "Your Software Title"
+description: "Benchmarking synthetic tabular data generators (LLM-based and diffusion-based) for structural coherence in behavioral and educational datasets using Structural Equation Modeling (SEM) metrics including directional consistency and rank preservation."
+keywords:
+  - synthetic-data
+  - diffusion-models
+  - large-language-models
+  - structural-equation-modeling
+  - timss
+  - pisa
+  - tabular-data
 message: "If you use this software, please cite it as below."
 type: software
 authors:
