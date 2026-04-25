@@ -78,3 +78,11 @@ If you use this software or build upon these methods in your research, please ci
 
 
 
+
+
+
+
+⚠️ Disclaimer
+
+This repository contains a preliminary research report generated with the assistance of AI tools. 
+The content is under active validation and should not be considered a finalized or peer-reviewed academic work.
