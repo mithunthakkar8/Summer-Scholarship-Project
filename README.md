@@ -66,3 +66,7 @@ If you use this software or build upon these methods in your research, please ci
   version = {1.0.0},
   year = {2026}
 }
+
+For questions, collaborations, or code access:
+
+mithun.thakkar8@gmail.com
