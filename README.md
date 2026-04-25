@@ -1,5 +1,7 @@
 # BENCHMARKING SYNTHETIC TABULAR DATA GENERATORS FOR STRUCTURAL COHERENCE OF BEHAVIORAL AND EDUCATIONAL DATASETS
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19759033.svg)](https://doi.org/10.5281/zenodo.19759033)
+
 Overview:
 This repository benchmarks synthetic tabular data generators—specifically **LLM-based** (fine-tuned) 
 and **diffusion-based** models—for their ability to preserve **structural coherence** in behavioral 
@@ -47,3 +49,13 @@ See the [LICENSE](LICENSE) file for details.
 If you use this software in your research, please cite:
 
 **Mithun Thakkar, "Benchmarking Synthetic Tabular Data Generators for Structural Coherence of Behavioral and Educational Datasets", forthcoming on arXiv, 2026**
+
+```bibtex
+@software{Thakkar_Benchmarking_Synthetic_Tabular_2026,
+  author = {Mithun Thakkar},
+  title = {Benchmarking Synthetic Tabular Data Generators for Structural Coherence of Behavioral and Educational Datasets},
+  url = {https://github.com/mithunthakkar8/Summer-Scholarship-Project},
+  doi = {10.5281/zenodo.19759033},
+  version = {1.0.0},
+  year = {2026}
+}
