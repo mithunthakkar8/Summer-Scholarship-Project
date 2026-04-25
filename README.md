@@ -2,22 +2,28 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19759033.svg)](https://doi.org/10.5281/zenodo.19759033)
 
-Overview:
-This repository benchmarks synthetic tabular data generators—specifically **LLM-based** (fine-tuned) 
-and **diffusion-based** models—for their ability to preserve **structural coherence** in behavioral 
-and educational datasets (TIMSS and PISA). Unlike traditional ML-focused evaluations, 
-this work assesses generators through the lens of **Structural Equation Modeling (SEM)** .
+## 📌 Overview
 
-## 🔬 Key Contributions
+Synthetic tabular data is increasingly used to enable data sharing in privacy-sensitive behavioral and educational research contexts. However, its suitability for **Structural Equation Modeling (SEM)** remains to be fully understood. This study benchmarks LLM-based and diffusion-based synthetic data generators for their ability to preserve **structural coherence**—including measurement properties, causal path directions, and global model fit—required for valid SEM-based analysis.
 
-This project achieves **pioneering results** at the intersection of generative AI and structural equation modeling:
+Using data from **PISA 2022** and **TIMSS 2023** (Singapore samples), this work evaluates generators across distributional fidelity, measurement reliability, discriminant validity, structural path preservation, global model fit, and privacy risk.
 
-| Contribution | Details |
-|--------------|---------|
-| **Expanded Scope** | Extended from LLM-only to include diffusion-based generators (TabSyn, TabDiff), achieving pioneering results in SEM-oriented synthetic data generation |
-| **Novel Application** | First successful mapping of synthetic data generators (built for ML) to SEM applications |
-| **New Evaluation Metrics** | Proposed and implemented structural coherence metrics beyond standard RMSE, including **directional consistency** and **rank preservation** |
-| **Code-Based Analytics** | Replaced SPSS-dependent workflows with reproducible, production-style Python/R pipeline |
+## 🔬 Key Findings
+
+| Finding | Details |
+|---------|---------|
+| **Diffusion models excel** | TabDiff and TabSyn achieve strong preservation of structural relationships and global SEM fit |
+| **LLM sensitivity** | LLM-based generators exhibit greater sensitivity to model size and hyperparameter configuration |
+| **Privacy trade-offs** | In small-sample settings, certain diffusion models show substantial privacy leakage; well-tuned LLMs demonstrate more balanced performance |
+| **Model capacity matters** | Increasing LLM model capacity (GReaT-Lrg) substantially improves measurement fidelity, rivaling diffusion-based approaches |
+
+## 📊 Generators Benchmarked
+
+| Category | Generators |
+|----------|------------|
+| **Diffusion-based** | TabDiff, TabSyn |
+| **LLM-based** | GReaT, PredLLM, TapTap, REaLTabFormer, TabuLa |
+| **Classical** | CTGAN |
 
 ## 🛠️ Tech Stack
 
@@ -25,19 +31,20 @@ This project achieves **pioneering results** at the intersection of generative A
 |----------|--------------|
 | Languages | Python, R |
 | Deep Learning | PyTorch, HuggingFace Transformers |
-| Generation Models | TabSyn, TabDiff, Fine-tuned LLMs |
-| Evaluation | SEM frameworks, Custom structural coherence metrics |
-| Infrastructure | Slurm, Git Bash |
+| Generation Models | TabSyn, TabDiff, GReaT, PredLLM, TapTap, REaLTabFormer, TabuLa, CTGAN |
+| SEM Evaluation | SEMinR (PLS-SEM), lavaan (CB-SEM) |
+| Infrastructure | Slurm, NeSI HPC, Raapoi Cluster |
 | Documentation | LaTeX |
 
-## 📊 End-to-End Analytics Pipeline
+## 📊 End-to-End Evaluation Pipeline
 
-This repository implements a fully automated evaluation pipeline:
+This repository implements a fully automated SEM-oriented evaluation pipeline:
 
-1. **Auto-preprocessing** — TIMSS and PISA datasets
-2. **Generator Training** — LLM fine-tuning + diffusion model training
-3. **Structural Evaluation** — SEM fit indices, directional consistency, rank preservation
-4. **Automated Reporting** — Tabular reports + data visualization outputs
+1. **Auto-preprocessing** — PISA 2022 and TIMSS 2023 datasets
+2. **Generator Training** — LLM fine-tuning + diffusion model training on HPC cluster
+3. **Structural Evaluation** — SEM fit indices (CFI, TLI, RMSEA, SRMR), directional consistency, rank preservation, measurement reliability, discriminant validity (HTMT)
+4. **Privacy Assessment** — Exact match rate, nearest-neighbor distance ratio (NNDR), membership inference risk, distance to closest record (DCR)
+5. **Automated Reporting** — Tabular reports + data visualization outputs
 
 ## 📄 License
 
@@ -46,9 +53,9 @@ See the [LICENSE](LICENSE) file for details.
 
 ## 📝 Citation
 
-If you use this software in your research, please cite:
+If you use this software or build upon these methods in your research, please cite:
 
-**Mithun Thakkar, "Benchmarking Synthetic Tabular Data Generators for Structural Coherence of Behavioral and Educational Datasets", forthcoming on arXiv, 2026**
+**Mithun Thakkar, "Benchmarking Synthetic Tabular Data Generators for Structural Coherence of Behavioral and Educational Datasets", arXiv preprint, 2026**
 
 ```bibtex
 @software{Thakkar_Benchmarking_Synthetic_Tabular_2026,
