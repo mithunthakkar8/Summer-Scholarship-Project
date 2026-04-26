@@ -17,7 +17,6 @@ Using data from **PISA 2022** and **TIMSS 2023** (Singapore samples), this work 
 | **Privacy trade-offs** | In small-sample settings, certain diffusion models show substantial privacy leakage; well-tuned LLMs demonstrate more balanced performance |
 | **Model capacity matters** | Increasing LLM model capacity (GReaT-Lrg) substantially improves measurement fidelity, rivaling diffusion-based approaches |
 
-## Benchmarking performance gauged:
 ## 📊 TIMSS 2023 (Singapore) - Full Benchmark Results
 
 | Metric | TabDiff | TabSyn | GReaT | PredLLM | TapTap | REaLTabFormer | CTGAN | Tabula |
