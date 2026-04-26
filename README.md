@@ -92,6 +92,11 @@ This repository implements a fully automated SEM-oriented evaluation pipeline:
 4. **Privacy Assessment** — Exact match rate, nearest-neighbor distance ratio (NNDR), membership inference risk, distance to closest record (DCR)
 5. **Automated Reporting** — Tabular reports + data visualization outputs
 
+
+## ⚠️ Disclaimer
+
+This repository contains a preliminary research report generated with the assistance of AI tools. The content is under active validation and should not be considered a finalized or peer-reviewed academic work.
+
 ## 📄 License
 
 This project is licensed under the **GNU General Public License v3.0**.
