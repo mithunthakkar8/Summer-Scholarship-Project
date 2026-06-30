@@ -123,9 +123,6 @@ To check whether relationships between key covariates (ESCS, age, class size, ge
 
 The full set of 27 covariate plots (all combinations of ESCS, age, class size, gender, grade, immigration status, mother's education, school size × SMP/SMS/SPI) is available in [`Outputs/`](./Outputs).
 
-⚠️ Disclaimer
-This repository contains a preliminary research report generated with the assistance of AI tools. The content is under active validation and should not be considered a finalized or peer-reviewed academic work.
-
 📄 License
 This project is licensed under the GNU General Public License v3.0. See the LICENSE file for details.
 
@@ -151,8 +148,6 @@ Mithun Thakkar, "Benchmarking Synthetic Tabular Data Generators for Structural C
   year = {2026}
 }
 
-⚠️ Disclaimer
 
-This repository contains a preliminary research report generated with the assistance of AI tools. 
-The content is under active validation and should not be considered a finalized or peer-reviewed academic work.
+
 
