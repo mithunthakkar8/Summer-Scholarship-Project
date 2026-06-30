@@ -1,0 +1,591 @@
+
+<style>
+/* =====================================================
+   APA 7 TABLE FORMAT (MINIMAL RULES)
+   ===================================================== */
+
+.sem-table {
+  border-collapse: collapse;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12pt;
+  color: #000;
+  margin: 12px 0;
+
+  /* APA: only top & bottom rules */
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+/* -----------------------------------------------------
+   HEADER
+   ----------------------------------------------------- */
+.sem-table thead th {
+  padding: 6px 8px;
+  text-align: center;
+  font-weight: 600;
+
+  /* APA: header separator rule */
+  border-bottom: 1px solid #000;
+
+  /* APA: NEVER vertical rules */
+  border-left: none;
+  border-right: none;
+}
+
+/* -----------------------------------------------------
+   BODY
+   ----------------------------------------------------- */
+.sem-table td {
+  padding: 6px 8px;
+  text-align: center;
+  vertical-align: middle;
+
+  /* APA: no inner gridlines */
+  border: none;
+  white-space: nowrap;
+}
+
+/* First column left-aligned (row labels) */
+.sem-table th:first-child,
+.sem-table td:first-child {
+  text-align: left;
+}
+
+/* Remove zebra striping / shading */
+.sem-table tbody tr {
+  background: transparent;
+}
+
+/* -----------------------------------------------------
+   TABLE NOTES
+   ----------------------------------------------------- */
+.apa-table-note {
+  font-size: 11pt;
+  margin-top: 6px;
+}
+
+/* -----------------------------------------------------
+   TABLE NUMBER & TITLE
+   ----------------------------------------------------- */
+.apa-table-number {
+  margin-top: 12px;
+  font-size: 12pt;
+  font-weight: 600;
+}
+
+.apa-table-title {
+  margin-bottom: 6px;
+  font-size: 12pt;
+  font-style: italic;
+}
+
+</style>
+
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+  svg: { fontCache: 'global' }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+<div class="apa-table-number"><strong>Table 34</strong></div><div class="apa-table-title"><em>Detailed Metric Breakdown by Technique</em></div><table border="1" class="dataframe sem-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Metric</th>
+      <th>TabSyn</th>
+      <th>TabDiff</th>
+      <th>TapTap</th>
+      <th>GReaT</th>
+      <th>PredLLM</th>
+      <th>Tabula</th>
+      <th>CTGAN</th>
+      <th>REaLTabFormer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>— DISTRIBUTION FIDELITY —</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mean |Δμ| ↓</td>
+      <td><b>0.030</b></td>
+      <td><b>0.030</b></td>
+      <td>0.040</td>
+      <td>0.180</td>
+      <td>0.040</td>
+      <td>0.170</td>
+      <td>0.100</td>
+      <td>0.240</td>
+    </tr>
+    <tr>
+      <td>Mean |Δσ| ↓</td>
+      <td>0.070</td>
+      <td>0.240</td>
+      <td><b>0.030</b></td>
+      <td>0.250</td>
+      <td>0.050</td>
+      <td>0.260</td>
+      <td>0.140</td>
+      <td>0.090</td>
+    </tr>
+    <tr>
+      <td>Continuous adherence ↑</td>
+      <td><b>1.000</b></td>
+      <td><b>1.000</b></td>
+      <td>0.989</td>
+      <td><b>1.000</b></td>
+      <td>0.999</td>
+      <td><b>1.000</b></td>
+      <td><b>1.000</b></td>
+      <td>0.998</td>
+    </tr>
+    <tr>
+      <td>Category adherence ↑</td>
+      <td><b>1.000</b></td>
+      <td><b>1.000</b></td>
+      <td>0.500</td>
+      <td><b>1.000</b></td>
+      <td>0.500</td>
+      <td><b>1.000</b></td>
+      <td>0.768</td>
+      <td>0.500</td>
+    </tr>
+    <tr>
+      <td>Composite error ↓</td>
+      <td><b>0.100</b></td>
+      <td>0.270</td>
+      <td>0.581</td>
+      <td>0.430</td>
+      <td>0.591</td>
+      <td>0.430</td>
+      <td>0.472</td>
+      <td>0.832</td>
+    </tr>
+    <tr>
+      <td>Distribution composite ↑</td>
+      <td><b>1.000</b></td>
+      <td>0.674</td>
+      <td>0.174</td>
+      <td>0.340</td>
+      <td>0.537</td>
+      <td>0.342</td>
+      <td>0.514</td>
+      <td>0.000</td>
+    </tr>
+    <tr>
+      <td>Distribution rank</td>
+      <td><b>1</b></td>
+      <td>2</td>
+      <td>7</td>
+      <td>6</td>
+      <td>3</td>
+      <td>5</td>
+      <td>4</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>— STRUCTURAL FIDELITY —</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Directional consistency ↑</td>
+      <td><b>1.000</b></td>
+      <td><b>1.000</b></td>
+      <td>0.842</td>
+      <td>0.842</td>
+      <td>0.842</td>
+      <td>0.789</td>
+      <td>0.842</td>
+      <td>0.789</td>
+    </tr>
+    <tr>
+      <td>Rank preservation (Spearman ρ) ↑</td>
+      <td><b>0.872</b></td>
+      <td>0.707</td>
+      <td>0.626</td>
+      <td>0.675</td>
+      <td>0.609</td>
+      <td>0.825</td>
+      <td>0.121</td>
+      <td>0.447</td>
+    </tr>
+    <tr>
+      <td>Latent corr |Δr| ↓</td>
+      <td>0.029</td>
+      <td><b>0.017</b></td>
+      <td>0.033</td>
+      <td>0.030</td>
+      <td>0.029</td>
+      <td>0.039</td>
+      <td>0.044</td>
+      <td>0.086</td>
+    </tr>
+    <tr>
+      <td>Covariate |Δr| ↓</td>
+      <td>0.025</td>
+      <td><b>0.016</b></td>
+      <td>0.033</td>
+      <td>0.044</td>
+      <td>0.043</td>
+      <td>0.034</td>
+      <td>0.031</td>
+      <td>0.057</td>
+    </tr>
+    <tr>
+      <td>Indirect |Δβ| ↓</td>
+      <td>0.022</td>
+      <td>0.013</td>
+      <td>0.011</td>
+      <td>0.013</td>
+      <td>0.010</td>
+      <td>0.013</td>
+      <td><b>0.006</b></td>
+      <td>0.030</td>
+    </tr>
+    <tr>
+      <td>Structural composite ↑</td>
+      <td>0.736</td>
+      <td><b>0.896</b></td>
+      <td>0.631</td>
+      <td>0.567</td>
+      <td>0.590</td>
+      <td>0.586</td>
+      <td>0.557</td>
+      <td>0.026</td>
+    </tr>
+    <tr>
+      <td>Structural rank</td>
+      <td>2</td>
+      <td><b>1</b></td>
+      <td>3</td>
+      <td>6</td>
+      <td>4</td>
+      <td>5</td>
+      <td>7</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>— MEASUREMENT FIDELITY —</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Loading MAD ↓</td>
+      <td><b>0.028</b></td>
+      <td>0.111</td>
+      <td>0.046</td>
+      <td>0.037</td>
+      <td>0.073</td>
+      <td>0.037</td>
+      <td>0.084</td>
+      <td>0.108</td>
+    </tr>
+    <tr>
+      <td>Reliability MAD ↓</td>
+      <td>0.032</td>
+      <td>0.074</td>
+      <td><b>0.017</b></td>
+      <td>0.030</td>
+      <td>0.033</td>
+      <td>0.033</td>
+      <td>0.059</td>
+      <td>0.055</td>
+    </tr>
+    <tr>
+      <td>Measurement composite ↑</td>
+      <td>0.870</td>
+      <td>0.000</td>
+      <td><b>0.893</b></td>
+      <td>0.832</td>
+      <td>0.592</td>
+      <td>0.803</td>
+      <td>0.294</td>
+      <td>0.185</td>
+    </tr>
+    <tr>
+      <td>Measurement rank</td>
+      <td>2</td>
+      <td>8</td>
+      <td><b>1</b></td>
+      <td>3</td>
+      <td>5</td>
+      <td>4</td>
+      <td>6</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>— VALIDITY —</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HTMT RMSE ↓</td>
+      <td>0.040</td>
+      <td>0.028</td>
+      <td>0.046</td>
+      <td><b>0.024</b></td>
+      <td>0.045</td>
+      <td>0.059</td>
+      <td>0.069</td>
+      <td>0.080</td>
+    </tr>
+    <tr>
+      <td>CFI ↑</td>
+      <td>0.880</td>
+      <td>0.720</td>
+      <td><b>0.930</b></td>
+      <td>0.850</td>
+      <td>0.910</td>
+      <td>0.890</td>
+      <td>0.880</td>
+      <td>0.840</td>
+    </tr>
+    <tr>
+      <td>TLI ↑</td>
+      <td>0.870</td>
+      <td>0.680</td>
+      <td><b>0.920</b></td>
+      <td>0.830</td>
+      <td>0.900</td>
+      <td>0.870</td>
+      <td>0.870</td>
+      <td>0.820</td>
+    </tr>
+    <tr>
+      <td>RMSEA ↓</td>
+      <td>0.100</td>
+      <td>0.090</td>
+      <td>0.080</td>
+      <td>0.100</td>
+      <td>0.080</td>
+      <td>0.090</td>
+      <td><b>0.070</b></td>
+      <td>0.110</td>
+    </tr>
+    <tr>
+      <td>SRMR ↓</td>
+      <td>0.090</td>
+      <td>0.080</td>
+      <td>0.080</td>
+      <td>0.090</td>
+      <td><b>0.070</b></td>
+      <td>0.090</td>
+      <td>0.080</td>
+      <td>0.100</td>
+    </tr>
+    <tr>
+      <td>Validity composite ↑</td>
+      <td>0.560</td>
+      <td>0.467</td>
+      <td>0.772</td>
+      <td>0.639</td>
+      <td><b>0.812</b></td>
+      <td>0.452</td>
+      <td>0.526</td>
+      <td>0.000</td>
+    </tr>
+    <tr>
+      <td>Validity rank</td>
+      <td>4</td>
+      <td>6</td>
+      <td>2</td>
+      <td>3</td>
+      <td><b>1</b></td>
+      <td>7</td>
+      <td>5</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>— PRIVACY —</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Exact Match Rate ↓</td>
+      <td><b>0.000</b></td>
+      <td><b>0.000</b></td>
+      <td><b>0.000</b></td>
+      <td><b>0.000</b></td>
+      <td><b>0.000</b></td>
+      <td><b>0.000</b></td>
+      <td><b>0.000</b></td>
+      <td><b>0.000</b></td>
+    </tr>
+    <tr>
+      <td>NNDR ↑</td>
+      <td>99.200</td>
+      <td><b>271.228</b></td>
+      <td>89.826</td>
+      <td>80.810</td>
+      <td>97.338</td>
+      <td>83.650</td>
+      <td>187.354</td>
+      <td>110.220</td>
+    </tr>
+    <tr>
+      <td>Membership inference risk ↓</td>
+      <td>0.863</td>
+      <td><b>0.383</b></td>
+      <td>0.917</td>
+      <td>0.964</td>
+      <td>0.901</td>
+      <td>0.944</td>
+      <td>0.531</td>
+      <td>0.832</td>
+    </tr>
+    <tr>
+      <td>DCR p05 ↑</td>
+      <td>56.436</td>
+      <td><b>146.862</b></td>
+      <td>57.721</td>
+      <td>47.822</td>
+      <td>60.451</td>
+      <td>55.591</td>
+      <td>104.322</td>
+      <td>63.969</td>
+    </tr>
+    <tr>
+      <td>Privacy composite ↑</td>
+      <td>0.119</td>
+      <td><b>1.000</b></td>
+      <td>0.076</td>
+      <td>0.000</td>
+      <td>0.108</td>
+      <td>0.043</td>
+      <td>0.625</td>
+      <td>0.182</td>
+    </tr>
+    <tr>
+      <td>Privacy rank</td>
+      <td>4</td>
+      <td><b>1</b></td>
+      <td>6</td>
+      <td>8</td>
+      <td>5</td>
+      <td>7</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>— OVERALL —</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Composite score ↑</td>
+      <td><b>1.000</b></td>
+      <td>0.884</td>
+      <td>0.824</td>
+      <td>0.800</td>
+      <td>0.748</td>
+      <td>0.702</td>
+      <td>0.598</td>
+      <td>0.000</td>
+    </tr>
+    <tr>
+      <td>Overall rank</td>
+      <td><b>1</b></td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+      <td>7</td>
+      <td>8</td>
+    </tr>
+  </tbody>
+</table><div class="apa-table-note"><em>Note.</em> Rows represent individual evaluation metrics. Errors are shown as positive magnitudes. Normalized scores are scaled to [0,1], where higher is better. Overall composite score is computed as a weighted sum of normalized component scores with the following weights: Distribution: 0.13; Path: 0.13; Latent corr: 0.08; Covariate: 0.08; Loading: 0.12; Reliability: 0.10; HTMT: 0.12; Fit: 0.09; Privacy: 0.15; Indirect: 0.08. All component scores are min–max normalized to [0,1] prior to aggregation.</div>
