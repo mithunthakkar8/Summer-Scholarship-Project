@@ -54,6 +54,27 @@ All figures and interactive tables referenced below are in the [`Outputs/`](./Ou
 
 These are best viewed live via GitHub Pages rather than opened as raw source on GitHub:
 
+**Summary Tables**
+- [Final ranking — detailed metric breakdown](https://mithunthakkar8.github.io/Summer-Scholarship-Project/Outputs/table_00b_final_ranking_detailed_metric_breakdown.html)
+- [Boundary adherence](https://mithunthakkar8.github.io/Summer-Scholarship-Project/Outputs/table_boundary_adherence.html)
+- [Boundary adherence — diff vs real](https://mithunthakkar8.github.io/Summer-Scholarship-Project/Outputs/table_boundary_adherence_diff_vs_real.html)
+- [Category adherence](https://mithunthakkar8.github.io/Summer-Scholarship-Project/Outputs/table_category_adherence.html)
+- [Continuous summary](https://mithunthakkar8.github.io/Summer-Scholarship-Project/Outputs/table_continuous_summary.html)
+- [Covariate correlation error](https://mithunthakkar8.github.io/Summer-Scholarship-Project/Outputs/table_covariate_corr_error.html)
+- [Covariate correlation ranges](https://mithunthakkar8.github.io/Summer-Scholarship-Project/Outputs/table_covariate_corr_ranges.html)
+- [Discriminant margin](https://mithunthakkar8.github.io/Summer-Scholarship-Project/Outputs/table_discriminant_margin.html)
+- [Distribution summary — categorical](https://mithunthakkar8.github.io/Summer-Scholarship-Project/Outputs/table_distribution_summary_categorical.html)
+- [Distribution summary — continuous](https://mithunthakkar8.github.io/Summer-Scholarship-Project/Outputs/table_distribution_summary_continuous.html)
+- [Fornell-Larcker / HTMT RMSE](https://mithunthakkar8.github.io/Summer-Scholarship-Project/Outputs/table_fl_htmt_rmse.html)
+- [Fornell-Larcker diagonal](https://mithunthakkar8.github.io/Summer-Scholarship-Project/Outputs/table_fornell_larcker_diag.html)
+- [HTMT stability](https://mithunthakkar8.github.io/Summer-Scholarship-Project/Outputs/table_htmt_stability.html)
+- [HTMT summary](https://mithunthakkar8.github.io/Summer-Scholarship-Project/Outputs/table_htmt_summary.html)
+- [Indirect effects comparison](https://mithunthakkar8.github.io/Summer-Scholarship-Project/Outputs/table_indirect_effects_comparison.html)
+- [Latent correlation stability](https://mithunthakkar8.github.io/Summer-Scholarship-Project/Outputs/table_latent_correlation_stability.html)
+- [Missingness diagnostics](https://mithunthakkar8.github.io/Summer-Scholarship-Project/Outputs/table_missingness_diagnostics.html)
+- [Range sanity vs real](https://mithunthakkar8.github.io/Summer-Scholarship-Project/Outputs/table_range_sanity_vs_real.html)
+- [Sample size](https://mithunthakkar8.github.io/Summer-Scholarship-Project/Outputs/table_sample_size.html)
+
 **Global Model Fit (CB-SEM)**
 - [Global fit — mean](https://mithunthakkar8.github.io/Summer-Scholarship-Project/Outputs/cbsem_global_fit_mean.html)
 - [Global fit — stability](https://mithunthakkar8.github.io/Summer-Scholarship-Project/Outputs/cbsem_global_fit_stability.html)
@@ -78,27 +99,6 @@ These are best viewed live via GitHub Pages rather than opened as raw source on 
 **Privacy**
 - [Privacy — k-anonymity mean](https://mithunthakkar8.github.io/Summer-Scholarship-Project/Outputs/privacy_k_anonymity_mean.html)
 - [Privacy — mean](https://mithunthakkar8.github.io/Summer-Scholarship-Project/Outputs/privacy_mean.html)
-
-**Summary Tables**
-- [Final ranking — detailed metric breakdown](https://mithunthakkar8.github.io/Summer-Scholarship-Project/Outputs/table_00b_final_ranking_detailed_metric_breakdown.html)
-- [Boundary adherence](https://mithunthakkar8.github.io/Summer-Scholarship-Project/Outputs/table_boundary_adherence.html)
-- [Boundary adherence — diff vs real](https://mithunthakkar8.github.io/Summer-Scholarship-Project/Outputs/table_boundary_adherence_diff_vs_real.html)
-- [Category adherence](https://mithunthakkar8.github.io/Summer-Scholarship-Project/Outputs/table_category_adherence.html)
-- [Continuous summary](https://mithunthakkar8.github.io/Summer-Scholarship-Project/Outputs/table_continuous_summary.html)
-- [Covariate correlation error](https://mithunthakkar8.github.io/Summer-Scholarship-Project/Outputs/table_covariate_corr_error.html)
-- [Covariate correlation ranges](https://mithunthakkar8.github.io/Summer-Scholarship-Project/Outputs/table_covariate_corr_ranges.html)
-- [Discriminant margin](https://mithunthakkar8.github.io/Summer-Scholarship-Project/Outputs/table_discriminant_margin.html)
-- [Distribution summary — categorical](https://mithunthakkar8.github.io/Summer-Scholarship-Project/Outputs/table_distribution_summary_categorical.html)
-- [Distribution summary — continuous](https://mithunthakkar8.github.io/Summer-Scholarship-Project/Outputs/table_distribution_summary_continuous.html)
-- [Fornell-Larcker / HTMT RMSE](https://mithunthakkar8.github.io/Summer-Scholarship-Project/Outputs/table_fl_htmt_rmse.html)
-- [Fornell-Larcker diagonal](https://mithunthakkar8.github.io/Summer-Scholarship-Project/Outputs/table_fornell_larcker_diag.html)
-- [HTMT stability](https://mithunthakkar8.github.io/Summer-Scholarship-Project/Outputs/table_htmt_stability.html)
-- [HTMT summary](https://mithunthakkar8.github.io/Summer-Scholarship-Project/Outputs/table_htmt_summary.html)
-- [Indirect effects comparison](https://mithunthakkar8.github.io/Summer-Scholarship-Project/Outputs/table_indirect_effects_comparison.html)
-- [Latent correlation stability](https://mithunthakkar8.github.io/Summer-Scholarship-Project/Outputs/table_latent_correlation_stability.html)
-- [Missingness diagnostics](https://mithunthakkar8.github.io/Summer-Scholarship-Project/Outputs/table_missingness_diagnostics.html)
-- [Range sanity vs real](https://mithunthakkar8.github.io/Summer-Scholarship-Project/Outputs/table_range_sanity_vs_real.html)
-- [Sample size](https://mithunthakkar8.github.io/Summer-Scholarship-Project/Outputs/table_sample_size.html)
 
 > **Note:** The links above point to the live GitHub Pages version of each report, which renders the interactive HTML/CSS as intended. If you instead browse to these files directly inside the [`Outputs/`](./Outputs) folder on GitHub, you'll see raw source code rather than the rendered page — use the links above instead.
 
