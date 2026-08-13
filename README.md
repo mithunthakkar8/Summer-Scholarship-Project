@@ -19,12 +19,15 @@ Using data from PISA 2022 and TIMSS 2023 (Singapore samples), this work evaluate
 
 ## 🎛️ Hyperparameter Tuning Approach
 
-This is a benchmarking study, so model configurations were standardised rather than individually optimised. Generator architectures were understood at a high level — sufficient to implement each pipeline correctly (including custom patches for the diffusion workflows) and run a controlled ablation on LLM model capacity and tuning depth — but no manual hyperparameter tuning was performed to optimise structural-metric performance.
+## 🎛️ Hyperparameter Tuning Approach
 
-Instead, generators were trained using stable, method-recommended configurations. LLM-based generators used a common backbone (DistilGPT-2) with shared hyperparameters (batch size, number of epochs) — the parameters uniformly exposed across all frameworks — with defaults used elsewhere. Diffusion-based generators (TabDiff, TabSyn) used their default architecture and noise schedule.
+This is a benchmarking study. Model configurations were standardised rather than individually optimised.
 
-This design choice trades peak per-model performance for fairness and reproducibility, ensuring observed differences reflect inherent modelling characteristics rather than differential tuning effort. See Section 5.4–5.6 of the accompanying report for full methodology.
+Generator architectures were understood at a high level. This was sufficient to implement each pipeline correctly, including custom patches for the diffusion workflows. We also ran a controlled ablation on LLM model capacity and tuning depth. However, no manual hyperparameter tuning was performed to optimise structural-metric performance.
 
+Generators were trained using stable, method-recommended configurations instead. LLM-based generators used a common backbone (DistilGPT-2). They shared hyperparameters for batch size and number of epochs, since these are uniformly exposed across all frameworks. Defaults were used elsewhere. Diffusion-based generators (TabDiff, TabSyn) used their default architecture and noise schedule.
+
+This design choice trades peak per-model performance for fairness and reproducibility. It ensures observed differences reflect inherent modelling characteristics, not differential tuning effort. See Section 5.4–5.6 of the accompanying report for full methodology.
 ## 📊 Generators Benchmarked
 
 | Category | Generators |
