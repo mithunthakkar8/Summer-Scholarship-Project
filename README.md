@@ -2,11 +2,27 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19759033.svg)](https://doi.org/10.5281/zenodo.19759033)
 
+## 🎓 Project Background
+
+This project was completed during the 2025–26 summer as a Victoria University of Wellington Summer Scholarship project. It builds a system to evaluate synthetic tabular data quality using modern AI approaches.
+
+The work is approached from a systems and data engineering perspective. Focus areas include reproducibility, evaluation design, and real-world applicability, such as privacy-preserving data generation and simulation scenarios.
+
 ## 📌 Overview
 
 Synthetic tabular data is increasingly used to enable data sharing in privacy-sensitive behavioral and educational research contexts. However, its suitability for Structural Equation Modeling (SEM) remains to be fully understood. This study benchmarks LLM-based and diffusion-based synthetic data generators for their ability to preserve structural coherence—including measurement properties, causal path directions, and global model fit—required for valid SEM-based analysis.
 
 Using data from PISA 2022 and TIMSS 2023 (Singapore samples), this work evaluates generators across distributional fidelity, measurement reliability, discriminant validity, structural path preservation, global model fit, and privacy risk.
+
+## 🎛️ Hyperparameter Tuning Approach
+
+This is a benchmarking study. Model configurations were standardised rather than individually optimised.
+
+Generator architectures were understood at a high level. This was sufficient to implement each pipeline correctly, including custom patches for the diffusion workflows. We also ran a controlled ablation on LLM model capacity and tuning depth. However, no manual hyperparameter tuning was performed to optimise structural-metric performance.
+
+Generators were trained using stable, method-recommended configurations instead. LLM-based generators used a common backbone (DistilGPT-2). They shared hyperparameters for batch size and number of epochs, since these are uniformly exposed across all frameworks. Defaults were used elsewhere. Diffusion-based generators (TabDiff, TabSyn) used their default architecture and noise schedule.
+
+This design choice trades peak per-model performance for fairness and reproducibility. It ensures observed differences reflect inherent modelling characteristics, not differential tuning effort. See Section 5.4–5.6 of the accompanying report for full methodology.
 
 ## 🔬 Key Findings
 
@@ -16,16 +32,6 @@ Using data from PISA 2022 and TIMSS 2023 (Singapore samples), this work evaluate
 | LLM sensitivity | LLM-based generators exhibit greater sensitivity to model size and hyperparameter configuration |
 | Privacy trade-offs | In small-sample settings, certain diffusion models show substantial privacy leakage; well-tuned LLMs demonstrate more balanced performance |
 | Model capacity matters | Increasing LLM model capacity (GReaT-Lrg) substantially improves measurement fidelity, rivaling diffusion-based approaches |
-
-## 🎛️ Hyperparameter Tuning Approach
-
-This is a benchmarking study. Model configurations were standardised rather than individually optimised.
-
-Generator architectures were understood at a high level. This was sufficient to implement each pipeline correctly, including custom patches for the diffusion workflows. I also ran a controlled ablation on LLM model capacity and tuning depth. 
-
-Generators were trained using stable, method-recommended configurations. LLM-based generators used a common backbone (DistilGPT-2). They shared hyperparameters for batch size and number of epochs, since these are uniformly exposed across all frameworks. Defaults were used elsewhere. Diffusion-based generators (TabDiff, TabSyn) used their default architecture and noise schedule.
-
-This design choice trades peak per-model performance for fairness and reproducibility. It ensures observed differences reflect inherent modelling characteristics, not differential tuning effort. See Section 5.4–5.6 of the accompanying report for full methodology.
 
 ## 📊 Generators Benchmarked
 
@@ -141,8 +147,6 @@ To check whether relationships between key covariates (ESCS, age, class size, ge
 
 The full set of 27 covariate plots (all combinations of ESCS, age, class size, gender, grade, immigration status, mother's education, school size × SMP/SMS/SPI) is available in [`Outputs/`](./Outputs).
 
-
-
 ## 📄 License
 
 This project is licensed under the GNU General Public License v3.0. See the LICENSE file for details.
@@ -169,4 +173,3 @@ Mithun Thakkar, "Benchmarking Synthetic Tabular Data Generators for Structural C
   year = {2026}
 }
 ```
-
