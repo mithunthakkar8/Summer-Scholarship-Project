@@ -19,11 +19,11 @@ Using data from PISA 2022 and TIMSS 2023 (Singapore samples), this work evaluate
 
 ## 🎛️ Hyperparameter Tuning Approach
 
-This is a benchmarking study, so model configurations were standardised. No manual hyperparameter tuning was performed to optimise performance on structural metrics. Instead, generators were trained using stable, method-recommended configurations.
+This is a benchmarking study, so model configurations were standardised rather than individually optimised. Generator architectures were understood at a high level — sufficient to implement each pipeline correctly (including custom patches for the diffusion workflows) and run a controlled ablation on LLM model capacity and tuning depth — but no manual hyperparameter tuning was performed to optimise structural-metric performance.
 
-For LLM-based generators, training used a common backbone (DistilGPT-2) and shared hyperparameters (batch size, number of epochs), since these are the parameters uniformly exposed across all frameworks. Default settings were used elsewhere. Diffusion-based generators (TabDiff, TabSyn) used their default architecture and noise schedule.
+Instead, generators were trained using stable, method-recommended configurations. LLM-based generators used a common backbone (DistilGPT-2) with shared hyperparameters (batch size, number of epochs) — the parameters uniformly exposed across all frameworks — with defaults used elsewhere. Diffusion-based generators (TabDiff, TabSyn) used their default architecture and noise schedule.
 
-This design choice trades peak per-model performance for fairness and reproducibility. It ensures observed differences reflect inherent modelling characteristics rather than differential tuning effort. See Section 5.4–5.6 of the accompanying report for full methodology, plus a controlled ablation on model capacity and tuning depth.
+This design choice trades peak per-model performance for fairness and reproducibility, ensuring observed differences reflect inherent modelling characteristics rather than differential tuning effort. See Section 5.4–5.6 of the accompanying report for full methodology.
 
 ## 📊 Generators Benchmarked
 
