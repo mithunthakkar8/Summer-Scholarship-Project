@@ -19,8 +19,6 @@ Using data from PISA 2022 and TIMSS 2023 (Singapore samples), this work evaluate
 
 ## 🎛️ Hyperparameter Tuning Approach
 
-## 🎛️ Hyperparameter Tuning Approach
-
 This is a benchmarking study. Model configurations were standardised rather than individually optimised.
 
 Generator architectures were understood at a high level. This was sufficient to implement each pipeline correctly, including custom patches for the diffusion workflows. We also ran a controlled ablation on LLM model capacity and tuning depth. However, no manual hyperparameter tuning was performed to optimise structural-metric performance.
