@@ -17,6 +17,14 @@ Using data from PISA 2022 and TIMSS 2023 (Singapore samples), this work evaluate
 | Privacy trade-offs | In small-sample settings, certain diffusion models show substantial privacy leakage; well-tuned LLMs demonstrate more balanced performance |
 | Model capacity matters | Increasing LLM model capacity (GReaT-Lrg) substantially improves measurement fidelity, rivaling diffusion-based approaches |
 
+## 🎛️ Hyperparameter Tuning Approach
+
+This is a benchmarking study, so model configurations were standardised. No manual hyperparameter tuning was performed to optimise performance on structural metrics. Instead, generators were trained using stable, method-recommended configurations.
+
+For LLM-based generators, training used a common backbone (DistilGPT-2) and shared hyperparameters (batch size, number of epochs), since these are the parameters uniformly exposed across all frameworks. Default settings were used elsewhere. Diffusion-based generators (TabDiff, TabSyn) used their default architecture and noise schedule.
+
+This design choice trades peak per-model performance for fairness and reproducibility. It ensures observed differences reflect inherent modelling characteristics rather than differential tuning effort. See Section 5.4–5.6 of the accompanying report for full methodology, plus a controlled ablation on model capacity and tuning depth.
+
 ## 📊 Generators Benchmarked
 
 | Category | Generators |
