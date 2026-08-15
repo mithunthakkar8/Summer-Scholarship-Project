@@ -28,7 +28,7 @@ This design choice trades peak per-model performance for fairness and reproducib
 
 This section addresses a natural question: what makes this project methodologically novel, beyond routine benchmarking?
 
-**The core problem.** SEM-structured behavioral data has no explicit target variable. It only has interrelated latent constructs. Several generators (TabDiff, TabSyn, PredLLM) don't strictly require a target to run. But without one, they failed to preserve the structural relationships needed for valid SEM analysis.
+**The core problem.** SEM-structured behavioral data has no explicit target variable. It only has interrelated latent constructs. Generators like GReaT don't strictly require a target to run. But without one, they failed to preserve the structural relationships needed for valid SEM analysis.
 
 **Naive fixes didn't work.** Two workarounds were tried first. Conditioning on raw PCA-derived scores was tested. Arbitrary single-column targets were tested too. Both failed to preserve the structural relationships encoded in the SEM.
 
