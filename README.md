@@ -36,7 +36,10 @@ This section addresses a natural question: what makes this project methodologica
 
 **Why this matters.** This bridges two fields that don't usually talk to each other: SEM methodology and generative ML tooling. Most synthetic data benchmarks assume a ready-made target column. Behavioral and educational datasets built for SEM don't have one. This project shows a theoretically justified way to interface the two. It avoids defaulting to an arbitrary column that quietly breaks structural validity.
 
-This is the basis for calling the project pioneering: not the generators used, but the target-construction method that makes SEM-based evaluation possible in the first place.
+**Basis for the claiming this project is pioneering:**
+
+- **Method.** The target-construction approach is what makes SEM-based evaluatio in this project possible in the first place. It uses a SEM-derived composite score, not an arbitrary column or PCA derived column. This helps structural relationships survive the generation process.
+- **Results.** The findings are pioneering in the same sense. They come from a setting no prior study has tested. No prior study has systematically benchmarked trained diffusion- and transformer-based generators against SEM structural coherence criteria on real behavioral or educational data. Existing work either evaluates generators on standard ML metrics, or evaluates AI-generated survey data that was prompted rather than trained.
 
 **Literature confirmation.** A search of the current literature (Aug 2026) supports this gap. Existing benchmarks of trained tabular generators evaluate against machine learning efficiency, statistical similarity, and privacy risk. They never evaluate against SEM fit indices, factor loadings, or structural paths. Prior AI-generated survey and psychometric data work is prompting-based, such as using ChatGPT to simulate personas. It does not use trained generative modelling. No prior study benchmarks trained diffusion- and LLM-based generators against SEM structural coherence on real behavioral or educational data. See related work: van Kesteren & Oberski (2019) on SEM as computation graphs, and Structural Equation-VAE (arXiv 2508.06347), which aligns architecture with SEM structure but uses simulated ground-truth data rather than real assessment data or generator benchmarking.
 
