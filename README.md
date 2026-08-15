@@ -36,7 +36,7 @@ This section addresses a natural question: what makes this project methodologica
 
 **Why this matters.** This bridges two fields that don't usually talk to each other: SEM methodology and generative ML tooling. Most synthetic data benchmarks assume a ready-made target column. Behavioral and educational datasets built for SEM don't have one. This project shows a theoretically justified way to interface the two. It avoids defaulting to an arbitrary column that quietly breaks structural validity.
 
-**Basis for the claiming this project is pioneering:**
+**Basis for claiming this project is pioneering:**
 
 - **Method.** The target-construction approach is what makes SEM-based evaluatio in this project possible in the first place. It uses a SEM-derived composite score, not an arbitrary column or PCA derived column. This helps structural relationships survive the generation process.
 - **Results.** The findings are pioneering in the same sense. They come from a setting no prior study has tested. No prior study has systematically benchmarked trained diffusion- and transformer-based generators against SEM structural coherence criteria on real behavioral or educational data. Existing work either evaluates generators on standard ML metrics, or evaluates AI-generated survey data that was prompted rather than trained.
