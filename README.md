@@ -18,7 +18,7 @@ Using data from PISA 2022 and TIMSS 2023 (Singapore samples), this work evaluate
 
 This is a benchmarking study. Model configurations were standardised rather than individually optimised.
 
-Generator architectures were understood at a high level. This was sufficient to implement each pipeline correctly, including custom patches for the diffusion workflows. I also ran a controlled ablation on LLM model capacity and tuning depth. However, basic hyperparameter tuning was performed to optimise structural-metric performance.
+Generator architectures were understood at a high level. This was sufficient to implement each pipeline correctly, including custom patches for the diffusion workflows. I also ran a controlled ablation on LLM model capacity and tuning depth. 
 
 Generators were trained using stable, method-recommended configurations. LLM-based generators used a common backbone (DistilGPT-2). They shared hyperparameters for batch size and number of epochs, since these are uniformly exposed across all frameworks. Defaults were used elsewhere. Diffusion-based generators (TabDiff, TabSyn) used their default architecture and noise schedule.
 
