@@ -10,7 +10,7 @@ The work is approached from a systems and data engineering perspective. Focus ar
 
 ## 📌 Overview
 
-Synthetic tabular data is increasingly used to enable data sharing in privacy-sensitive behavioral and educational research contexts. However, its suitability for Structural Equation Modeling (SEM) remains to be fully understood. This study benchmarks LLM-based and diffusion-based synthetic data generators for their ability to preserve structural coherence required for valid SEM-based analysis. These measurement properties, causal path directions, and global model fit.
+Synthetic tabular data is increasingly used to enable data sharing in privacy-sensitive behavioral and educational research contexts. However, its suitability for Structural Equation Modeling (SEM) remains to be fully understood. This study benchmarks LLM-based and diffusion-based synthetic data generators for their ability to preserve structural coherence required for valid SEM-based analysis. Structural coherence includes measurement properties, causal path directions, and global model fit.
 
 Using data from PISA 2022 and TIMSS 2023 (Singapore samples), this work evaluates generators across distributional fidelity, measurement reliability, discriminant validity, structural path preservation, global model fit, and privacy risk.
 
