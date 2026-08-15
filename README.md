@@ -4,7 +4,7 @@
 
 ## 🎓 Project Background
 
-This project was completed during the 2025–26 summer as a Victoria University of Wellington Summer Scholarship project. It builds a system to evaluate synthetic tabular data quality using modern AI approaches.
+This project was completed during the 2025–26 summer as a Victoria University of Wellington Summer Scholarship project. It builds a system to evaluate synthetic tabular data using modern AI approaches.
 
 The work is approached from a systems and data engineering perspective. Focus areas include reproducibility, evaluation design, and real-world applicability, such as privacy-preserving data generation and simulation scenarios.
 
