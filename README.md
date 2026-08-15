@@ -24,6 +24,21 @@ Generators were trained using stable, method-recommended configurations. LLM-bas
 
 This design choice trades peak per-model performance for fairness and reproducibility. It ensures observed differences reflect inherent modelling characteristics, not differential tuning effort. See Section 5.4–5.6 of the accompanying report for full methodology.
 
+## 💡 Contributions
+
+This section addresses a natural question: what makes this project methodologically novel, beyond routine benchmarking?
+
+**The core problem.** SEM-structured behavioral data has no explicit target variable. It only has interrelated latent constructs. Several generators (TabDiff, TabSyn, PredLLM) don't strictly require a target to run. But without one, they failed to preserve the structural relationships needed for valid SEM analysis.
+
+**Naive fixes didn't work.** Two workarounds were tried first. Conditioning on raw PCA-derived scores was tested. Arbitrary single-column targets were tested too. Both failed to preserve the structural relationships encoded in the SEM.
+
+**The solution required SEM theory, not just ML tooling.** The endogenous latent construct's composite score was used as the target instead. This choice has theoretical grounding: in linear SEM, endogenous constructs function analogously to dependent variables in regression. The composite score was obtained directly from the PLS-SEM model in R. After generation, this column was discarded. Latent constructs were then re-estimated from observed indicators only, to prevent leakage into the SEM evaluation.
+
+**Why this matters.** This bridges two fields that don't usually talk to each other: SEM methodology and generative ML tooling. Most synthetic data benchmarks assume a ready-made target column, since standard ML datasets have one. Behavioral and educational datasets built for SEM don't. This project shows a theoretically justified way to interface the two, rather than defaulting to an arbitrary column that quietly breaks structural validity.
+
+This is the basis for calling the project pioneering: not the generators used, but the target-construction method that makes SEM-based evaluation possible in the first place.
+
+
 ## 🔬 Key Findings
 
 | Finding | Details |
