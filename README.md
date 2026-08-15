@@ -38,6 +38,7 @@ This section addresses a natural question: what makes this project methodologica
 
 This is the basis for calling the project pioneering: not the generators used, but the target-construction method that makes SEM-based evaluation possible in the first place.
 
+**Literature confirmation.** A search of the current literature (Aug 2026) supports this gap. Existing benchmarks of trained tabular generators (diffusion-based, transformer-based, GAN-based) evaluate against machine learning efficiency, statistical similarity, and privacy risk. They never evaluate against SEM fit indices, factor loadings, or structural paths. Prior AI-generated survey/psychometric data work is prompting-based (e.g., using ChatGPT to simulate personas), not trained generative modelling. No prior study benchmarks trained diffusion- and LLM-based generators against SEM structural coherence on real behavioral or educational data. See related work: van Kesteren & Oberski (2019) on SEM as computation graphs, and Structural Equation-VAE (arXiv 2508.06347), which aligns architecture with SEM structure but uses simulated ground-truth data rather than real assessment data or generator benchmarking.
 
 ## 🔬 Key Findings
 
