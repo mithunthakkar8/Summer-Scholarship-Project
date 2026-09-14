@@ -8,16 +8,6 @@ Synthetic tabular data is increasingly used to enable data sharing in privacy-se
 
 Using data from PISA 2022 and TIMSS 2023 (Singapore samples), this work evaluates generators across distributional fidelity, measurement reliability, discriminant validity, structural path preservation, global model fit, and privacy risk.
 
-## 🎛️ Hyperparameter Tuning Approach
-
-This is a benchmarking study. Model configurations were standardised rather than individually optimised.
-
-Generator architectures were understood at a high level. This was sufficient to implement each pipeline correctly, including custom patches for the diffusion workflows. I also ran a controlled ablation on LLM model capacity and tuning depth. 
-
-Generators were trained using stable, method-recommended configurations. LLM-based generators used a common backbone (DistilGPT-2). They shared hyperparameters for batch size and number of epochs, since these are uniformly exposed across all frameworks. Defaults were used elsewhere. Diffusion-based generators (TabDiff, TabSyn) used their default architecture and noise schedule.
-
-This design choice trades peak per-model performance for fairness and reproducibility. It ensures observed differences reflect inherent modelling characteristics, not differential tuning effort. See Section 5.4–5.6 of the accompanying report for full methodology.
-
 ## 💡 Contributions
 
 This section addresses a natural question: what makes this project methodologically novel, beyond routine benchmarking?
@@ -36,6 +26,16 @@ This section addresses a natural question: what makes this project methodologica
 - **Results.** The findings are pioneering in the same sense. They come from a setting no prior study has tested. No prior study has systematically benchmarked trained diffusion- and transformer-based generators against SEM structural coherence criteria on real behavioral or educational data. Existing work either evaluates generators on standard ML metrics, or evaluates AI-generated survey data that was prompted rather than trained.
 
 **Literature confirmation.** A search of the current literature (Aug 2026) supports this gap. Existing benchmarks of trained tabular generators evaluate against machine learning efficiency, statistical similarity, and privacy risk. They never evaluate against SEM fit indices, factor loadings, or structural paths. Prior AI-generated survey and psychometric data work is prompting-based, such as using ChatGPT to simulate personas. It does not use trained generative modelling. No prior study benchmarks trained diffusion- and LLM-based generators against SEM structural coherence on real behavioral or educational data. See related work: van Kesteren & Oberski (2019) on SEM as computation graphs, and Structural Equation-VAE (arXiv 2508.06347), which aligns architecture with SEM structure but uses simulated ground-truth data rather than real assessment data or generator benchmarking.
+
+## 🎛️ Hyperparameter Tuning Approach
+
+This is a benchmarking study. Model configurations were standardised rather than individually optimised.
+
+Generator architectures were understood at a high level. This was sufficient to implement each pipeline correctly, including custom patches for the diffusion workflows. I also ran a controlled ablation on LLM model capacity and tuning depth. 
+
+Generators were trained using stable, method-recommended configurations. LLM-based generators used a common backbone (DistilGPT-2). They shared hyperparameters for batch size and number of epochs, since these are uniformly exposed across all frameworks. Defaults were used elsewhere. Diffusion-based generators (TabDiff, TabSyn) used their default architecture and noise schedule.
+
+This design choice trades peak per-model performance for fairness and reproducibility. It ensures observed differences reflect inherent modelling characteristics, not differential tuning effort. See Section 5.4–5.6 of the accompanying report for full methodology.
 
 ## 🔬 Key Findings
 
