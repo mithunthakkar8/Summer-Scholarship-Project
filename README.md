@@ -18,8 +18,6 @@ This section addresses a natural question: what makes this project methodologica
 
 **The solution required SEM theory, not just ML tooling.** The endogenous latent construct's composite score was used as the target instead. This choice has theoretical grounding: in linear SEM, endogenous constructs function analogously to dependent variables in regression. The composite score was obtained directly from the PLS-SEM model in R. After generation, this column was discarded. Latent constructs were then re-estimated from observed indicators only, to prevent leakage into the SEM evaluation.
 
-**Why this matters.** This bridges two fields that don't usually talk to each other: SEM methodology and generative ML tooling. Most synthetic data benchmarks assume a ready-made target column. Behavioral and educational datasets built for SEM don't have one. This project shows a theoretically justified way to interface the two. It avoids defaulting to an arbitrary column that quietly breaks structural validity.
-
 **Basis for claiming this project is pioneering:**
 
 - **Method.** The target-construction approach is what makes SEM-based evaluation in this project possible in the first place. It uses a SEM-derived composite score, not an arbitrary column or PCA derived column. This helps structural relationships survive the generation process.
