@@ -2,12 +2,6 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19759033.svg)](https://doi.org/10.5281/zenodo.19759033)
 
-## 🎓 Project Background
-
-This project was completed during the 2025–26 summer as a Victoria University of Wellington Summer Scholarship project. It builds a system to evaluate synthetic tabular data using modern AI approaches.
-
-The work is approached from a systems and data engineering perspective. Focus areas include reproducibility, evaluation design, and real-world applicability, such as privacy-preserving data generation and simulation scenarios.
-
 ## 📌 Overview
 
 Synthetic tabular data is increasingly used to enable data sharing in privacy-sensitive behavioral and educational research contexts. However, its suitability for Structural Equation Modeling (SEM) remains to be fully understood. This study benchmarks LLM-based and diffusion-based synthetic data generators for their ability to preserve structural coherence required for valid SEM-based analysis. Structural coherence includes measurement properties, causal path directions, and global model fit.
